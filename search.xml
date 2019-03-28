@@ -80,19 +80,6 @@
   </entry>
   <entry>
     <title><![CDATA[Introduction to Probability and Counting]]></title>
-    <url>%2F2019%2F03%2F28%2FC1%2F</url>
-    <content type="text"><![CDATA[C1 Introduction to Probability and Counting1.1 Interpretation of ProbabilitiesThree methods: Personal approach (Two Die Rolls) Relative frequency approach Classical approach (Two Coin Tosses) 1.2 Sample spaces and events A sample space for an experiment is a set S such that each physical outcome of the experiment corresponds to exactly one element of S. An element of ${S}$ is called a sample point. Any subsect A of a sample space S is called an event. Two events $A_1$ and $A_2$ are mutually exclusive $\iff$ $A_1 \cap A_2 = \varnothing$ 1.3 Permutations and Combinations A permutation is an arrangement of objects in a definite order. A combination is a selection of objects without regard to order. \begin{align} P_n^r &= \dfrac{n!}{(n-r)!}​\\ C_n^r &= \left( \begin{array} { l } { n } \\ { r } \end{array} \right) = \dfrac{n!}{r! (n-r)!} \end{align}]]></content>
-      <categories>
-        <category>probability</category>
-      </categories>
-      <tags>
-        <tag>sample space</tag>
-        <tag>event</tag>
-        <tag>combination and permutation</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Introduction to Probability and Counting]]></title>
     <url>%2F2019%2F03%2F28%2FIntroduction%20to%20Probability%20and%20Counting%2F</url>
     <content type="text"><![CDATA[C1 Introduction to Probability and Counting1.1 Interpretation of ProbabilitiesThree methods: Personal approach (Two Die Rolls) Relative frequency approach Classical approach (Two Coin Tosses) 1.2 Sample spaces and events A sample space for an experiment is a set S such that each physical outcome of the experiment corresponds to exactly one element of S. An element of ${S}$ is called a sample point. Any subsect A of a sample space S is called an event. Two events $A_1$ and $A_2$ are mutually exclusive $\iff$ $A_1 \cap A_2 = \varnothing$ 1.3 Permutations and Combinations A permutation is an arrangement of objects in a definite order. A combination is a selection of objects without regard to order. \begin{align} P_n^r &= \dfrac{n!}{(n-r)!}​\\ C_n^r &= \left( \begin{array} { l } { n } \\ { r } \end{array} \right) = \dfrac{n!}{r! (n-r)!} \end{align}]]></content>
       <categories>
