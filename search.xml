@@ -1,8 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Geometric Distribution]]></title>
+    <url>%2F2019%2F03%2F29%2FGeometric-Distribution%2F</url>
+    <content type="text"><![CDATA[3.4 Geometric DistributionGeometric properties: A series of trails, classed as being either ‘success‘ or ‘failure‘ (Bernoulli trial). The trials are identical and independent. ( in the sense that the outcome of one trial has no effect on the outcome of any other) The random variable $X$ denotes the number of trials needed to obtain the first success. E.g: Sample space for an experiment: S = \{ s, fs, ffs, fffs, ...... \}\Note that: \begin{align} P[X = 1] &= p\\ P[X = 2] &= (1-p)(p)\\ P[X = 3] &= (1-p)^2(p)\\ ...... \end{align}Definition ( Geometric distribution): f(x) = (1-p)^{x-1}p \qquad x=1,2,3...We write: X \sim \operatorname{Geom}(p) Geometric moment generating function: m_X(t) = \dfrac{pe^t}{1-qe^t} \qquad t< -\ln q, \qquad q = 1-pExpectation and Variance for the Geometric Distribution: E[X] = \mu= 1/p \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = q/p^2]]></content>
+      <categories>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>discrete distributions</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Properties of Discrete Distributions]]></title>
+    <url>%2F2019%2F03%2F29%2FProperties-of-Discrete-Distributions%2F</url>
+    <content type="text"><![CDATA[C3 Discrete Distributions3.1 Random VariablesRandom Variable: Let $S$ be the sample space for an experiment. A real-valued function that is defined on $S$ is called a random variable, i.e.., $X : S \rightarrow \mathbb { R }​$ where such a function $X$ is said to be a random variable. discrete random variables: defined as having a countable range in $\mathbb{R}$ continuous random variables: defined as having a range equal to $\mathbb{R}$ 3.2 Discrete Probability DensitiesLet $S$ be a sample space and $\Omega$ a countable subset of $\mathbb { R }$ A discrete random variable is a map X: S \rightarrow \Omegatogether with a function $f_X： \Omega \rightarrow R$, given by $f_X(x) = P[X = x]$. having the properties that ​ (i) $f _ { X } ( x ) \geq 0$ for all $x \in \Omega$ and ​ (ii) $\sum \limits_ { x \in \Omega } f _ { X } ( x ) = 1​$ The function $f _ { X }$ is called the probability density function or probability distribution of $X $. We often say that a random variable is given by the pair $\left( X , f _ { X } \right)$ Cumulative Distribution: F(x) = P[X \leq x] = 1-q^{ \lfloor x\rfloor}​3.3 Expectation, Variance and Standard deviationThe expected value of $X$: $E[X] = \sum \limits _{all x} x \cdot f(x) $ Expectations of a Function of a Random Variable: $E[\varphi \circ X]=\sum\limits_{x \in \Omega} \varphi(x) \cdot f_{X}(x)$ proof is omitted Eg: $E[X^2] = \sum \limits _{all x} x^2 \cdot f(x)$ Rules for expectation: $E[c] = c$ $E[cX] = cE[X]$ $E[X + Y] = E[X] + E[Y]$ Variance: $ \operatorname{Var}[X] :=\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]$ $E[X] = \mu_X = \mu, \qquad \operatorname{Var}[X] = \sigma_X^2 = \sigma^2$ Computational formula for $\sigma^2$: $\sigma^2 = \operatorname{Var} [X] = E[X^2] - (E[X])^2$ Standard deviation: $\sigma = \sqrt{\operatorname{Var} [X]} = \sqrt{\sigma^2}$ Rules for variance: $\operatorname{Var}[c] = 0$ $\operatorname{Var}[cX] = c^2 \operatorname{Var}[X]$ $\operatorname{Var}[X+Y] = \operatorname{Var}[X] + \operatorname{Var}[Y]$ 3.4* The Moment Generating FunctionDefinition ( Ordinary moments): \text{Let $X$ be a random variable. The $k^{th}$ ordinary moment for $X$ is defined as $E[X^k]$. }Definition ( Moment generating function): m_{X}(t)=\sum_{n=0}^{\infty} \frac{t^{n}}{n !} \mathrm{E}\left[X^{n}\right]=\mathrm{E}\left[\sum_{n=0}^{\infty} \frac{t^{n} X^{n}}{n !}\right]=\mathrm{E}\left[e^{t X}\right]The moment generating function enables us to find these moments easily. Theorem: \dfrac{d^km_X(t)}{dt^k}\Bigg|_{t = 0} = E[X^k]]]></content>
+      <categories>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>discrete distributions</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Some Probability Laws]]></title>
+    <url>%2F2019%2F03%2F29%2Fsome-probability-laws%2F</url>
+    <content type="text"><![CDATA[C2 Some Probability Laws$P$是一个函数，定义域是$\mathscr{F}$， 叫做probability function (probability measure / probability) $P : \mathscr { T } \rightarrow [ 0,1 ] , \quad A \mapsto P [ A ]$ The triple $( S , \mathscr { T } , P )$ is called a probability space. 2.1 Basic Properties of Probabilities of Events \begin{aligned} P [ S ] & = 1 \\ P [ \varnothing ] & = 0 \\ P [ S \backslash A ] & = 1 - P [ A ] \\ P \left[ A _ { 1 } \cup A _ { 2 } \right] & = P \left[ A _ { 1 } \right] + P \left[ A _ { 2 } \right] - P \left[ A _ { 1 } \cap A _ { 2 } \right] \end{aligned}2.2 Conditional Probability P \left[ A _ { 1 } | A _ { 2 } \right] = \dfrac { \left| A _ { 1 } \cap A _ { 2 } \right| } { \left| A _ { 2 } \right| } = \dfrac { P \left[ A _ { 1 } \cap A _ { 2 } \right] } { P \left[ A _ { 2 } \right] }the conditional probability of the event A occurring, given that $B$ occurs as follows: P [ B | A ] = \dfrac { P [ A \cap B ] } { P [ A ] }2.3 Independence and the Multiplication Ruletwo events A and B are independent if: $P [ A \cap B ] = P [ A ] P [ B ]$ $\Updownarrow$ $\begin{array} { l l } { P [ A | B ] = P [ A ] } &amp; { \text { if } P [ B ] \neq 0 } \\ { P [ B | A ] = P [ B ] } &amp; { \text { if } P [ A ] \neq 0 } \end{array}$ 2.3* Partition and Law of Total ProbabilityPartition. Let $S$ denote the sample space of some experiment, and consider $k$ events$A _ { 1 } , \ldots , A _ { k }$ in $S$ such that $ A _ { 1 } , \ldots , A _ { k }$ are disjoint and $\bigcup _ { i = 1 } ^ { k } A _ { i } = S .$ It is said that theseevents form a partition of $S$. Law of total probability. Suppose that the events $B _ { 1 } , \ldots , B _ { k }$ form a partition of thespace $S$ and $\operatorname { Pr } \left( B _ { j } \right) &gt; 0$ for $j = 1 , \ldots , k .$ Then, for every event $A$ in $S$, \operatorname { P } ( B ) = \sum\limits _ { j = 1 } ^ { k } \operatorname { P } \left( A _ { j } \right) \operatorname { P } ( B | A _ { j } )2.4 Bayes’s Theorem \begin{align} P[A|B] &= \dfrac{P(B|A) \cdot P(A)}{P(B)}\\ \\ P[A_k | B ] &= \dfrac{P[B \cap A_k]}{P[B]} =\dfrac{P[B | A_k] \cdot P[A_k]}{ \sum\limits_{j=1}^n P[B | A_j] \cdot P[A_j]} \end{align}]]></content>
+      <categories>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>conditional probability</tag>
+        <tag>Bayes&#39;s Theorem</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Introduction to Probability and Counting]]></title>
     <url>%2F2019%2F03%2F28%2FC1%2F</url>
+    <content type="text"><![CDATA[C1 Introduction to Probability and Counting1.1 Interpretation of ProbabilitiesThree methods: Personal approach (Two Die Rolls) Relative frequency approach Classical approach (Two Coin Tosses) 1.2 Sample spaces and events A sample space for an experiment is a set S such that each physical outcome of the experiment corresponds to exactly one element of S. An element of ${S}$ is called a sample point. Any subsect A of a sample space S is called an event. Two events $A_1$ and $A_2$ are mutually exclusive $\iff$ $A_1 \cap A_2 = \varnothing$ 1.3 Permutations and Combinations A permutation is an arrangement of objects in a definite order. A combination is a selection of objects without regard to order. \begin{align} P_n^r &= \dfrac{n!}{(n-r)!}​\\ C_n^r &= \left( \begin{array} { l } { n } \\ { r } \end{array} \right) = \dfrac{n!}{r! (n-r)!} \end{align}]]></content>
+      <categories>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>sample space</tag>
+        <tag>event</tag>
+        <tag>combination and permutation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Introduction to Probability and Counting]]></title>
+    <url>%2F2019%2F03%2F28%2FIntroduction%20to%20Probability%20and%20Counting%2F</url>
     <content type="text"><![CDATA[C1 Introduction to Probability and Counting1.1 Interpretation of ProbabilitiesThree methods: Personal approach (Two Die Rolls) Relative frequency approach Classical approach (Two Coin Tosses) 1.2 Sample spaces and events A sample space for an experiment is a set S such that each physical outcome of the experiment corresponds to exactly one element of S. An element of ${S}$ is called a sample point. Any subsect A of a sample space S is called an event. Two events $A_1$ and $A_2$ are mutually exclusive $\iff$ $A_1 \cap A_2 = \varnothing$ 1.3 Permutations and Combinations A permutation is an arrangement of objects in a definite order. A combination is a selection of objects without regard to order. \begin{align} P_n^r &= \dfrac{n!}{(n-r)!}​\\ C_n^r &= \left( \begin{array} { l } { n } \\ { r } \end{array} \right) = \dfrac{n!}{r! (n-r)!} \end{align}]]></content>
       <categories>
         <category>probability</category>
