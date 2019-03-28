@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Poisson Distribution]]></title>
+    <url>%2F2019%2F03%2F29%2FPoisson-Distribution%2F</url>
+    <content type="text"><![CDATA[3.8 Poisson DistributionDefinition ( Poisson distribution): f_{X}(x)=\frac{k^{x} e^{-k}}{x !} \qquad x = 0,1,2...,\quad k>0Poisson moment generating function: m_X(t) = e^{k(e^t-1)}Expectation and Variance for the Poisson Distribution: E[X] = \mu = k\\ \operatorname{Var} [X] = \sigma^2 = k]]></content>
+      <categories>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>discrete distributions</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hypergeometric Distribution]]></title>
+    <url>%2F2019%2F03%2F29%2FHypergeometric-Distribution%2F</url>
+    <content type="text"><![CDATA[3.7 Hypergeometric DistributionHypergeometric properties: The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects. Of the N objects, we want r , the other N-r do not have the trait. The random variable $X$ denotes the number of objects obtained in n trials with the trait. Definition ( Hypergeometric distribution): f(x) = \dfrac{\left( \begin{array} { c } { r } \\ { x } \end{array} \right) \left( \begin{array} { c } { N - r } \\ { n-x } \end{array} \right)}{\left( \begin{array} { c } { N } \\ { n } \end{array} \right)} \qquad \qquad \operatorname{max}[0, n- (N-r)] \leq x \leq \operatorname{min}(n,r)Expectation and Variance for the Hypergeometric Distribution: E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}where $p = r/N$, $q = 1 - p$ Approximating the Hypergeometric Distribution: If $n/N \leq 0.05$, the hypergeometric distribution can be approximated by a binomial distribution with parameters $n$ and $p=r/N$.]]></content>
+      <categories>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>discrete distributions</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Negative Binomial Distribution]]></title>
+    <url>%2F2019%2F03%2F29%2FNegative-Binomial-Distribution%2F</url>
+    <content type="text"><![CDATA[3.6 Negative Binomial DistributionNegative binomial properties: A series of trails, classed as being either ‘success‘ or ‘failure‘ (Bernoulli trial). The trials are observed until exactly r successes are obtained, where r is fixed by the experimenter. The random variable $X$ denotes the number of successes needed to obtain the r trials. E.g: Sample space for an experiment in which $r = 3$: S = \{ ssffffs, sffffss, ffffsss, sss, ssfs \}\Here, $X = 7, 7, 7, 3, 4$, for $X = 7$ , there are $\left( \begin{array}{c}{ x-1 } \\ { 2 } \end{array} \right)$ ways in which $X$ can assume the value 7. The probability of an outcome for which $X = x$ is given by: P[X = x] = \left( \begin{array}{c}{ x-1 } \\ { 2 } \end{array} \right)(1-p)^x-3p^3 \qquad x=3, 4, 5...Definition ( Negative binomial distribution): f(x) = \left( \begin{array}{l}{ x-1 } \\ { 2-1 } \end{array} \right) p^r(1-p)^{x-r} \qquad r=1, 2, 3,... \qquad x = r, r+1, r+2,...Negative binomial moment generating function: m_X(t) = \dfrac{(pe^t)^r}{(1-qe^t)^r} \qquad q = 1-pExpectation and Variance for the Negative Binomial Distribution: E[X] = \mu = r/p \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = rq/p^2]]></content>
+      <categories>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>discrete distributions</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Binomial Distribution]]></title>
+    <url>%2F2019%2F03%2F29%2FBinomial-Distribution%2F</url>
+    <content type="text"><![CDATA[3.5 Binomial DistributionBinomial properties: A series of trails, classed as being either ‘success‘ or ‘failure‘ (Bernoulli trial). The trials are identical and independent. ( in the sense that the outcome of one trial has no effect on the outcome of any other) The random variable $X$ denotes the number of successes obtained in the n trials. Sample space for an experiment in which $n = 3$: S = \{ fff, sff, fsf, ffs, ssf, sfs, sss , fss \}\Note that: \begin{align} P[X = 0] &= (1-p)^3\\ P[X = 1] &= 3 \cdot p(1-p)^2\\ P[X = 2] &= 3 \cdot p^2(1-p)\\ P[X = 3] &= p^3\\ \end{align}Definition ( Binomial distribution): f(x) = \left( \begin{array} { l } { n } \\ { x } \end{array} \right) p^x(1-p)^{n-x} \qquad x=0,1,2,...,n \qquad 0]]></content>
+      <categories>
+        <category>probability</category>
+      </categories>
+      <tags>
+        <tag>discrete distributions</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Geometric Distribution]]></title>
     <url>%2F2019%2F03%2F29%2FGeometric-Distribution%2F</url>
     <content type="text"><![CDATA[3.4 Geometric DistributionGeometric properties: A series of trails, classed as being either ‘success‘ or ‘failure‘ (Bernoulli trial). The trials are identical and independent. ( in the sense that the outcome of one trial has no effect on the outcome of any other) The random variable $X$ denotes the number of trials needed to obtain the first success. E.g: Sample space for an experiment: S = \{ s, fs, ffs, fffs, ...... \}\Note that: \begin{align} P[X = 1] &= p\\ P[X = 2] &= (1-p)(p)\\ P[X = 3] &= (1-p)^2(p)\\ ...... \end{align}Definition ( Geometric distribution): f(x) = (1-p)^{x-1}p \qquad x=1,2,3...We write: X \sim \operatorname{Geom}(p) Geometric moment generating function: m_X(t) = \dfrac{pe^t}{1-qe^t} \qquad t< -\ln q, \qquad q = 1-pExpectation and Variance for the Geometric Distribution: E[X] = \mu= 1/p \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = q/p^2]]></content>
