@@ -100,7 +100,7 @@
 <meta name="keywords" content="hhh">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jack Kin">
-<meta property="og:url" content="https://Jack-Kin.github.io/index.html">
+<meta property="og:url" content="https://Jack-Kin.github.io/page/2/index.html">
 <meta property="og:site_name" content="Jack Kin">
 <meta property="og:description" content="UMJI-SJTU. A garbage sophomore">
 <meta property="og:locale" content="en">
@@ -113,7 +113,7 @@
 
 
 
-  <link rel="canonical" href="https://Jack-Kin.github.io/">
+  <link rel="canonical" href="https://Jack-Kin.github.io/page/2/">
 
 
 
@@ -214,7 +214,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -378,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Reliability/">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Hypergeometric-Distribution/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jack Kin">
@@ -398,7 +398,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/03/29/Reliability/" class="post-title-link" itemprop="url">Reliability</a>
+                <a href="/2019/03/29/Hypergeometric-Distribution/" class="post-title-link" itemprop="url">Hypergeometric Distribution</a>
               
             
           </h1>
@@ -423,7 +423,7 @@
                 
               
 
-              <time title="Created: 2019-03-29 02:06:14 / Modified: 02:10:29" itemprop="dateCreated datePublished" datetime="2019-03-29T02:06:14+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 01:51:16 / Modified: 01:52:06" itemprop="dateCreated datePublished" datetime="2019-03-29T01:51:16+08:00">2019-03-29</time>
             
 
             
@@ -482,510 +482,24 @@
       
         
           
-            <p>The reliability function, R, is defined to be the probability that the component will not fail before time t. Thus</p>
+            <h2 id="3-7-Hypergeometric-Distribution"><a href="#3-7-Hypergeometric-Distribution" class="headerlink" title="3.7 Hypergeometric Distribution"></a>3.7 Hypergeometric Distribution</h2><p><strong>Hypergeometric properties</strong>:</p>
+<ol>
+<li><p>The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.</p>
+</li>
+<li><p>Of the N objects, we want r , the other N-r do not have the trait.</p>
+</li>
+<li><p>The random variable $X$ denotes <strong>the number of objects obtained in n trials with the trait.</strong></p>
+</li>
+</ol>
+<p><strong>Definition ( Hypergeometric distribution)</strong>: </p>
 <script type="math/tex; mode=display">
-\begin{aligned} R(t) &=1-P[\text { component fails before time } t] \\ &=1-\int_{0}^{t} f(x) d x\\ &=1-F(t) \end{aligned}</script><p>The hazard rate $\rho$ :</p>
+f(x) = \dfrac{\left( \begin{array} { c } { r } \\ { x } \end{array} \right) \left( \begin{array} { c } { N - r } \\ { n-x } \end{array} \right)}{\left( \begin{array} { c } { N } \\ { n } \end{array} \right)}  
+\qquad \qquad
+\operatorname{max}[0, n- (N-r)] \leq x \leq \operatorname{min}(n,r)</script><p><strong>Expectation and Variance for the Hypergeometric Distribution</strong>:</p>
 <script type="math/tex; mode=display">
-\rho (t) = \dfrac{f(t)}{R(t)}</script><p><strong>Theorem</strong>:</p>
-<script type="math/tex; mode=display">
-R(t) = e^{-\int_0^t \rho(x)dx}</script><p><strong>Reliability of Series and Parallel Systems</strong>:</p>
-<p>The reliability of a series system wih k components:</p>
-<script type="math/tex; mode=display">
-R_{s}(t)=\prod_{i=1}^{k} R_{i}(t)</script><p>The reliability of a parallel system is given by:</p>
-<script type="math/tex; mode=display">
-\begin{aligned} R_{p}(t) &=1-P[\text { all components fail before } t] \\ &=1-\prod_{i=1}^{k}\left(1-R_{i}(t)\right) \end{aligned}</script>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Transformation-of-Random-Variables/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jack Kin">
-      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
-      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jack Kin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/29/Transformation-of-Random-Variables/" class="post-title-link" itemprop="url">Transformation of Random Variables</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-29 02:05:56 / Modified: 02:09:44" itemprop="dateCreated datePublished" datetime="2019-03-29T02:05:56+08:00">2019-03-29</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/probability/" itemprop="url" rel="index"><span itemprop="name">probability</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="4-8-Transformation-of-Random-Variables"><a href="#4-8-Transformation-of-Random-Variables" class="headerlink" title="4.8 Transformation of Random Variables"></a>4.8 Transformation of Random Variables</h2><p>Let $Y = \varphi(X)$, where g is strictly monotonic and differentiable. Then:</p>
-<script type="math/tex; mode=display">
-f_{Y}(y)=f_{X}\left(\varphi^{-1}(y)\right) \cdot\left|\frac{d \varphi^{-1}(y)}{d y}\right| \quad \text { for } y \in \operatorname{ran}g</script><p>and </p>
-<script type="math/tex; mode=display">
-f_Y(y) = 0  \qquad \text { for } y \notin \operatorname{ran}g</script>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Weibull-Distribution/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jack Kin">
-      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
-      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jack Kin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/29/Weibull-Distribution/" class="post-title-link" itemprop="url">Weibull Distribution</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-29 02:05:38 / Modified: 02:09:24" itemprop="dateCreated datePublished" datetime="2019-03-29T02:05:38+08:00">2019-03-29</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/probability/" itemprop="url" rel="index"><span itemprop="name">probability</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="4-7-Weibull-Distribution"><a href="#4-7-Weibull-Distribution" class="headerlink" title="4.7 Weibull Distribution"></a>4.7 Weibull Distribution</h2><script type="math/tex; mode=display">
-f(x)=\left\{\begin{array}{ll}{\alpha \beta x^{\beta-1} e^{-\alpha x^{\beta}},} & {x>0,} \\ {0,} & {\text { otherwise }}\end{array}\right. \quad \alpha, \beta>0</script><script type="math/tex; mode=display">
-\begin{array}{c}{\mu=\alpha^{-1 / \beta} \Gamma(1+1 / \beta)} \\ {\sigma^{2}=\alpha^{-2 / \beta} \Gamma(1+2 / \beta)-\mu^{2}}\end{array}</script>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Normal-Approximation-to-the-Binomial-Distributions/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jack Kin">
-      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
-      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jack Kin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/29/Normal-Approximation-to-the-Binomial-Distributions/" class="post-title-link" itemprop="url">Normal Approximation to the Binomial Distributions</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-29 02:05:19 / Modified: 02:08:52" itemprop="dateCreated datePublished" datetime="2019-03-29T02:05:19+08:00">2019-03-29</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/probability/" itemprop="url" rel="index"><span itemprop="name">probability</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="4-6-Normal-Approximation-to-the-Binomial-Distributions"><a href="#4-6-Normal-Approximation-to-the-Binomial-Distributions" class="headerlink" title="4.6 Normal Approximation to the Binomial Distributions"></a>4.6 Normal Approximation to the Binomial Distributions</h2><p>Let $X$ be binomial with parameters $n$ and $p$. For large $n$, $X$ is approximately normal with mean $\mu = np$ and variance $\sigma^2 = np(1-p)$.</p>
-<script type="math/tex; mode=display">
-P[X=x]=\frac{n !}{x !(n-x) !} p^{x} q^{n-x} \approx \frac{1}{\sqrt{n p q} \sqrt{2 \pi}} e^{-\dfrac{(x-n p)^{2}}{2 n p q}}</script><p>The approximation is good if $p$ is close to 0.5 and $n&gt;10$. Otherwise, we require that</p>
-<script type="math/tex; mode=display">
-n p>5 \quad \text { if } p \leq 1 / 2 \quad \text { or } \quad n(1-p)>5 \quad \text { if } p>1 / 2</script><p>we can approximate the <strong>sum</strong> over all $x \leq y$ by integrating to y + 1/2:</p>
-<script type="math/tex; mode=display">
-P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p^{x}(1-p)^{n-x} \approx \Phi\left(\frac{y+1 / 2-n p}{\sqrt{n p(1-p)}}\right)</script><p>This additional term 1/2 is known as the <strong>half-unit correction</strong> for the normal approximation to the cumulative binomial distribution function.</p>
+E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</script><p>where $p = r/N$, $q = 1 - p$</p>
+<p><strong>Approximating the Hypergeometric Distribution</strong>:</p>
+<p>If $n/N \leq 0.05$, the <strong>hypergeometric distribution</strong> can be approximated by a <strong>binomial distribution</strong> with parameters $n$ and $p=r/N$.</p>
 
           
         
@@ -1042,7 +556,7 @@ P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Normal-Distribution/">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Negative-Binomial-Distribution/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jack Kin">
@@ -1062,7 +576,7 @@ P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/03/29/Normal-Distribution/" class="post-title-link" itemprop="url">Normal Distribution</a>
+                <a href="/2019/03/29/Negative-Binomial-Distribution/" class="post-title-link" itemprop="url">Negative Binomial Distribution</a>
               
             
           </h1>
@@ -1087,7 +601,7 @@ P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p
                 
               
 
-              <time title="Created: 2019-03-29 02:04:32 / Modified: 02:08:31" itemprop="dateCreated datePublished" datetime="2019-03-29T02:04:32+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 01:49:48 / Modified: 01:50:14" itemprop="dateCreated datePublished" datetime="2019-03-29T01:49:48+08:00">2019-03-29</time>
             
 
             
@@ -1146,17 +660,28 @@ P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p
       
         
           
-            <h2 id="4-4-Normal-Distribution"><a href="#4-4-Normal-Distribution" class="headerlink" title="4.4 Normal Distribution"></a>4.4 Normal Distribution</h2><script type="math/tex; mode=display">
-f_{X}(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-((x-\mu) / \sigma)^{2} / 2} \qquad \sigma>0</script><script type="math/tex; mode=display">
-E[X] = \mu</script><script type="math/tex; mode=display">
-\text{Var}[X] = \sigma^2</script><script type="math/tex; mode=display">
-m_{X} : \mathbb{R} \rightarrow \mathbb{R}, \quad m_{X}(t)=e^{\mu t+\sigma^{2} t^{2} / 2}</script><p><img src="Introduciton to Probability and Statistics.assets/1552376740052.png" alt="1552376740052"></p>
-<h3 id="Standard-Normal-Distribution"><a href="#Standard-Normal-Distribution" class="headerlink" title="Standard Normal Distribution"></a>Standard Normal Distribution</h3><p><strong>Definition</strong>: normally distributed random variable with parameters $\mu$= 0 and $\sigma$ = 1 is called a standard normal random variable and denoted by Z.</p>
-<p><strong>Theorem</strong>: $Z = \dfrac{X - \mu}{\sigma}​$ has standard normal distribution.</p>
-<h2 id="4-5-Normal-Probability-Rule-and-Chebyshev’s-Inequality"><a href="#4-5-Normal-Probability-Rule-and-Chebyshev’s-Inequality" class="headerlink" title="4.5 Normal Probability Rule and Chebyshev’s Inequality"></a>4.5 Normal Probability Rule and Chebyshev’s Inequality</h2><script type="math/tex; mode=display">
-\begin{aligned} P[-\sigma<X-\mu<\sigma] &=0.68 \\ P[-2 \sigma<X-\mu<2 \sigma] &=0.95 \\ P[-3 \sigma<X-\mu<3 \sigma] &=0.997 \end{aligned}</script><p><strong>Chebyshev’s Inequality</strong>:</p>
+            <h2 id="3-6-Negative-Binomial-Distribution"><a href="#3-6-Negative-Binomial-Distribution" class="headerlink" title="3.6 Negative Binomial Distribution"></a>3.6 Negative Binomial Distribution</h2><p><strong>Negative binomial properties</strong>:</p>
+<ol>
+<li><p>A series of trails, classed as being either ‘<strong>success</strong>‘ or ‘<strong>failure</strong>‘ (<em>Bernoulli</em> trial).</p>
+</li>
+<li><p>The trials are observed until exactly r successes are obtained, where r is fixed by the experimenter. </p>
+</li>
+<li><p>The random variable $X$ denotes <strong>the number of successes needed to obtain the r trials.</strong></p>
+</li>
+</ol>
+<p><strong>E.g:</strong></p>
+<p>Sample space for an experiment in which  $r  = 3$:</p>
 <script type="math/tex; mode=display">
-P[|X-\mu| \geq m \sigma] \leq \frac{1}{m^{2}}</script>
+S = \{ ssffffs, sffffss, ffffsss, sss, ssfs \}\</script><p>Here, $X = 7, 7, 7, 3, 4$, for $X = 7$ , there are $\left( \begin{array}{c}{ x-1 } \\ { 2 } \end{array} \right)$ ways in which $X$ can assume the value 7.</p>
+<p>The probability of an outcome for which $X = x$ is given by: </p>
+<script type="math/tex; mode=display">
+P[X = x] = \left( \begin{array}{c}{ x-1 } \\ { 2 } \end{array} \right)(1-p)^x-3p^3 \qquad x=3, 4, 5...</script><p><strong>Definition ( Negative binomial distribution)</strong>: </p>
+<script type="math/tex; mode=display">
+f(x) = \left( \begin{array}{l}{ x-1 } \\ { 2-1 } \end{array} \right) p^r(1-p)^{x-r} \qquad r=1, 2, 3,... \qquad x = r, r+1, r+2,...</script><p><strong>Negative binomial moment generating function</strong>:</p>
+<script type="math/tex; mode=display">
+m_X(t) = \dfrac{(pe^t)^r}{(1-qe^t)^r} \qquad  q = 1-p</script><p><strong>Expectation and Variance for the Negative Binomial Distribution</strong>:</p>
+<script type="math/tex; mode=display">
+E[X] = \mu = r/p \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = rq/p^2</script>
           
         
       
@@ -1212,7 +737,7 @@ P[|X-\mu| \geq m \sigma] \leq \frac{1}{m^{2}}</script>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Chi-Squared-Distribution/">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Binomial-Distribution/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jack Kin">
@@ -1232,7 +757,7 @@ P[|X-\mu| \geq m \sigma] \leq \frac{1}{m^{2}}</script>
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/03/29/Chi-Squared-Distribution/" class="post-title-link" itemprop="url">Chi-Squared Distribution</a>
+                <a href="/2019/03/29/Binomial-Distribution/" class="post-title-link" itemprop="url">Binomial Distribution</a>
               
             
           </h1>
@@ -1257,7 +782,7 @@ P[|X-\mu| \geq m \sigma] \leq \frac{1}{m^{2}}</script>
                 
               
 
-              <time title="Created: 2019-03-29 02:04:20 / Modified: 02:07:52" itemprop="dateCreated datePublished" datetime="2019-03-29T02:04:20+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 01:48:33 / Modified: 01:49:31" itemprop="dateCreated datePublished" datetime="2019-03-29T01:48:33+08:00">2019-03-29</time>
             
 
             
@@ -1316,12 +841,30 @@ P[|X-\mu| \geq m \sigma] \leq \frac{1}{m^{2}}</script>
       
         
           
-            <h3 id="Chi-Squared-Distribution"><a href="#Chi-Squared-Distribution" class="headerlink" title="Chi-Squared Distribution"></a>Chi-Squared Distribution</h3><p>Let $\gamma \in \mathbb{N} $. A continuous random variable $\left(\chi_{\gamma}^{2}, f_{X}\right)$ with density</p>
+            <h2 id="3-5-Binomial-Distribution"><a href="#3-5-Binomial-Distribution" class="headerlink" title="3.5 Binomial Distribution"></a>3.5 Binomial Distribution</h2><p><strong>Binomial properties</strong>:</p>
+<ol>
+<li>A series of trails, classed as being either ‘<strong>success</strong>‘ or ‘<strong>failure</strong>‘ (<em>Bernoulli</em> trial).</li>
+<li>The trials are <strong>identical</strong> and <strong>independent</strong>. ( in the sense that the outcome of one trial has no effect on the outcome of any other)</li>
+<li>The random variable $X$ denotes <strong>the number of successes obtained in the n trials.</strong></li>
+</ol>
+<p>Sample space for an experiment in which  $n  = 3$:</p>
 <script type="math/tex; mode=display">
-f_{\gamma}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\gamma / 2) 2^{\alpha}} x^{\gamma / 2-1} e^{-x / 2},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right.</script><p>is said to follow a chi-squared distribution with $\gamma$ <strong>degrees of freedom</strong>.</p>
-<p>the chi-squared distribution is simply that of a gamma random variable with  $\beta$= 2 and $\alpha$ =<br>=$\gamma /2 $, hence, we see that</p>
+S = \{ fff, sff, fsf, ffs, ssf, sfs, sss , fss \}\</script><p>Note that:</p>
 <script type="math/tex; mode=display">
-E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi_{\gamma}^{2}\right]=2 \gamma</script>
+\begin{align}
+P[X = 0] &= (1-p)^3\\
+P[X = 1] &= 3 \cdot p(1-p)^2\\
+P[X = 2] &= 3 \cdot p^2(1-p)\\
+P[X = 3] &= p^3\\
+\end{align}</script><p><strong>Definition ( Binomial distribution)</strong>: </p>
+<script type="math/tex; mode=display">
+f(x) = \left( \begin{array} { l } { n } \\ { x } \end{array} \right) p^x(1-p)^{n-x} \qquad x=0,1,2,...,n \qquad 0<p<1</script><p>We write: <script type="math/tex">X \sim \operatorname{B}(n, p)</script></p>
+<p>Specially,  <script type="math/tex">\operatorname{B}(1, p )= \operatorname{Bernoulli}(p)</script></p>
+<p><strong>Binomial moment generating function</strong>:</p>
+<script type="math/tex; mode=display">
+m_X(t) = (q+pe^t)^n \qquad  q = 1-p</script><p><strong>Expectation and Variance for the Binomial Distribution</strong>:</p>
+<script type="math/tex; mode=display">
+E[X] = \mu = np \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = npq</script>
           
         
       
@@ -1377,7 +920,7 @@ E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Exponential-Distribution/">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Geometric-Distribution/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jack Kin">
@@ -1397,7 +940,7 @@ E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/03/29/Exponential-Distribution/" class="post-title-link" itemprop="url">Exponential Distribution</a>
+                <a href="/2019/03/29/Geometric-Distribution/" class="post-title-link" itemprop="url">Geometric Distribution</a>
               
             
           </h1>
@@ -1422,7 +965,7 @@ E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi
                 
               
 
-              <time title="Created: 2019-03-29 02:04:04 / Modified: 02:07:28" itemprop="dateCreated datePublished" datetime="2019-03-29T02:04:04+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 01:45:55 / Modified: 01:46:50" itemprop="dateCreated datePublished" datetime="2019-03-29T01:45:55+08:00">2019-03-29</time>
             
 
             
@@ -1481,19 +1024,31 @@ E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi
       
         
           
-            <h3 id="Exponential-Distribution"><a href="#Exponential-Distribution" class="headerlink" title="Exponential Distribution"></a>Exponential Distribution</h3><script type="math/tex; mode=display">
-f_{\beta}(x)=\left\{\begin{array}{ll}{\beta e^{-\beta x},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \beta > 0</script><script type="math/tex; mode=display">
-E[X] = \dfrac{1}{\beta}</script><script type="math/tex; mode=display">
-\text{Var}[X] = \dfrac{1}{\beta^2}</script><script type="math/tex; mode=display">
-m_X(t) = \dfrac{1}{1-\dfrac{t}{\beta}}</script><p><strong>Connection to the Poisson Distribution</strong>:</p>
-<p>Consider a Poisson process with parameter $\lambda$. Let $W$ denote the time of the occurrence of the <strong>first</strong> event. $W$ has an exponential distribution with $\beta = 1/\lambda$.</p>
-<p><strong>Memoryless Property of the Exponential Distribution</strong>:</p>
+            <h2 id="3-4-Geometric-Distribution"><a href="#3-4-Geometric-Distribution" class="headerlink" title="3.4 Geometric Distribution"></a>3.4 Geometric Distribution</h2><p><strong>Geometric properties</strong>:</p>
+<ol>
+<li>A series of trails, classed as being either ‘<strong>success</strong>‘ or ‘<strong>failure</strong>‘ (<em>Bernoulli</em> trial).</li>
+<li>The trials are <strong>identical</strong> and <strong>independent</strong>. ( in the sense that the outcome of one trial has no effect on the outcome of any other)</li>
+<li>The random variable $X$ denotes <strong>the number of trials needed to obtain the first success.</strong></li>
+</ol>
+<p><strong>E.g:</strong></p>
+<p>Sample space for an experiment:</p>
 <script type="math/tex; mode=display">
-P[X>t+s | X>t]=P[X>s]\\
-\Leftrightarrow \dfrac{P[X>t+s, X>t]}{P[X>t]}= P[X>s]\\
-\Leftrightarrow P[X>t+s] = P[X>s]P[X>t]</script><p><strong>Time to several arrivals</strong>:</p>
+S = \{ s, fs, ffs, fffs, ...... \}\</script><p>Note that:</p>
 <script type="math/tex; mode=display">
-f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}</script>
+\begin{align}
+P[X = 1] &= p\\
+P[X = 2] &= (1-p)(p)\\
+P[X = 3] &= (1-p)^2(p)\\
+......
+
+\end{align}</script><p><strong>Definition ( Geometric distribution)</strong>: </p>
+<script type="math/tex; mode=display">
+f(x) = (1-p)^{x-1}p \qquad x=1,2,3...</script><p>We write: <script type="math/tex">X \sim \operatorname{Geom}(p)</script></p>
+<p><strong>Geometric moment generating function</strong>:</p>
+<script type="math/tex; mode=display">
+m_X(t) = \dfrac{pe^t}{1-qe^t} \qquad t< -\ln q, \qquad  q = 1-p</script><p><strong>Expectation and Variance for the Geometric Distribution</strong>:</p>
+<script type="math/tex; mode=display">
+E[X] = \mu= 1/p \qquad and \qquad \operatorname{Var} [X] = \sigma^2 =  q/p^2</script>
           
         
       
@@ -1549,7 +1104,7 @@ f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}</script>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Gamma-Distribution/">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Properties-of-Discrete-Distributions/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jack Kin">
@@ -1569,7 +1124,7 @@ f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}</script>
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/03/29/Gamma-Distribution/" class="post-title-link" itemprop="url">Gamma Distribution</a>
+                <a href="/2019/03/29/Properties-of-Discrete-Distributions/" class="post-title-link" itemprop="url">Properties of Discrete Distributions</a>
               
             
           </h1>
@@ -1594,7 +1149,7 @@ f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}</script>
                 
               
 
-              <time title="Created: 2019-03-29 02:03:46 / Modified: 02:06:59" itemprop="dateCreated datePublished" datetime="2019-03-29T02:03:46+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 01:38:05 / Modified: 01:44:53" itemprop="dateCreated datePublished" datetime="2019-03-29T01:38:05+08:00">2019-03-29</time>
             
 
             
@@ -1653,188 +1208,59 @@ f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}</script>
       
         
           
-            <h3 id="Gamma-Distribution"><a href="#Gamma-Distribution" class="headerlink" title="Gamma Distribution"></a>Gamma Distribution</h3><script type="math/tex; mode=display">
-f_{\alpha, \beta}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\alpha) \beta^{\alpha}} x^{\alpha-1} e^{-x / \beta},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \alpha>0, \beta>0</script><p>Here, </p>
-<script type="math/tex; mode=display">
-\Gamma(\alpha)=\int_{0}^{\infty} z^{\alpha-1} e^{-z} d z, \quad \alpha>0</script><p>is the Euler gamma function,   $n !=\Gamma(n+1)$</p>
-<script type="math/tex; mode=display">
-E[X] = \alpha \beta</script><script type="math/tex; mode=display">
-\text{Var}[X] = \alpha\beta^2</script><script type="math/tex; mode=display">
-{m_{X} :(-\infty, 1 / \beta) \rightarrow \mathbb{R}, \quad m_{X}(t)=(1-\beta t)^{-\alpha}}</script>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Properties-of-Continuous-Distributions/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jack Kin">
-      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
-      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jack Kin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/29/Properties-of-Continuous-Distributions/" class="post-title-link" itemprop="url">Properties of Continuous Distributions</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-29 02:02:00 / Modified: 02:02:55" itemprop="dateCreated datePublished" datetime="2019-03-29T02:02:00+08:00">2019-03-29</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/probability/" itemprop="url" rel="index"><span itemprop="name">probability</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="C4-Continuous-Distributions"><a href="#C4-Continuous-Distributions" class="headerlink" title="C4 Continuous Distributions"></a>C4 Continuous Distributions</h1><h2 id="4-1-Continuous-Densities"><a href="#4-1-Continuous-Densities" class="headerlink" title="4.1 Continuous Densities"></a>4.1 Continuous Densities</h2><p>Let $S$ be a sample space. A <strong>continuous  random variable</strong> is a map <script type="math/tex">X: S \rightarrow \R</script> together with a function <script type="math/tex">f_X： \R \rightarrow \R</script> , having the properties that:</p>
-<pre><code>    (i)  $f _ { X } ( x ) \geq 0$ for all $x$ real
-
-    (ii)  $\int_{-\infty}^{\infty} f_{X}(x)dx = 1$
-
-    (iii)  $P[a \leq X \leq b]=\int_{a}^{b} f_{X}(x) d x$
-</code></pre><p>The function $f_X$ is called the <strong>probability density function</strong> of the random variable $X$.</p>
+            <h1 id="C3-Discrete-Distributions"><a href="#C3-Discrete-Distributions" class="headerlink" title="C3 Discrete Distributions"></a>C3 Discrete Distributions</h1><h2 id="3-1-Random-Variables"><a href="#3-1-Random-Variables" class="headerlink" title="3.1 Random Variables"></a>3.1 Random Variables</h2><p><strong>Random Variable</strong>:  Let $S$ be the sample space for an experiment. A real-valued function that is defined on $S$ is called a random variable, i.e..,</p>
+<p>$X : S \rightarrow \mathbb { R }​$</p>
+<p>where such a function $X$ is said to be a random variable.</p>
+<ul>
+<li><strong>discrete random variables</strong>: defined as having a countable range in $\mathbb{R}$</li>
+<li><strong>continuous random variables</strong>: defined as having a range equal to $\mathbb{R}$</li>
+</ul>
+<h2 id="3-2-Discrete-Probability-Densities"><a href="#3-2-Discrete-Probability-Densities" class="headerlink" title="3.2 Discrete Probability Densities"></a>3.2 Discrete Probability Densities</h2><p>Let $S$ be a sample space and $\Omega$ a countable subset of  $\mathbb { R }$</p>
+<p>A <strong>discrete  random variable</strong> is a map </p>
+<script type="math/tex; mode=display">X: S \rightarrow \Omega</script><p>together with a function</p>
+<p>$f_X： \Omega \rightarrow  R$,  given by $f_X(x) = P[X = x]$.</p>
+<p>having the properties that</p>
+<p>​    (i) $f _ { X } ( x ) \geq 0$ for all $x \in \Omega$ and</p>
+<p>​    (ii) $\sum \limits_ { x \in \Omega } f _ { X } ( x ) = 1​$</p>
+<p>The function $f _ { X }$ is called the <strong>probability density function</strong> or <strong>probability distribution</strong> of $X $. </p>
+<p>We often say that a random variable is given by the pair $\left( X , f _ { X } \right)$</p>
 <p><strong>Cumulative Distribution</strong>: </p>
 <script type="math/tex; mode=display">
-F_X(x) = P[X \leq x] = \int_{-\infty}^{x} f_{X}(t) d t</script><p><strong>Obtain the density $f_X$ from $F_X$</strong>:</p>
+F(x) = P[X \leq x] = 1-q^{ \lfloor x\rfloor}​</script><h2 id="3-3-Expectation-Variance-and-Standard-deviation"><a href="#3-3-Expectation-Variance-and-Standard-deviation" class="headerlink" title="3.3 Expectation, Variance and Standard deviation"></a>3.3 Expectation, Variance and Standard deviation</h2><p><strong>The expected value of $X$</strong>:</p>
+<p>$E[X] = \sum \limits _{all x} x \cdot f(x) $</p>
+<p><strong>Expectations of a Function of a Random Variable</strong>:</p>
+<p>$E[\varphi \circ X]=\sum\limits_{x \in \Omega} \varphi(x) \cdot f_{X}(x)$   proof is omitted</p>
+<p>Eg: $E[X^2] = \sum \limits _{all x} x^2 \cdot f(x)$</p>
+<p><strong>Rules for expectation:</strong></p>
+<ol>
+<li>$E[c] = c$</li>
+<li>$E[cX] = cE[X]$</li>
+<li>$E[X + Y] = E[X] + E[Y]$</li>
+</ol>
+<p><strong>Variance</strong>:</p>
+<p>$ \operatorname{Var}[X] :=\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]$</p>
+<p>$E[X] = \mu_X = \mu, \qquad \operatorname{Var}[X] = \sigma_X^2 = \sigma^2$</p>
+<p><strong>Computational formula for $\sigma^2$</strong>:</p>
+<p>$\sigma^2 = \operatorname{Var} [X] = E[X^2] - (E[X])^2$</p>
+<p><strong>Standard deviation</strong>:</p>
+<p>$\sigma = \sqrt{\operatorname{Var} [X]} = \sqrt{\sigma^2}$</p>
+<p><strong>Rules for variance:</strong></p>
+<ol>
+<li><p>$\operatorname{Var}[c] = 0$</p>
+</li>
+<li><p>$\operatorname{Var}[cX] = c^2 \operatorname{Var}[X]$</p>
+</li>
+<li><p>$\operatorname{Var}[X+Y] = \operatorname{Var}[X] + \operatorname{Var}[Y]$</p>
+</li>
+</ol>
+<h2 id="3-4-The-Moment-Generating-Function"><a href="#3-4-The-Moment-Generating-Function" class="headerlink" title="3.4* The Moment Generating Function"></a>3.4* The Moment Generating Function</h2><p><strong>Definition ( Ordinary moments)</strong>:</p>
 <script type="math/tex; mode=display">
-f_X(x) = F'_X(x)</script><h2 id="4-2-Expectation-and-Distribution-Parameters"><a href="#4-2-Expectation-and-Distribution-Parameters" class="headerlink" title="4.2 Expectation and Distribution Parameters"></a>4.2 Expectation and Distribution Parameters</h2><script type="math/tex; mode=display">
-\mathrm{E}[X] =\int_{-\infty}^{\infty} x \cdot f_{X}(x) d x</script><script type="math/tex; mode=display">
-E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x</script><script type="math/tex; mode=display">
-\operatorname{Var}[X] =\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]=\mathrm{E}\left[X^{2}\right]-\mathrm{E}[X]^{2}</script>
+\text{Let $X$ be a random variable. The $k^{th}$ ordinary moment for $X$ is defined as $E[X^k]$.  }</script><p><strong>Definition ( Moment generating function)</strong>:</p>
+<script type="math/tex; mode=display">
+m_{X}(t)=\sum_{n=0}^{\infty} \frac{t^{n}}{n !} \mathrm{E}\left[X^{n}\right]=\mathrm{E}\left[\sum_{n=0}^{\infty} \frac{t^{n} X^{n}}{n !}\right]=\mathrm{E}\left[e^{t X}\right]</script><p>The moment generating function enables us to find these moments easily.    </p>
+<p><strong>Theorem</strong>:</p>
+<script type="math/tex; mode=display">
+\dfrac{d^km_X(t)}{dt^k}\Bigg|_{t = 0} = E[X^k]</script>
           
         
       
@@ -1890,7 +1316,7 @@ E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x</script
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/Poisson-Distribution/">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/some-probability-laws/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jack Kin">
@@ -1910,7 +1336,7 @@ E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x</script
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/03/29/Poisson-Distribution/" class="post-title-link" itemprop="url">Poisson Distribution</a>
+                <a href="/2019/03/29/some-probability-laws/" class="post-title-link" itemprop="url">Some Probability Laws</a>
               
             
           </h1>
@@ -1935,7 +1361,7 @@ E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x</script
                 
               
 
-              <time title="Created: 2019-03-29 01:52:37 / Modified: 01:53:06" itemprop="dateCreated datePublished" datetime="2019-03-29T01:52:37+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 01:32:39 / Modified: 01:36:16" itemprop="dateCreated datePublished" datetime="2019-03-29T01:32:39+08:00">2019-03-29</time>
             
 
             
@@ -1994,13 +1420,372 @@ E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x</script
       
         
           
-            <h2 id="3-8-Poisson-Distribution"><a href="#3-8-Poisson-Distribution" class="headerlink" title="3.8 Poisson Distribution"></a>3.8 Poisson Distribution</h2><p><strong>Definition ( Poisson distribution)</strong>: </p>
+            <h1 id="C2-Some-Probability-Laws"><a href="#C2-Some-Probability-Laws" class="headerlink" title="C2 Some Probability Laws"></a>C2 Some Probability Laws</h1><p>$P$是一个函数，定义域是$\mathscr{F}$， 叫做<strong>probability function</strong> (<strong>probability measure</strong> / <strong>probability</strong>)</p>
+<p>$P : \mathscr { T } \rightarrow [ 0,1 ] , \quad A \mapsto P [ A ]$</p>
+<p>The triple $( S , \mathscr { T } , P )$ is called a <strong>probability space</strong>.</p>
+<h2 id="2-1-Basic-Properties-of-Probabilities-of-Events"><a href="#2-1-Basic-Properties-of-Probabilities-of-Events" class="headerlink" title="2.1 Basic Properties of Probabilities of Events"></a>2.1 Basic Properties of Probabilities of Events</h2><script type="math/tex; mode=display">
+\begin{aligned} P [ S ] & = 1 \\ P [ \varnothing ] & = 0 \\ P [ S \backslash A ] & = 1 - P [ A ] \\ P \left[ A _ { 1 } \cup A _ { 2 } \right] & = P \left[ A _ { 1 } \right] + P \left[ A _ { 2 } \right] - P \left[ A _ { 1 } \cap A _ { 2 } \right] \end{aligned}</script><h2 id="2-2-Conditional-Probability"><a href="#2-2-Conditional-Probability" class="headerlink" title="2.2 Conditional Probability"></a>2.2 Conditional Probability</h2><script type="math/tex; mode=display">
+P \left[ A _ { 1 } | A _ { 2 } \right] = \dfrac { \left| A _ { 1 } \cap A _ { 2 } \right| } { \left| A _ { 2 } \right| } = \dfrac { P \left[ A _ { 1 } \cap A _ { 2 } \right] } { P \left[ A _ { 2 } \right] }</script><p>the <strong>conditional probability</strong> of the event A occurring, given that $B$ occurs as follows:</p>
 <script type="math/tex; mode=display">
-f_{X}(x)=\frac{k^{x} e^{-k}}{x !} \qquad x = 0,1,2...,\quad k>0</script><p><strong>Poisson moment generating function</strong>:</p>
+P [ B | A ]  = \dfrac { P [ A \cap B ] } { P [ A ] }</script><h2 id="2-3-Independence-and-the-Multiplication-Rule"><a href="#2-3-Independence-and-the-Multiplication-Rule" class="headerlink" title="2.3 Independence and the Multiplication Rule"></a>2.3 Independence and the Multiplication Rule</h2><p>two events A and B are <strong>independent</strong> if:</p>
+<p>$P [ A \cap B ] = P [ A ] P [ B ]$</p>
+<p>$\Updownarrow$ </p>
+<p>$\begin{array} { l l } { P [ A | B ] = P [ A ] } &amp; { \text { if } P [ B ] \neq 0 } \\ { P [ B | A ] = P [ B ] } &amp; { \text { if } P [ A ] \neq 0 } \end{array}$</p>
+<h2 id="2-3-Partition-and-Law-of-Total-Probability"><a href="#2-3-Partition-and-Law-of-Total-Probability" class="headerlink" title="2.3* Partition and Law of Total Probability"></a>2.3* Partition and Law of Total Probability</h2><p><strong>Partition</strong>. Let $S$ denote the sample space of some experiment, and consider $k$ events<br>$A _ { 1 } , \ldots , A _ { k }$ in $S$ such that $ A _ { 1 } , \ldots , A _ { k }$ are disjoint and $\bigcup _ { i = 1 } ^ { k } A _ { i } = S .$ It is said that these<br>events form a partition of $S$.</p>
+<p><strong>Law of total probability</strong>. Suppose that the events $B _ { 1 } , \ldots , B _ { k }$ form a partition of the<br>space $S$ and $\operatorname { Pr } \left( B _ { j } \right) &gt; 0$ for $j = 1 , \ldots , k .$ Then, for every event $A$ in $S$,</p>
 <script type="math/tex; mode=display">
-m_X(t) = e^{k(e^t-1)}</script><p><strong>Expectation and Variance for the Poisson Distribution</strong>:</p>
+\operatorname { P } ( B ) = \sum\limits _ { j = 1 } ^ { k } \operatorname { P } \left( A _ { j } \right) \operatorname { P } ( B | A _ { j } )</script><h2 id="2-4-Bayes’s-Theorem"><a href="#2-4-Bayes’s-Theorem" class="headerlink" title="2.4 Bayes’s Theorem"></a>2.4 Bayes’s Theorem</h2><script type="math/tex; mode=display">
+\begin{align}
+P[A|B] &= \dfrac{P(B|A) \cdot P(A)}{P(B)}\\
+\\
+P[A_k | B ]  &= \dfrac{P[B \cap  A_k]}{P[B]} =\dfrac{P[B | A_k] \cdot P[A_k]}{ \sum\limits_{j=1}^n P[B | A_j] \cdot P[A_j]}
+\end{align}</script>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/28/Introduction to Probability and Counting/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack Kin">
+      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
+      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack Kin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/28/Introduction to Probability and Counting/" class="post-title-link" itemprop="url">Introduction to Probability and Counting</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-28 18:50:12" itemprop="dateCreated datePublished" datetime="2019-03-28T18:50:12+08:00">2019-03-28</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-03-29 01:31:41" itemprop="dateModified" datetime="2019-03-29T01:31:41+08:00">2019-03-29</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/probability/" itemprop="url" rel="index"><span itemprop="name">probability</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="C1-Introduction-to-Probability-and-Counting"><a href="#C1-Introduction-to-Probability-and-Counting" class="headerlink" title="C1  Introduction to Probability and Counting"></a>C1  Introduction to Probability and Counting</h1><h2 id="1-1-Interpretation-of-Probabilities"><a href="#1-1-Interpretation-of-Probabilities" class="headerlink" title="1.1 Interpretation of Probabilities"></a>1.1 Interpretation of Probabilities</h2><p>Three methods:</p>
+<ul>
+<li><p>Personal approach (Two Die Rolls)</p>
+</li>
+<li><p>Relative frequency approach</p>
+</li>
+<li><p>Classical approach (Two Coin Tosses)</p>
+</li>
+</ul>
+<h2 id="1-2-Sample-spaces-and-events"><a href="#1-2-Sample-spaces-and-events" class="headerlink" title="1.2 Sample spaces and events"></a>1.2 Sample spaces and events</h2><ul>
+<li><p>A <strong>sample space</strong> for an experiment is a set S such that each physical outcome of the experiment corresponds to exactly one element of S.</p>
+</li>
+<li><p>An element of ${S}$ is called a <strong>sample point</strong>.</p>
+</li>
+<li><p>Any subsect <script type="math/tex">A</script>  of a sample space <script type="math/tex">S</script> is called an <strong>event</strong>. </p>
+</li>
+<li><p>Two events $A_1$ and $A_2$ are <strong>mutually exclusive</strong> $\iff$ $A_1 \cap A_2 = \varnothing$ </p>
+</li>
+</ul>
+<h2 id="1-3-Permutations-and-Combinations"><a href="#1-3-Permutations-and-Combinations" class="headerlink" title="1.3 Permutations and Combinations"></a>1.3 Permutations and Combinations</h2><ul>
+<li>A <strong>permutation</strong> is an arrangement of objects in a definite order.</li>
+<li>A <strong>combination</strong> is a selection of objects without regard to order.</li>
+</ul>
 <script type="math/tex; mode=display">
-E[X] = \mu = k\\ \operatorname{Var} [X] = \sigma^2 = k</script>
+\begin{align}
+P_n^r &= \dfrac{n!}{(n-r)!}​\\
+ C_n^r  &=  \left( \begin{array} { l } { n } \\ { r } \end{array} \right) = \dfrac{n!}{r! (n-r)!}
+\end{align}</script>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/15/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack Kin">
+      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
+      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack Kin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/15/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-15 13:23:43" itemprop="dateCreated datePublished" datetime="2019-03-15T13:23:43+08:00">2019-03-15</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
           
         
       
@@ -2045,7 +1830,7 @@ E[X] = \mu = k\\ \operatorname{Var} [X] = \sigma^2 = k</script>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
   </nav>
 
 
@@ -2339,7 +2124,94 @@ E[X] = \mu = k\\ \operatorname{Var} [X] = \sigma^2 = k</script>
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
+
+
+  
+  
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -2358,49 +2230,7 @@ E[X] = \mu = k\\ \operatorname{Var} [X] = \sigma^2 = k</script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
 
-
-  
-  
-
-
-
-  
-
-
-
-
-  
-
-  
-
-  
-  
-
-  
-  
     
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  
-
   
 
 
