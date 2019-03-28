@@ -47,7 +47,7 @@
   <entry>
     <title><![CDATA[Normal Distribution]]></title>
     <url>%2F2019%2F03%2F29%2FNormal-Distribution%2F</url>
-    <content type="text"><![CDATA[4.4 Normal Distribution f_{X}(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-((x-\mu) / \sigma)^{2} / 2} \qquad \sigma>0 E[X] = \mu \text{Var}[X] = \sigma^2 m_{X} : \mathbb{R} \rightarrow \mathbb{R}, \quad m_{X}(t)=e^{\mu t+\sigma^{2} t^{2} / 2} Standard Normal DistributionDefinition: normally distributed random variable with parameters $\mu$= 0 and $\sigma$ = 1 is called a standard normal random variable and denoted by Z. Theorem: $Z = \dfrac{X - \mu}{\sigma}​$ has standard normal distribution. 4.5 Normal Probability Rule and Chebyshev’s Inequality \begin{aligned} P[-\sigma]]></content>
+    <content type="text"><![CDATA[4.4 Normal Distribution f_{X}(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-((x-\mu) / \sigma)^{2} / 2} \qquad \sigma>0 E[X] = \mu \text{Var}[X] = \sigma^2 m_{X} : \mathbb{R} \rightarrow \mathbb{R}, \quad m_{X}(t)=e^{\mu t+\sigma^{2} t^{2} / 2}Standard Normal DistributionDefinition: normally distributed random variable with parameters $\mu$= 0 and $\sigma$ = 1 is called a standard normal random variable and denoted by Z. Theorem: $Z = \dfrac{X - \mu}{\sigma}​$ has standard normal distribution. 4.5 Normal Probability Rule and Chebyshev’s Inequality \begin{aligned} P[-\sigma]]></content>
       <categories>
         <category>probability</category>
       </categories>
