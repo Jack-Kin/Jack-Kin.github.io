@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Fisher's Hypothesis Test]]></title>
+    <url>%2F2019%2F05%2F03%2Fstatistics%2FFisher-s-Hypothesis-Test%2F</url>
+    <content type="text"><![CDATA[2.2 Fisher’s Hypothesis TestWe consider a single hypothesis that compares a population parameter $\theta $ (总体参数) to a given null value $\theta_0$. This hypothesis will be denoted by $H_0$ and is called the null hypothesis. Our goal is to find statistical evidence that allow us to reject $H_0$. 2.2.1 One-tailed test H_{0} : \theta \leq \theta_{0} \quad \text { or } \quad H_{0} : \theta \geq \theta_{0}2.2.2 Two-tailed test H_0 :\theta = \theta_{0}2.2.3 P-valueThe P-value is an upper bound of the probability of obtaining the data if $H_0$ is true. If $D$ represents the statistical data, P = P[D | \ H_0]and we will reject $H_0$ if the value is small. We say that we reject $H_0$ at the [P-value] level of significance. 2.2.4 Fisher Test的问题A small P-value 不能推出 $H_0$ is false. In hypothesis test, we want to argue that \text{If P then Q; Q is unlikely, therefore P is unlikely}which is obviously wrong.]]></content>
+      <categories>
+        <category>statistics</category>
+      </categories>
+      <tags>
+        <tag>Fisher Test</tag>
+        <tag>Hypothesis Test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Simultaneous Estimation of the Mean and Variance]]></title>
+    <url>%2F2019%2F05%2F03%2Fstatistics%2FSimultaneous-Estimation-of-the-Mean-and-Variance%2F</url>
+    <content type="text"><![CDATA[2.1 Simultaneous Estimation of the Mean and Variance2.1.1 Confidence intervalA $100(1-\alpha)\%$ confidence interval for a parameter $\theta$ is a random interval $[L_1, L_2]$ : P[L_1 \leq \theta \leq L_2] = 1- \alphaConfidence interval on $\mu$ when $\sigma^2 $ is known: \overline{X} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}}Joint Sampling of Mean and Variance: Let $X_{1}, \ldots, X_{n}, n \geq 2,$ be a random sample of size n from a normal distribution with mean $\mu$ and variance $\sigma^{2}$ . Then: \begin{array}{l}{\text { 1. The sample mean } \overline{X} \text { is independent of the sample variance } S^{2} \text { , }} \\ {\text { 2. } \overline{X} \text { is normally distributed with mean } \mu \text { and variance } \sigma^{2} / n,} \\ {\text { 3. }(n-1) S^{2} / \sigma^{2} \text { is chi-squared distributed with } n-1 \text { degrees of freedom. }}\end{array}Furthermore, if in a given situation we assume that X and S2 are independently distributed we are essentially assuming that the population is normally distributed. Interval Estimation of Variability: A $100(1-\alpha)\%$ confidence interval on $\sigma^2$ is given by: \left[(n-1) S^{2} / \chi_{\alpha / 2, n-1}^{2},(n-1) S^{2} / \chi_{1-\alpha / 2, n-1}^{2}\right]2.1.2 The Student T distributionLet Z be a standard normal variable and let $\chi^2$ be an independent chi-squared random variable with $\gamma$ degrees of freedom. The random variable T_{\gamma}=\frac{Z}{\sqrt{\chi_{\gamma}^{2} / \gamma}}is said to follow a T distribution with $\gamma$ degrees of freedom. The density: f_{T_{\gamma}}(t)=\frac{\Gamma((\gamma+1) / 2)}{\Gamma(\gamma / 2) \sqrt{\pi \gamma}}\left(1+\frac{t^{2}}{\gamma}\right)^{-\frac{\gamma+1}{2}}Theorem: Let $X_{1}, X_{2},\ldots, X_{n}$ be a random sample from a normal distribution with $\mu$ and $\sigma$. Then the random variable: T_{n-1}=\frac{\overline{X}-\mu}{S / \sqrt{n}}follows a T distribution with n-1 degrees of freedom. A $100(1-\alpha)\%$ confidence interval on $\sigma^2$ is given by: \overline{X} \pm t_{\alpha / 2, n-1} S / \sqrt{n}2.1.3 Tolerance LimitsTwo sided tolerance limitsLet $X$ be a normally distributed random variable and $\overline{X}$ and $S^2$ be the mean and variance obtained from a sample of size n. Then there exist $K=K(n, \alpha, \delta)$ such that the interval \overline{X} \pm K(n, \alpha, \delta) Scovers $($ at least ) $ \delta \cdot 100 \%$ of the population with $(1-\alpha) \cdot 100 \%$ confidence. One sided tolerance limitsthere exist numbers $K=K(n, \alpha, \delta)$ such that the intervals (-\infty, \overline{X}+K S) \quad and \quad(\overline{X}-K S, \infty)covers $($ at least ) $ \delta \cdot 100 \%$ of the population with $(1-\alpha) \cdot 100 \%$ confidence. Non-Parametric Tolerance Limits \begin{aligned} 1-\alpha &=P\left[\left(X_{\min }, X_{\max }\right) \text { covers at least } \delta \cdot 100 \% \text { of the population }\right] \\ &=1-n \delta^{n-1}+(n-1) \delta^{n} \end{aligned}where $n \approx \dfrac{1}{2}+\dfrac{1+\delta}{1-\delta} \cdot \dfrac{\chi_{\alpha, 4}^{2}}{4}$]]></content>
+      <categories>
+        <category>statistics</category>
+      </categories>
+      <tags>
+        <tag>confidence interval</tag>
+        <tag>student T distribution</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[通往自由的教程]]></title>
     <url>%2F2019%2F05%2F03%2F%E9%80%9A%E5%BE%80%E8%87%AA%E7%94%B1%E7%9A%84%E6%95%99%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[通往自由的教程前言本文介绍自搭梯子的方法， 嫌麻烦可以直接使用NordVPN等付费软件。 起这个名字的原因是怕被ban (自欺欺人)。 参考了前人的经验。 本文非常详细适合小白。 搭建过程如下： 租界VPS 安装ssh远程登陆客户端 通过rrsmu.sh脚本远程安装ShadowsocksR 安装SSR本地客户端，科学上网 What’s VPS (可以跳过)VPS（Virtual Private Server 虚拟专用服务器）技术，将一台服务器分割成多个虚拟专享服务器的优质服务。实现VPS的技术分为容器技术，和虚拟化技术。在容器或虚拟机中，每个VPS都可分配独立公网IP地址、独立操作系统、实现不同VPS间磁盘空间、内存、CPU资源、进程和系统配置的隔离，为用户和应用程序模拟出“独占”使用计算资源的体验。VPS可以像独立服务器一样，重装操作系统，安装程序，单独重启服务器。VPS为使用者提供了管理配置的自由，可用于企业虚拟化，也可以用于IDC资源租用。 简单说，可以vps就是你自己的一台服务器，你可以随时远程登陆(手机都可以，很方便)，在上面部署任何服务，比如建个网站博客之类的，做个邮件服务器，或者就是当个ftp服务器，做个云盘等等，这就不细说了，但是同样你也可以用它搭建梯子，让它成为你自己独享的一台代理服务器。当这个服务器ip在国外的时候，不受墙的限制，你利用这个服务器的梯子科学上网的时候，相当于是用它代理，比如你要看油管的视频，其实是它代替你上油管，视频先加载在你的代理服务器上，服务器在转给你，因为墙也不是所有国外ip都封锁，基本上你新申请的vps是不会被墙的，所以你和你自己的vps之间的链接是正常的（当然之后用的时间越久流量越大，被封的概率也很高，不过不要担心，这时候我们换个ip就好啦）。这样，就实现了科学上网的功能。 好了讲完原理，看看怎么操作，第一步租个vps，vps当然不是免费的，你也可以把它理解为一台在国外，你可以用它远程上网的，永远不关机的电脑。（所以你要是想不花钱的话，可以直接找你在国外上学的同学，用他的电脑搭梯子，也是可行的) VPS租借推荐两个网站： Digitalocean Vultr 两个网站都可以换ip, 都只计算单项流量 以下为vultr vps租借步骤： 充值 购买具体server 点击➕ 选择远端server location 选择server系统and server size (记得不要选ipv6 only!) p.s. 以上这种选择最便宜吧应该 点击确定了并且installing好之后是这样的 [ 点进去看server information [ IP Address, username 和 password之后有用！ ssh客户端安装ssh客户端就是我们本地连接服务器的工具，windows下ssh客户端主要有Putty和xshell，我一般用putty，直接百度搜&amp;下载就好 (www.putty.org), 点开如下图 hostname填刚才邮件的ip，点open，会出现login的登陆画面 填root，之后会要求出入密码，直接复制粘贴刚刚的password就好，注意！！！ putty里粘贴直接在光标后面点鼠标右键， 然后enter等一会儿就好 第一次登陆会要求改密码，按照提示改就好。 这样就代表成功了, 不要关putty，下一步还要用 ssrmu脚本远端安装通过rrsmu.sh脚本安装ShadowsocksR (通过putty安装在购买的服务器中) 先明确一点，我们是要安装shadowsocksR这个软件，rrsmu是一个便捷的安装配置ShadowsocksR的脚本。总之，通过上一步登录到我们的vps后我们直接复制黏贴下面的命令 wget -N —no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh 下图第二行 为我输入以上命令+按了enter的效果 如果提示 bash: wget: command not found 的话，就先执行下面的再执行第一步的命令 yum -y install wget 然后就进入了ssrmu.sh脚本了，脚本有很多功能，如下 我这里第一步选择1安装shadowsocksR, 小白的我们之后一路回车就好了 最后会出现配置完成的画面，复制好提示出现的ssr链接复制保存在剪贴板里 （CTRL + C），之后就要安装ssr客户端了。 SSR客户端本地安装安装SSR客户端，科学上网 windows下的ssr客户端数不胜数，百度一个下载就好，一般下载下来是这样的图标 打开以后，在桌面右下角任务栏出现，点右键，点从粘贴板导入 检查一下服务器选项中ip是否和购买的服务器相同。 介绍一下：直连模式 = 翻不了&amp;省流量， PAC = 只能外网&amp;省流量， 全局 = 都可以&amp;费流量 好了我们Google测试测试 Congratulations！大功告成！]]></content>
@@ -11,7 +35,7 @@
   </entry>
   <entry>
     <title><![CDATA[Reliability]]></title>
-    <url>%2F2019%2F03%2F29%2FReliability%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FReliability%2F</url>
     <content type="text"><![CDATA[The reliability function, R, is defined to be the probability that the component will not fail before time t. Thus \begin{aligned} R(t) &=1-P[\text { component fails before time } t] \\ &=1-\int_{0}^{t} f(x) d x\\ &=1-F(t) \end{aligned}The hazard rate $\rho$ : \rho (t) = \dfrac{f(t)}{R(t)}Theorem: R(t) = e^{-\int_0^t \rho(x)dx}Reliability of Series and Parallel Systems: The reliability of a series system wih k components: R_{s}(t)=\prod_{i=1}^{k} R_{i}(t)The reliability of a parallel system is given by: \begin{aligned} R_{p}(t) &=1-P[\text { all components fail before } t] \\ &=1-\prod_{i=1}^{k}\left(1-R_{i}(t)\right) \end{aligned}]]></content>
       <categories>
         <category>probability</category>
@@ -22,7 +46,7 @@
   </entry>
   <entry>
     <title><![CDATA[Transformation of Random Variables]]></title>
-    <url>%2F2019%2F03%2F29%2FTransformation-of-Random-Variables%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FTransformation-of-Random-Variables%2F</url>
     <content type="text"><![CDATA[4.8 Transformation of Random VariablesLet $Y = \varphi(X)$, where g is strictly monotonic and differentiable. Then: f_{Y}(y)=f_{X}\left(\varphi^{-1}(y)\right) \cdot\left|\frac{d \varphi^{-1}(y)}{d y}\right| \quad \text { for } y \in \operatorname{ran}gand f_Y(y) = 0 \qquad \text { for } y \notin \operatorname{ran}g]]></content>
       <categories>
         <category>probability</category>
@@ -33,8 +57,8 @@
   </entry>
   <entry>
     <title><![CDATA[Weibull Distribution]]></title>
-    <url>%2F2019%2F03%2F29%2FWeibull-Distribution%2F</url>
-    <content type="text"><![CDATA[4.7 Weibull Distribution f(x)=\left\{\begin{array}{ll}{\alpha \beta x^{\beta-1} e^{-\alpha x^{\beta}},} & {x>0,} \\ {0,} & {\text { otherwise }}\end{array}\right. \quad \alpha, \beta>0 \begin{array}{c}{\mu=\alpha^{-1 / \beta} \Gamma(1+1 / \beta)} \\ {\sigma^{2}=\alpha^{-2 / \beta} \Gamma(1+2 / \beta)-\mu^{2}}\end{array}]]></content>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FWeibull-Distribution%2F</url>
+    <content type="text"><![CDATA[4.7 Weibull DistributionDefinition: f(x)=\left\{\begin{array}{ll}{\alpha \beta x^{\beta-1} e^{-\alpha x^{\beta}},} & {x>0,} \\ {0,} & {\text { otherwise }}\end{array}\right. \quad \alpha, \beta>0With \begin{array}{c}{\mu=\alpha^{-1 / \beta} \Gamma(1+1 / \beta)} \\ {\sigma^{2}=\alpha^{-2 / \beta} \Gamma(1+2 / \beta)-\mu^{2}}\end{array}]]></content>
       <categories>
         <category>probability</category>
       </categories>
@@ -44,7 +68,7 @@
   </entry>
   <entry>
     <title><![CDATA[Normal Approximation to the Binomial Distributions]]></title>
-    <url>%2F2019%2F03%2F29%2FNormal-Approximation-to-the-Binomial-Distributions%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FNormal-Approximation-to-the-Binomial-Distributions%2F</url>
     <content type="text"><![CDATA[4.6 Normal Approximation to the Binomial DistributionsLet $X$ be binomial with parameters $n$ and $p$. For large $n$, $X$ is approximately normal with mean $\mu = np$ and variance $\sigma^2 = np(1-p)$. P[X=x]=\frac{n !}{x !(n-x) !} p^{x} q^{n-x} \approx \frac{1}{\sqrt{n p q} \sqrt{2 \pi}} e^{-\dfrac{(x-n p)^{2}}{2 n p q}}The approximation is good if $p$ is close to 0.5 and $n&gt;10$. Otherwise, we require that n p>5 \quad \text { if } p \leq 1 / 2 \quad \text { or } \quad n(1-p)>5 \quad \text { if } p>1 / 2we can approximate the sum over all $x \leq y$ by integrating to y + 1/2: P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p^{x}(1-p)^{n-x} \approx \Phi\left(\frac{y+1 / 2-n p}{\sqrt{n p(1-p)}}\right)This additional term 1/2 is known as the half-unit correction for the normal approximation to the cumulative binomial distribution function.]]></content>
       <categories>
         <category>probability</category>
@@ -55,7 +79,7 @@
   </entry>
   <entry>
     <title><![CDATA[Normal Distribution]]></title>
-    <url>%2F2019%2F03%2F29%2FNormal-Distribution%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FNormal-Distribution%2F</url>
     <content type="text"><![CDATA[4.4 Normal Distribution f_{X}(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-((x-\mu) / \sigma)^{2} / 2} \qquad \sigma>0 E[X] = \mu \text{Var}[X] = \sigma^2 m_{X} : \mathbb{R} \rightarrow \mathbb{R}, \quad m_{X}(t)=e^{\mu t+\sigma^{2} t^{2} / 2}Standard Normal DistributionDefinition: normally distributed random variable with parameters $\mu$= 0 and $\sigma$ = 1 is called a standard normal random variable and denoted by Z. Theorem: $Z = \dfrac{X - \mu}{\sigma}​$ has standard normal distribution. 4.5 Normal Probability Rule and Chebyshev’s Inequality \begin{aligned} P[-\sigma]]></content>
       <categories>
         <category>probability</category>
@@ -66,7 +90,7 @@
   </entry>
   <entry>
     <title><![CDATA[Chi-Squared Distribution]]></title>
-    <url>%2F2019%2F03%2F29%2FChi-Squared-Distribution%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FChi-Squared-Distribution%2F</url>
     <content type="text"><![CDATA[Chi-Squared DistributionLet $\gamma \in \mathbb{N} $. A continuous random variable $\left(\chi_{\gamma}^{2}, f_{X}\right)$ with density f_{\gamma}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\gamma / 2) 2^{\alpha}} x^{\gamma / 2-1} e^{-x / 2},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right.is said to follow a chi-squared distribution with $\gamma$ degrees of freedom. the chi-squared distribution is simply that of a gamma random variable with $\beta$= 2 and $\alpha$ ==$\gamma /2 $, hence, we see that E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi_{\gamma}^{2}\right]=2 \gamma]]></content>
       <categories>
         <category>probability</category>
@@ -77,7 +101,7 @@
   </entry>
   <entry>
     <title><![CDATA[Exponential Distribution]]></title>
-    <url>%2F2019%2F03%2F29%2FExponential-Distribution%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FExponential-Distribution%2F</url>
     <content type="text"><![CDATA[Exponential Distribution f_{\beta}(x)=\left\{\begin{array}{ll}{\beta e^{-\beta x},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \beta > 0 E[X] = \dfrac{1}{\beta} \text{Var}[X] = \dfrac{1}{\beta^2} m_X(t) = \dfrac{1}{1-\dfrac{t}{\beta}}Connection to the Poisson Distribution: Consider a Poisson process with parameter $\lambda$. Let $W$ denote the time of the occurrence of the first event. $W$ has an exponential distribution with $\beta = 1/\lambda$. Memoryless Property of the Exponential Distribution: P[X>t+s | X>t]=P[X>s]\\ \Leftrightarrow \dfrac{P[X>t+s, X>t]}{P[X>t]}= P[X>s]\\ \Leftrightarrow P[X>t+s] = P[X>s]P[X>t]Time to several arrivals: f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}]]></content>
       <categories>
         <category>probability</category>
@@ -88,7 +112,7 @@
   </entry>
   <entry>
     <title><![CDATA[Gamma Distribution]]></title>
-    <url>%2F2019%2F03%2F29%2FGamma-Distribution%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FGamma-Distribution%2F</url>
     <content type="text"><![CDATA[Gamma Distribution f_{\alpha, \beta}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\alpha) \beta^{\alpha}} x^{\alpha-1} e^{-x / \beta},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \alpha>0, \beta>0Here, \Gamma(\alpha)=\int_{0}^{\infty} z^{\alpha-1} e^{-z} d z, \quad \alpha>0is the Euler gamma function, $n !=\Gamma(n+1)$ E[X] = \alpha \beta \text{Var}[X] = \alpha\beta^2 {m_{X} :(-\infty, 1 / \beta) \rightarrow \mathbb{R}, \quad m_{X}(t)=(1-\beta t)^{-\alpha}}]]></content>
       <categories>
         <category>probability</category>
@@ -99,7 +123,7 @@
   </entry>
   <entry>
     <title><![CDATA[Properties of Continuous Distributions]]></title>
-    <url>%2F2019%2F03%2F29%2FProperties-of-Continuous-Distributions%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FProperties-of-Continuous-Distributions%2F</url>
     <content type="text"><![CDATA[C4 Continuous Distributions4.1 Continuous DensitiesLet $S$ be a sample space. A continuous random variable is a map X: S \rightarrow \R together with a function f_X： \R \rightarrow \R , having the properties that: (i) $f _ { X } ( x ) \geq 0$ for all $x$ real (ii) $\int_{-\infty}^{\infty} f_{X}(x)dx = 1$ (iii) $P[a \leq X \leq b]=\int_{a}^{b} f_{X}(x) d x$ The function $f_X$ is called the probability density function of the random variable $X$. Cumulative Distribution: F_X(x) = P[X \leq x] = \int_{-\infty}^{x} f_{X}(t) d tObtain the density $f_X$ from $F_X$: f_X(x) = F'_X(x)4.2 Expectation and Distribution Parameters \mathrm{E}[X] =\int_{-\infty}^{\infty} x \cdot f_{X}(x) d x E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x \operatorname{Var}[X] =\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]=\mathrm{E}\left[X^{2}\right]-\mathrm{E}[X]^{2}]]></content>
       <categories>
         <category>probability</category>
@@ -110,7 +134,7 @@
   </entry>
   <entry>
     <title><![CDATA[Poisson Distribution]]></title>
-    <url>%2F2019%2F03%2F29%2FPoisson-Distribution%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FPoisson-Distribution%2F</url>
     <content type="text"><![CDATA[3.8 Poisson DistributionDefinition ( Poisson distribution): f_{X}(x)=\frac{k^{x} e^{-k}}{x !} \qquad x = 0,1,2...,\quad k>0Poisson moment generating function: m_X(t) = e^{k(e^t-1)}Expectation and Variance for the Poisson Distribution: E[X] = \mu = k\\ \operatorname{Var} [X] = \sigma^2 = k]]></content>
       <categories>
         <category>probability</category>
@@ -121,7 +145,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hypergeometric Distribution]]></title>
-    <url>%2F2019%2F03%2F29%2FHypergeometric-Distribution%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FHypergeometric-Distribution%2F</url>
     <content type="text"><![CDATA[3.7 Hypergeometric DistributionHypergeometric properties: The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects. Of the N objects, we want r , the other N-r do not have the trait. The random variable $X$ denotes the number of objects obtained in n trials with the trait. Definition ( Hypergeometric distribution): f(x) = \dfrac{\left( \begin{array} { c } { r } \\ { x } \end{array} \right) \left( \begin{array} { c } { N - r } \\ { n-x } \end{array} \right)}{\left( \begin{array} { c } { N } \\ { n } \end{array} \right)} \qquad \qquad \operatorname{max}[0, n- (N-r)] \leq x \leq \operatorname{min}(n,r)Expectation and Variance for the Hypergeometric Distribution: E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}where $p = r/N$, $q = 1 - p$ Approximating the Hypergeometric Distribution: If $n/N \leq 0.05$, the hypergeometric distribution can be approximated by a binomial distribution with parameters $n$ and $p=r/N$.]]></content>
       <categories>
         <category>probability</category>
@@ -132,7 +156,7 @@
   </entry>
   <entry>
     <title><![CDATA[Negative Binomial Distribution]]></title>
-    <url>%2F2019%2F03%2F29%2FNegative-Binomial-Distribution%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FNegative-Binomial-Distribution%2F</url>
     <content type="text"><![CDATA[3.6 Negative Binomial DistributionNegative binomial properties: A series of trails, classed as being either ‘success‘ or ‘failure‘ (Bernoulli trial). The trials are observed until exactly r successes are obtained, where r is fixed by the experimenter. The random variable $X$ denotes the number of successes needed to obtain the r trials. E.g: Sample space for an experiment in which $r = 3$: S = \{ ssffffs, sffffss, ffffsss, sss, ssfs \}\Here, $X = 7, 7, 7, 3, 4$, for $X = 7$ , there are $\left( \begin{array}{c}{ x-1 } \\ { 2 } \end{array} \right)$ ways in which $X$ can assume the value 7. The probability of an outcome for which $X = x$ is given by: P[X = x] = \left( \begin{array}{c}{ x-1 } \\ { 2 } \end{array} \right)(1-p)^x-3p^3 \qquad x=3, 4, 5...Definition ( Negative binomial distribution): f(x) = \left( \begin{array}{l}{ x-1 } \\ { 2-1 } \end{array} \right) p^r(1-p)^{x-r} \qquad r=1, 2, 3,... \qquad x = r, r+1, r+2,...Negative binomial moment generating function: m_X(t) = \dfrac{(pe^t)^r}{(1-qe^t)^r} \qquad q = 1-pExpectation and Variance for the Negative Binomial Distribution: E[X] = \mu = r/p \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = rq/p^2]]></content>
       <categories>
         <category>probability</category>
@@ -143,7 +167,7 @@
   </entry>
   <entry>
     <title><![CDATA[Binomial Distribution]]></title>
-    <url>%2F2019%2F03%2F29%2FBinomial-Distribution%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FBinomial-Distribution%2F</url>
     <content type="text"><![CDATA[3.5 Binomial DistributionBinomial properties: A series of trails, classed as being either ‘success‘ or ‘failure‘ (Bernoulli trial). The trials are identical and independent. ( in the sense that the outcome of one trial has no effect on the outcome of any other) The random variable $X$ denotes the number of successes obtained in the n trials. Sample space for an experiment in which $n = 3$: S = \{ fff, sff, fsf, ffs, ssf, sfs, sss , fss \}\Note that: \begin{align} P[X = 0] &= (1-p)^3\\ P[X = 1] &= 3 \cdot p(1-p)^2\\ P[X = 2] &= 3 \cdot p^2(1-p)\\ P[X = 3] &= p^3\\ \end{align}Definition ( Binomial distribution): f(x) = \left( \begin{array} { l } { n } \\ { x } \end{array} \right) p^x(1-p)^{n-x} \qquad x=0,1,2,...,n \qquad 0]]></content>
       <categories>
         <category>probability</category>
@@ -154,7 +178,7 @@
   </entry>
   <entry>
     <title><![CDATA[Geometric Distribution]]></title>
-    <url>%2F2019%2F03%2F29%2FGeometric-Distribution%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FGeometric-Distribution%2F</url>
     <content type="text"><![CDATA[3.4 Geometric DistributionGeometric properties: A series of trails, classed as being either ‘success‘ or ‘failure‘ (Bernoulli trial). The trials are identical and independent. ( in the sense that the outcome of one trial has no effect on the outcome of any other) The random variable $X$ denotes the number of trials needed to obtain the first success. E.g: Sample space for an experiment: S = \{ s, fs, ffs, fffs, ...... \}\Note that: \begin{align} P[X = 1] &= p\\ P[X = 2] &= (1-p)(p)\\ P[X = 3] &= (1-p)^2(p)\\ ...... \end{align}Definition ( Geometric distribution): f(x) = (1-p)^{x-1}p \qquad x=1,2,3...We write: X \sim \operatorname{Geom}(p) Geometric moment generating function: m_X(t) = \dfrac{pe^t}{1-qe^t} \qquad t< -\ln q, \qquad q = 1-pExpectation and Variance for the Geometric Distribution: E[X] = \mu= 1/p \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = q/p^2]]></content>
       <categories>
         <category>probability</category>
@@ -165,7 +189,7 @@
   </entry>
   <entry>
     <title><![CDATA[Properties of Discrete Distributions]]></title>
-    <url>%2F2019%2F03%2F29%2FProperties-of-Discrete-Distributions%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2FProperties-of-Discrete-Distributions%2F</url>
     <content type="text"><![CDATA[C3 Discrete Distributions3.1 Random VariablesRandom Variable: Let $S$ be the sample space for an experiment. A real-valued function that is defined on $S$ is called a random variable, i.e.., $X : S \rightarrow \mathbb { R }​$ where such a function $X$ is said to be a random variable. discrete random variables: defined as having a countable range in $\mathbb{R}$ continuous random variables: defined as having a range equal to $\mathbb{R}$ 3.2 Discrete Probability DensitiesLet $S$ be a sample space and $\Omega$ a countable subset of $\mathbb { R }$ A discrete random variable is a map X: S \rightarrow \Omegatogether with a function $f_X： \Omega \rightarrow R$, given by $f_X(x) = P[X = x]$. having the properties that ​ (i) $f _ { X } ( x ) \geq 0$ for all $x \in \Omega$ and ​ (ii) $\sum \limits_ { x \in \Omega } f _ { X } ( x ) = 1​$ The function $f _ { X }$ is called the probability density function or probability distribution of $X $. We often say that a random variable is given by the pair $\left( X , f _ { X } \right)$ Cumulative Distribution: F(x) = P[X \leq x] = 1-q^{ \lfloor x\rfloor}​3.3 Expectation, Variance and Standard deviationThe expected value of $X$: $E[X] = \sum \limits _{all x} x \cdot f(x) $ Expectations of a Function of a Random Variable: $E[\varphi \circ X]=\sum\limits_{x \in \Omega} \varphi(x) \cdot f_{X}(x)$ proof is omitted Eg: $E[X^2] = \sum \limits _{all x} x^2 \cdot f(x)$ Rules for expectation: $E[c] = c$ $E[cX] = cE[X]$ $E[X + Y] = E[X] + E[Y]$ Variance: $ \operatorname{Var}[X] :=\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]$ $E[X] = \mu_X = \mu, \qquad \operatorname{Var}[X] = \sigma_X^2 = \sigma^2$ Computational formula for $\sigma^2$: $\sigma^2 = \operatorname{Var} [X] = E[X^2] - (E[X])^2$ Standard deviation: $\sigma = \sqrt{\operatorname{Var} [X]} = \sqrt{\sigma^2}$ Rules for variance: $\operatorname{Var}[c] = 0$ $\operatorname{Var}[cX] = c^2 \operatorname{Var}[X]$ $\operatorname{Var}[X+Y] = \operatorname{Var}[X] + \operatorname{Var}[Y]$ 3.4* The Moment Generating FunctionDefinition ( Ordinary moments): \text{Let $X$ be a random variable. The $k^{th}$ ordinary moment for $X$ is defined as $E[X^k]$. }Definition ( Moment generating function): m_{X}(t)=\sum_{n=0}^{\infty} \frac{t^{n}}{n !} \mathrm{E}\left[X^{n}\right]=\mathrm{E}\left[\sum_{n=0}^{\infty} \frac{t^{n} X^{n}}{n !}\right]=\mathrm{E}\left[e^{t X}\right]The moment generating function enables us to find these moments easily. Theorem: \dfrac{d^km_X(t)}{dt^k}\Bigg|_{t = 0} = E[X^k]]]></content>
       <categories>
         <category>probability</category>
@@ -176,7 +200,7 @@
   </entry>
   <entry>
     <title><![CDATA[Some Probability Laws]]></title>
-    <url>%2F2019%2F03%2F29%2Fsome-probability-laws%2F</url>
+    <url>%2F2019%2F03%2F29%2Fprobability%2Fsome-probability-laws%2F</url>
     <content type="text"><![CDATA[C2 Some Probability Laws$P$是一个函数，定义域是$\mathscr{F}$， 叫做probability function (probability measure / probability) $P : \mathscr { T } \rightarrow [ 0,1 ] , \quad A \mapsto P [ A ]$ The triple $( S , \mathscr { T } , P )$ is called a probability space. 2.1 Basic Properties of Probabilities of Events \begin{aligned} P [ S ] & = 1 \\ P [ \varnothing ] & = 0 \\ P [ S \backslash A ] & = 1 - P [ A ] \\ P \left[ A _ { 1 } \cup A _ { 2 } \right] & = P \left[ A _ { 1 } \right] + P \left[ A _ { 2 } \right] - P \left[ A _ { 1 } \cap A _ { 2 } \right] \end{aligned}2.2 Conditional Probability P \left[ A _ { 1 } | A _ { 2 } \right] = \dfrac { \left| A _ { 1 } \cap A _ { 2 } \right| } { \left| A _ { 2 } \right| } = \dfrac { P \left[ A _ { 1 } \cap A _ { 2 } \right] } { P \left[ A _ { 2 } \right] }the conditional probability of the event A occurring, given that $B$ occurs as follows: P [ B | A ] = \dfrac { P [ A \cap B ] } { P [ A ] }2.3 Independence and the Multiplication Ruletwo events A and B are independent if: $P [ A \cap B ] = P [ A ] P [ B ]$ $\Updownarrow$ $\begin{array} { l l } { P [ A | B ] = P [ A ] } &amp; { \text { if } P [ B ] \neq 0 } \\ { P [ B | A ] = P [ B ] } &amp; { \text { if } P [ A ] \neq 0 } \end{array}$ 2.3* Partition and Law of Total ProbabilityPartition. Let $S$ denote the sample space of some experiment, and consider $k$ events$A _ { 1 } , \ldots , A _ { k }$ in $S$ such that $ A _ { 1 } , \ldots , A _ { k }$ are disjoint and $\bigcup _ { i = 1 } ^ { k } A _ { i } = S .$ It is said that theseevents form a partition of $S$. Law of total probability. Suppose that the events $B _ { 1 } , \ldots , B _ { k }$ form a partition of thespace $S$ and $\operatorname { Pr } \left( B _ { j } \right) &gt; 0$ for $j = 1 , \ldots , k .$ Then, for every event $A$ in $S$, \operatorname { P } ( B ) = \sum\limits _ { j = 1 } ^ { k } \operatorname { P } \left( A _ { j } \right) \operatorname { P } ( B | A _ { j } )2.4 Bayes’s Theorem \begin{align} P[A|B] &= \dfrac{P(B|A) \cdot P(A)}{P(B)}\\ \\ P[A_k | B ] &= \dfrac{P[B \cap A_k]}{P[B]} =\dfrac{P[B | A_k] \cdot P[A_k]}{ \sum\limits_{j=1}^n P[B | A_j] \cdot P[A_j]} \end{align}]]></content>
       <categories>
         <category>probability</category>
@@ -188,7 +212,7 @@
   </entry>
   <entry>
     <title><![CDATA[Introduction to Probability and Counting]]></title>
-    <url>%2F2019%2F03%2F28%2FIntroduction%20to%20Probability%20and%20Counting%2F</url>
+    <url>%2F2019%2F03%2F28%2Fprobability%2FIntroduction%20to%20Probability%20and%20Counting%2F</url>
     <content type="text"><![CDATA[C1 Introduction to Probability and Counting1.1 Interpretation of ProbabilitiesThree methods: Personal approach (Two Die Rolls) Relative frequency approach Classical approach (Two Coin Tosses) 1.2 Sample spaces and events A sample space for an experiment is a set S such that each physical outcome of the experiment corresponds to exactly one element of S. An element of ${S}$ is called a sample point. Any subsect A of a sample space S is called an event. Two events $A_1$ and $A_2$ are mutually exclusive $\iff$ $A_1 \cap A_2 = \varnothing$ 1.3 Permutations and Combinations A permutation is an arrangement of objects in a definite order. A combination is a selection of objects without regard to order. \begin{align} P_n^r &= \dfrac{n!}{(n-r)!}​\\ C_n^r &= \left( \begin{array} { l } { n } \\ { r } \end{array} \right) = \dfrac{n!}{r! (n-r)!} \end{align}]]></content>
       <categories>
         <category>probability</category>
@@ -201,7 +225,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F03%2F15%2Fhello-world%2F</url>
+    <url>%2F2019%2F03%2F15%2Fprobability%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
