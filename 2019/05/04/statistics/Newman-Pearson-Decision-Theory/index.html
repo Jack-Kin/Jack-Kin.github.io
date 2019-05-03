@@ -96,25 +96,25 @@
 
 
 
-  <meta name="description" content="3.7 Hypergeometric DistributionHypergeometric properties:  The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.">
-<meta name="keywords" content="discrete distributions">
+  <meta name="description" content="2.3 Newman-Pearson Decision Theory    Decision\Fact $H_0$ 成立 $H_1$ 成立     不拒绝$ H_0$ (接受$H_0 $) 不犯错 Type II error   拒绝$ H_0$ (接受$H_1$) Type I error 不犯错      \begin{aligned} \alpha &amp; =P[\text { Type } |">
+<meta name="keywords" content="Hypothesis Test,Newman-Pearson Decision Theory">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hypergeometric Distribution">
-<meta property="og:url" content="https://Jack-Kin.github.io/2019/03/29/probability/Hypergeometric-Distribution/index.html">
+<meta property="og:title" content="Newman-Pearson Decision Theory">
+<meta property="og:url" content="https://Jack-Kin.github.io/2019/05/04/statistics/Newman-Pearson-Decision-Theory/index.html">
 <meta property="og:site_name" content="Jack Kin">
-<meta property="og:description" content="3.7 Hypergeometric DistributionHypergeometric properties:  The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.">
+<meta property="og:description" content="2.3 Newman-Pearson Decision Theory    Decision\Fact $H_0$ 成立 $H_1$ 成立     不拒绝$ H_0$ (接受$H_0 $) 不犯错 Type II error   拒绝$ H_0$ (接受$H_1$) Type I error 不犯错      \begin{aligned} \alpha &amp; =P[\text { Type } |">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-28T17:52:06.431Z">
+<meta property="og:updated_time" content="2019-05-03T16:13:44.200Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hypergeometric Distribution">
-<meta name="twitter:description" content="3.7 Hypergeometric DistributionHypergeometric properties:  The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.">
+<meta name="twitter:title" content="Newman-Pearson Decision Theory">
+<meta name="twitter:description" content="2.3 Newman-Pearson Decision Theory    Decision\Fact $H_0$ 成立 $H_1$ 成立     不拒绝$ H_0$ (接受$H_0 $) 不犯错 Type II error   拒绝$ H_0$ (接受$H_1$) Type I error 不犯错      \begin{aligned} \alpha &amp; =P[\text { Type } |">
 
 
 
 
 
 
-  <link rel="canonical" href="https://Jack-Kin.github.io/2019/03/29/probability/Hypergeometric-Distribution/">
+  <link rel="canonical" href="https://Jack-Kin.github.io/2019/05/04/statistics/Newman-Pearson-Decision-Theory/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>Hypergeometric Distribution | Jack Kin</title>
+  <title>Newman-Pearson Decision Theory | Jack Kin</title>
   
 
 
@@ -378,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/probability/Hypergeometric-Distribution/">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/05/04/statistics/Newman-Pearson-Decision-Theory/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jack Kin">
@@ -395,7 +395,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hypergeometric Distribution
+          <h1 class="post-title" itemprop="name headline">Newman-Pearson Decision Theory
 
               
             
@@ -421,7 +421,7 @@
                 
               
 
-              <time title="Created: 2019-03-29 01:51:16 / Modified: 01:52:06" itemprop="dateCreated datePublished" datetime="2019-03-29T01:51:16+08:00">2019-03-29</time>
+              <time title="Created: 2019-05-04 00:12:50 / Modified: 00:13:44" itemprop="dateCreated datePublished" datetime="2019-05-04T00:12:50+08:00">2019-05-04</time>
             
 
             
@@ -443,7 +443,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/probability/" itemprop="url" rel="index"><span itemprop="name">probability</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/statistics/" itemprop="url" rel="index"><span itemprop="name">statistics</span></a></span>
 
                 
                 
@@ -478,24 +478,73 @@
       
 
       
-        <h2 id="3-7-Hypergeometric-Distribution"><a href="#3-7-Hypergeometric-Distribution" class="headerlink" title="3.7 Hypergeometric Distribution"></a>3.7 Hypergeometric Distribution</h2><p><strong>Hypergeometric properties</strong>:</p>
-<ol>
-<li><p>The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.</p>
-</li>
-<li><p>Of the N objects, we want r , the other N-r do not have the trait.</p>
-</li>
-<li><p>The random variable $X$ denotes <strong>the number of objects obtained in n trials with the trait.</strong></p>
-</li>
-</ol>
-<p><strong>Definition ( Hypergeometric distribution)</strong>: </p>
+        <h2 id="2-3-Newman-Pearson-Decision-Theory"><a href="#2-3-Newman-Pearson-Decision-Theory" class="headerlink" title="2.3 Newman-Pearson Decision Theory"></a>2.3 Newman-Pearson Decision Theory</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Decision\Fact</th>
+<th>$H_0$ 成立</th>
+<th>$H_1$ 成立</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不拒绝$ H_0$ (接受$H_0 $)</td>
+<td>不犯错</td>
+<td>Type II error</td>
+</tr>
+<tr>
+<td>拒绝$ H_0$ (接受$H_1$)</td>
+<td>Type I error</td>
+<td>不犯错</td>
+</tr>
+</tbody>
+</table>
+</div>
 <script type="math/tex; mode=display">
-f(x) = \dfrac{\left( \begin{array} { c } { r } \\ { x } \end{array} \right) \left( \begin{array} { c } { N - r } \\ { n-x } \end{array} \right)}{\left( \begin{array} { c } { N } \\ { n } \end{array} \right)}  
-\qquad \qquad
-\operatorname{max}[0, n- (N-r)] \leq x \leq \operatorname{min}(n,r)</script><p><strong>Expectation and Variance for the Hypergeometric Distribution</strong>:</p>
+\begin{aligned} \alpha & =P[\text { Type } | \text { error }]\\&=P\left[\text { reject } H_{0} | H_{0} \text { true }\right] \\ &=P\left[\text { accept } H_{1} | H_{0} \text { true }\right] \end{aligned}</script><script type="math/tex; mode=display">
+\begin{aligned} \beta & =P[\text { Type } \| \text { error }]\\
+&=P\left[\text { fail to reject } H_{0} | H_{1} \text { true }\right] \\ &=P\left[\text { accept } H_{0} | H_{1} \text { true }\right] \end{aligned}</script><script type="math/tex; mode=display">
+\begin{aligned} \text { Power } : &=1-\beta\\
+&=P\left[\text { reject } H_{0} | H_{1} \text { true }\right] \\ &=P\left[\text { accept } H_{1} | H_{1} \text { true] }\right.\end{aligned}</script><p>​    </p>
+<p><strong>Significant Test (显著性检验)：</strong> 只限制第一类错误</p>
+<p>$\alpha$ ：显著性水平</p>
+<p>$H_0$ 的提法：</p>
+<p>​    原则一： 将受保护的对象设为$ H_0$。E.g. 已经存在的事实/ 错误拒绝会带来很大后果的事情</p>
+<p>​    原则二： 如果希望“证明”某个命题，就取相反结论或者其中一部分作为$ H_0$</p>
+<p>​    原则三： 假设检验的”拒绝$ H_0$“结果不能比“不拒绝$ H_0$”的结论更有保证。（$\alpha$ 要小）</p>
+<h3 id="2-3-1-alpha-and-the-Critical-Region"><a href="#2-3-1-alpha-and-the-Critical-Region" class="headerlink" title="2.3.1 $\alpha$ and the Critical Region:"></a>2.3.1 $\alpha$ and the Critical Region:</h3><script type="math/tex; mode=display">
+\overline{X} \neq \mu \pm z_{\alpha / 2} \frac{\sigma}{\sqrt{n}}</script><p>其中$\mu$ 是总体均值，$\overline{X}$是样本均值</p>
+<p>范围内: reject $H_0$ $\Rightarrow$ the decision will be wrong with a probability of at most $\alpha$%.</p>
+<p>范围外: accept $H_0$</p>
+<h3 id="2-3-2-beta-and-the-Sample-Size"><a href="#2-3-2-beta-and-the-Sample-Size" class="headerlink" title="2.3.2 $\beta$ and the Sample Size:"></a>2.3.2 $\beta$ and the Sample Size:</h3><p>settings:   $H<em>{0} : \mu=\mu</em>{0}, \quad H<em>{1} :\left|\mu-\mu</em>{0}\right|&gt;\delta$</p>
+<p>Suppose that the true value of the mean is $\mu=\mu_{0}+\delta, \delta&gt;0$. Then the test statistic </p>
 <script type="math/tex; mode=display">
-E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</script><p>where $p = r/N$, $q = 1 - p$</p>
-<p><strong>Approximating the Hypergeometric Distribution</strong>:</p>
-<p>If $n/N \leq 0.05$, the <strong>hypergeometric distribution</strong> can be approximated by a <strong>binomial distribution</strong> with parameters $n$ and $p=r/N$.</p>
+Z=\frac{\overline{X}-\mu_{0}}{\sigma / \sqrt{n}}</script><p>will then follow a normal distribution with  unit variance and mean $\delta \sqrt{n} / \sigma$. </p>
+<p>Suppose that the critical and $\alpha$ have been fixed. we will <strong>fail to reject $H_0$</strong> if </p>
+<script type="math/tex; mode=display">
+-z_{\alpha / 2} \leq Z \leq z_{\alpha / 2}</script><p>then, </p>
+<script type="math/tex; mode=display">
+P\left[\text { fail to reject } H_{0} | \mu=\mu_{0}+\delta\right]
+\approx \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{z_{\alpha / 2}-\delta \sqrt{n} / \sigma} e^{-t^{2} / 2} d t</script><p>Let us suppose $H<em>{1}$ is true, i.e., $\left|\mu-\mu</em>{0}\right|&gt;\delta .$ Then</p>
+<script type="math/tex; mode=display">
+\begin{aligned} 
+\beta &=P\left[\text { fail to reject } H_{0} | H_{1} \text { true }\right] \\ & \leq P\left[\text { fail to reject } H_{0} | \mu=\mu_{0}+\delta\right] \\
+& = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{-z_{\beta}} e^{-t^{2} / 2} d t
+\end{aligned}</script><p>where</p>
+<script type="math/tex; mode=display">
+-z_{\beta} \approx z_{\alpha / 2}-\delta \sqrt{n} / \sigma</script><p>or</p>
+<script type="math/tex; mode=display">
+n \approx \frac{\left(z_{\alpha / 2}+z_{\beta}\right)^{2} \sigma^{2}}{\delta^{2}}</script><h3 id="2-3-3-OC-curve-操作特性曲线"><a href="#2-3-3-OC-curve-操作特性曲线" class="headerlink" title="2.3.3 OC curve (操作特性曲线)"></a>2.3.3 OC curve (操作特性曲线)</h3><p>待补充……</p>
+<h3 id="2-3-4-Acceptance-Sampling"><a href="#2-3-4-Acceptance-Sampling" class="headerlink" title="2.3.4 Acceptance Sampling"></a>2.3.4 Acceptance Sampling</h3><p>$\Pi_{}$: The true but unknown proportion of defectives</p>
+<p> $\Pi<em>{0}$: We will accept the lot if the true proportion of defectives is less than some specified $\Pi</em>{0}$</p>
+<p>$N$: lot size </p>
+<p>$n$: sample size </p>
+<p>c: acceptance number.( If the number of defective item in the sample exceeds c, the lot is rejected. Otherwise it is accepted)</p>
+<p>Hypothesis test:</p>
+<script type="math/tex; mode=display">
+H_{0} : \Pi \leq \Pi_{0,}, \quad H_{1} : \Pi>\Pi_{1}</script><p><strong>producer’s risk</strong> $\alpha $: Type I error $\Rightarrow$ reject an acceptable lot.</p>
+<p><strong>consumer’s risk</strong> $\beta $: Type II error $\Rightarrow$ fail to reject an unacceptable lot.</p>
 
       
     </div>
@@ -519,7 +568,9 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
       
         <div class="post-tags">
           
-            <a href="/tags/discrete-distributions/" rel="tag"># discrete distributions</a>
+            <a href="/tags/Hypothesis-Test/" rel="tag"># Hypothesis Test</a>
+          
+            <a href="/tags/Newman-Pearson-Decision-Theory/" rel="tag"># Newman-Pearson Decision Theory</a>
           
         </div>
       
@@ -532,8 +583,8 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/29/probability/Negative-Binomial-Distribution/" rel="next" title="Negative Binomial Distribution">
-                <i class="fa fa-chevron-left"></i> Negative Binomial Distribution
+              <a href="/2019/05/03/statistics/Fisher-s-Hypothesis-Test/" rel="next" title="Fisher's Hypothesis Test">
+                <i class="fa fa-chevron-left"></i> Fisher's Hypothesis Test
               </a>
             
           </div>
@@ -542,8 +593,8 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/29/probability/Poisson-Distribution/" rel="prev" title="Poisson Distribution">
-                Poisson Distribution <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/04/statistics/Tests-for-Mean-Median-and-Variance-of-a-Single-Sample/" rel="prev" title="Tests for Mean, Median and Variance of a Single Sample">
+                Tests for Mean, Median and Variance of a Single Sample <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -757,7 +808,7 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7-Hypergeometric-Distribution"><span class="nav-number">1.</span> <span class="nav-text">3.7 Hypergeometric Distribution</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-Newman-Pearson-Decision-Theory"><span class="nav-number">1.</span> <span class="nav-text">2.3 Newman-Pearson Decision Theory</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-1-alpha-and-the-Critical-Region"><span class="nav-number">1.1.</span> <span class="nav-text">2.3.1 $\alpha$ and the Critical Region:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-2-beta-and-the-Sample-Size"><span class="nav-number">1.2.</span> <span class="nav-text">2.3.2 $\beta$ and the Sample Size:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-3-OC-curve-操作特性曲线"><span class="nav-number">1.3.</span> <span class="nav-text">2.3.3 OC curve (操作特性曲线)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-4-Acceptance-Sampling"><span class="nav-number">1.4.</span> <span class="nav-text">2.3.4 Acceptance Sampling</span></a></li></ol></li></ol></div>
             
 
           </div>

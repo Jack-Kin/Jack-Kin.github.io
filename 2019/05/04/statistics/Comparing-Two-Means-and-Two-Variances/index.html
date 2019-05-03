@@ -96,25 +96,25 @@
 
 
 
-  <meta name="description" content="3.7 Hypergeometric DistributionHypergeometric properties:  The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.">
-<meta name="keywords" content="discrete distributions">
+  <meta name="description" content="2.7 Comparing Two Means and Two Variances2.7.1 Point Estimation: Independent SamplesPoint Estimator for the Difference Between Two Means  \widehat{\mu_{1}-\mu_{2}} :=\widehat{\mu}_{1}-\widehat{\mu}_{2">
+<meta name="keywords" content="Hypothesis Test">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hypergeometric Distribution">
-<meta property="og:url" content="https://Jack-Kin.github.io/2019/03/29/probability/Hypergeometric-Distribution/index.html">
+<meta property="og:title" content="Comparing Two Means and Two Variances">
+<meta property="og:url" content="https://Jack-Kin.github.io/2019/05/04/statistics/Comparing-Two-Means-and-Two-Variances/index.html">
 <meta property="og:site_name" content="Jack Kin">
-<meta property="og:description" content="3.7 Hypergeometric DistributionHypergeometric properties:  The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.">
+<meta property="og:description" content="2.7 Comparing Two Means and Two Variances2.7.1 Point Estimation: Independent SamplesPoint Estimator for the Difference Between Two Means  \widehat{\mu_{1}-\mu_{2}} :=\widehat{\mu}_{1}-\widehat{\mu}_{2">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-28T17:52:06.431Z">
+<meta property="og:updated_time" content="2019-05-03T16:17:54.703Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hypergeometric Distribution">
-<meta name="twitter:description" content="3.7 Hypergeometric DistributionHypergeometric properties:  The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.">
+<meta name="twitter:title" content="Comparing Two Means and Two Variances">
+<meta name="twitter:description" content="2.7 Comparing Two Means and Two Variances2.7.1 Point Estimation: Independent SamplesPoint Estimator for the Difference Between Two Means  \widehat{\mu_{1}-\mu_{2}} :=\widehat{\mu}_{1}-\widehat{\mu}_{2">
 
 
 
 
 
 
-  <link rel="canonical" href="https://Jack-Kin.github.io/2019/03/29/probability/Hypergeometric-Distribution/">
+  <link rel="canonical" href="https://Jack-Kin.github.io/2019/05/04/statistics/Comparing-Two-Means-and-Two-Variances/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>Hypergeometric Distribution | Jack Kin</title>
+  <title>Comparing Two Means and Two Variances | Jack Kin</title>
   
 
 
@@ -378,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/probability/Hypergeometric-Distribution/">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/05/04/statistics/Comparing-Two-Means-and-Two-Variances/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jack Kin">
@@ -395,7 +395,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hypergeometric Distribution
+          <h1 class="post-title" itemprop="name headline">Comparing Two Means and Two Variances
 
               
             
@@ -421,7 +421,7 @@
                 
               
 
-              <time title="Created: 2019-03-29 01:51:16 / Modified: 01:52:06" itemprop="dateCreated datePublished" datetime="2019-03-29T01:51:16+08:00">2019-03-29</time>
+              <time title="Created: 2019-05-04 00:17:25 / Modified: 00:17:54" itemprop="dateCreated datePublished" datetime="2019-05-04T00:17:25+08:00">2019-05-04</time>
             
 
             
@@ -443,7 +443,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/probability/" itemprop="url" rel="index"><span itemprop="name">probability</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/statistics/" itemprop="url" rel="index"><span itemprop="name">statistics</span></a></span>
 
                 
                 
@@ -478,25 +478,51 @@
       
 
       
-        <h2 id="3-7-Hypergeometric-Distribution"><a href="#3-7-Hypergeometric-Distribution" class="headerlink" title="3.7 Hypergeometric Distribution"></a>3.7 Hypergeometric Distribution</h2><p><strong>Hypergeometric properties</strong>:</p>
-<ol>
-<li><p>The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.</p>
-</li>
-<li><p>Of the N objects, we want r , the other N-r do not have the trait.</p>
-</li>
-<li><p>The random variable $X$ denotes <strong>the number of objects obtained in n trials with the trait.</strong></p>
-</li>
-</ol>
-<p><strong>Definition ( Hypergeometric distribution)</strong>: </p>
+        <h2 id="2-7-Comparing-Two-Means-and-Two-Variances"><a href="#2-7-Comparing-Two-Means-and-Two-Variances" class="headerlink" title="2.7 Comparing Two Means and Two Variances"></a>2.7 Comparing Two Means and Two Variances</h2><h3 id="2-7-1-Point-Estimation-Independent-Samples"><a href="#2-7-1-Point-Estimation-Independent-Samples" class="headerlink" title="2.7.1 Point Estimation: Independent Samples"></a>2.7.1 Point Estimation: Independent Samples</h3><p><strong>Point Estimator for the Difference Between Two Means</strong></p>
 <script type="math/tex; mode=display">
-f(x) = \dfrac{\left( \begin{array} { c } { r } \\ { x } \end{array} \right) \left( \begin{array} { c } { N - r } \\ { n-x } \end{array} \right)}{\left( \begin{array} { c } { N } \\ { n } \end{array} \right)}  
-\qquad \qquad
-\operatorname{max}[0, n- (N-r)] \leq x \leq \operatorname{min}(n,r)</script><p><strong>Expectation and Variance for the Hypergeometric Distribution</strong>:</p>
+\widehat{\mu_{1}-\mu_{2}} :=\widehat{\mu}_{1}-\widehat{\mu}_{2}=\overline{X}_{1}-\overline{X}_{2}</script><p><strong>Distribution of  $\overline{X}<em>{1}-\overline{X}</em>{2}$</strong></p>
+<p>2.9.1. Theorem. Let $\overline{X}<em>{1}$ and $\overline{X}</em>{2}$ be the sample means based on independent random samples of sizes $n<em>{1}$ and $n</em>{2}$ drawn from normal distributions with means $\mu<em>{1}$ and $\mu</em>{2}$ and variance $\sigma<em>{1}^{2}$ and $\sigma</em>{2}^{2},$ respectively. Then $\overline{X}<em>{1}-\overline{X}</em>{2}$ is normal with mean $\mu<em>{1}-\mu</em>{2}$ and variance $\sigma<em>{1}^{2} / n</em>{1}+\sigma<em>{2}^{2} / n</em>{2}$. i.e,</p>
 <script type="math/tex; mode=display">
-E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</script><p>where $p = r/N$, $q = 1 - p$</p>
-<p><strong>Approximating the Hypergeometric Distribution</strong>:</p>
-<p>If $n/N \leq 0.05$, the <strong>hypergeometric distribution</strong> can be approximated by a <strong>binomial distribution</strong> with parameters $n$ and $p=r/N$.</p>
-
+\frac{\overline{X}_{1}-\overline{X}_{2}-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{\sigma_{1}^{2} / n_{1}+\sigma_{2}^{2} / n_{2}}}</script><p>is a standard normal random variable.</p>
+<p>As usual, the Central Limit theorem allows us to apply this result even to non-normal populations if we have large sample sizes.</p>
+<h3 id="2-7-2-Comparing-Variances-The-F-Distribution"><a href="#2-7-2-Comparing-Variances-The-F-Distribution" class="headerlink" title="2.7.2 Comparing Variances: The F Distribution"></a>2.7.2 Comparing Variances: The F Distribution</h3><p>Let $X<em>{\gamma</em>{1}}^{2}$ and $X<em>{\gamma</em>{2}}^{2}$ be independent chi-squared random variables with $\gamma<em>{1}$ and $\gamma</em>{2}$ degrees of freedom:</p>
+<script type="math/tex; mode=display">
+F_{\gamma_{1}, \gamma_{2}}=\frac{X_{\gamma_{1}}^{2} / \gamma_{1}}{X_{\gamma_{2}}^{2} / \gamma_{2}}</script><p>is said to follorw an F-distribution。</p>
+<p>Remark:</p>
+<script type="math/tex; mode=display">
+P\left[F_{\gamma_{1}, \gamma_{2}}<x\right]=P\left[1 / F_{\gamma_{1}, \gamma_{2}}>1 / x\right]=1-P\left[F_{\gamma_{2}, \gamma_{1}}<1 / x\right]</script><script type="math/tex; mode=display">
+f_{1-\alpha, \gamma_{1}, \gamma_{2}}=\frac{1}{f_{\alpha, \gamma_{2}, \gamma_{1}}}</script><p>If $\sigma<em>{1}^{2}=\sigma</em>{2}^{2},$ then the statistic</p>
+<script type="math/tex; mode=display">
+\frac{S_1^2}{S_2^2}</script><p>follows an $F$ -distribution with $n<em>{1}-1$ and $n</em>{2}-1$ degrees of freedom.</p>
+<p><strong>The F -Test</strong></p>
+<script type="math/tex; mode=display">
+F_{n_{1}-1, n_{2}-1}=\frac{S_{1}^{2}}{S_{2}^{2}}</script><p>We reject at significance level $\alpha $:</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : \sigma_{1} \leq \sigma_{2} \text { if } \frac{S_{1}^{2}}{S_{2}^{2}}>f_{\alpha, n_{1}-1, n_{2}-1}} \\ {H_{0} : \sigma_{1} \geq \sigma_{2} \text { if } \frac{S_{2}^{2}}{S_{1}^{2}}>f_{\alpha, n_{2}-1, n_{1}-1}} \\ {H_{0} : \sigma_{1}=\sigma_{2} \text { if } \frac{S_{1}^{2}}{S_{2}^{2}}>f_{\alpha / 2, n_{1}-1, n_{2}-1} \text { or } \frac{S_{2}^{2}}{S_{1}^{2}}>f_{\alpha / 2, n_{2}-1, n_{1}-1}}\end{array}</script><h3 id="2-7-3-Comparing-Means-Variances-Equal-Pooled-Test"><a href="#2-7-3-Comparing-Means-Variances-Equal-Pooled-Test" class="headerlink" title="2.7.3 Comparing Means: Variances Equal (Pooled Test)"></a>2.7.3 Comparing Means: Variances Equal (Pooled Test)</h3><p><strong>Pooled Variance</strong></p>
+<script type="math/tex; mode=display">
+S_{p}^{2}=\frac{\left(n_{1}-1\right) S_{1}^{2}+\left(n_{2}-1\right) S_{2}^{2}}{n_{1}+n_{2}-2}</script><p><strong>Pooled T-Ｔest</strong></p>
+<script type="math/tex; mode=display">
+\begin{aligned} T_{n_{1}+n_{2}-2} &=\frac{Z}{\sqrt{X_{n_{1}+n_{2}-2}^{2} /\left(n_{1}+n_{2}-2\right)}} \\ &=\frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{S_{p}^{2}\left(1 / n_{1}+1 / n_{2}\right)}} \end{aligned}</script><p>follows a T-distribution with $n_1 + n_2 -2$ degrees of freedom.  </p>
+<p>We reject at significance level $\alpha $:</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : \mu_{1}-\mu_{2}=\left(\mu_{1}-\mu_{2}\right)_{0} \text { if }\left|T_{n_{1}+n_{2}-2}\right|>t_{\alpha / 2, n_{1}+n_{2}-2}} \\ {H_{0} : \mu_{1}-\mu_{2} \leq\left(\mu_{1}-\mu_{2}\right)_{0} \text { if } T_{n_{1}+n_{2}-2}>t_{\alpha, n_{1}+n_{2}-2}} \\ {H_{0} : \mu_{1}-\mu_{2} \geq\left(\mu_{1}-\mu_{2}\right)_{0} \text { if } T_{n_{1}+n_{2}-2}<-t_{\alpha, n_{1}+n_{2}-2}}\end{array}</script><p><strong>Confidence Interval for the Difference of Means</strong></p>
+<script type="math/tex; mode=display">
+\left(\overline{X}_{1}-\overline{X}_{2}\right) \pm t_{\alpha / 2, n_{1}+n_{2}-2} \sqrt{S_{p}^{2}\left(1 / n_{1}+1 / n_{2}\right)}</script><h3 id="2-7-4-Comparing-Means-Variance-Unequal"><a href="#2-7-4-Comparing-Means-Variance-Unequal" class="headerlink" title="2.7.4 Comparing Means: Variance Unequal"></a>2.7.4 Comparing Means: Variance Unequal</h3><p><strong>Pooled test for equality of means</strong></p>
+<script type="math/tex; mode=display">
+T_{\gamma}=\frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)_{0}}{\sqrt{S_{1}^{2} / n_{1}+S_{2}^{2} / n_{2}}}</script><p>We reject at significance level $\alpha $:</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : \mu_{1}-\mu_{2}=\left(\mu_{1}-\mu_{2}\right)_{0} \text { if }\left|T_{\gamma}\right|>t_{\alpha / 2, \gamma}} \\ {H_{0} : \mu_{1}-\mu_{2} \leq\left(\mu_{1}-\mu_{2}\right)_{0} \text { if } T_{\gamma}>t_{\alpha, \gamma}} \\ {H_{0} : \mu_{1}-\mu_{2} \geq\left(\mu_{1}-\mu_{2}\right)_{0} \text { if } T_{\gamma}<-t_{\alpha, \gamma}}\end{array}</script><h3 id="2-7-5-Comparing-Means-Paired-Data"><a href="#2-7-5-Comparing-Means-Paired-Data" class="headerlink" title="2.7.5 Comparing Means: Paired Data"></a>2.7.5 Comparing Means: Paired Data</h3><p>Define $D = X-Y$, whose mean will be </p>
+<script type="math/tex; mode=display">
+\mu_{D}=\mathrm{E}[D]=\mathrm{E}[X-Y]=\mathrm{E}[X]-\mathrm{E}[Y]=\mu_{X}-\mu_Y</script><p><strong>Paired T-Test</strong></p>
+<script type="math/tex; mode=display">
+T=\frac{\overline{D}}{s_{D} / \sqrt{n}}</script><p><strong>Confidence bounds on $\mu_X-\mu_Y$ for paired data</strong></p>
+<script type="math/tex; mode=display">
+\overline{D} \pm t_{\alpha/2} S_d / \sqrt{n}</script><h3 id="2-7-6-Alternative-Nonparametric-Methods"><a href="#2-7-6-Alternative-Nonparametric-Methods" class="headerlink" title="2.7.6 Alternative Nonparametric Methods"></a>2.7.6 Alternative Nonparametric Methods</h3><p><strong>The Wilcoxon Rank-Sum Test</strong></p>
+<script type="math/tex; mode=display">
+H_{0} : P[X>Y]=\frac{1}{2} \quad \text { or } \quad H_{0} : P[X>Y] \leq \frac{1}{2}</script><pre><code>m: smaller szmple size between $X$ and $Y$.
+</code></pre><p>for large values of $m$, $W_m$ is approximately normally distributed with  </p>
+<script type="math/tex; mode=display">
+\mathrm{E}\left[W_{m}\right]=\frac{m(m+n+1)}{2}, \quad \operatorname{Var} W_{m}=\frac{m n(m+n+1)}{12}</script>
       
     </div>
 
@@ -519,7 +545,7 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
       
         <div class="post-tags">
           
-            <a href="/tags/discrete-distributions/" rel="tag"># discrete distributions</a>
+            <a href="/tags/Hypothesis-Test/" rel="tag"># Hypothesis Test</a>
           
         </div>
       
@@ -532,8 +558,8 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/29/probability/Negative-Binomial-Distribution/" rel="next" title="Negative Binomial Distribution">
-                <i class="fa fa-chevron-left"></i> Negative Binomial Distribution
+              <a href="/2019/05/04/statistics/Inferences-on-Proportions/" rel="next" title=" Inferences on Proportions">
+                <i class="fa fa-chevron-left"></i>  Inferences on Proportions
               </a>
             
           </div>
@@ -541,10 +567,6 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/29/probability/Poisson-Distribution/" rel="prev" title="Poisson Distribution">
-                Poisson Distribution <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -757,7 +779,7 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7-Hypergeometric-Distribution"><span class="nav-number">1.</span> <span class="nav-text">3.7 Hypergeometric Distribution</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-7-Comparing-Two-Means-and-Two-Variances"><span class="nav-number">1.</span> <span class="nav-text">2.7 Comparing Two Means and Two Variances</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-1-Point-Estimation-Independent-Samples"><span class="nav-number">1.1.</span> <span class="nav-text">2.7.1 Point Estimation: Independent Samples</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-2-Comparing-Variances-The-F-Distribution"><span class="nav-number">1.2.</span> <span class="nav-text">2.7.2 Comparing Variances: The F Distribution</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-3-Comparing-Means-Variances-Equal-Pooled-Test"><span class="nav-number">1.3.</span> <span class="nav-text">2.7.3 Comparing Means: Variances Equal (Pooled Test)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-4-Comparing-Means-Variance-Unequal"><span class="nav-number">1.4.</span> <span class="nav-text">2.7.4 Comparing Means: Variance Unequal</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-5-Comparing-Means-Paired-Data"><span class="nav-number">1.5.</span> <span class="nav-text">2.7.5 Comparing Means: Paired Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-6-Alternative-Nonparametric-Methods"><span class="nav-number">1.6.</span> <span class="nav-text">2.7.6 Alternative Nonparametric Methods</span></a></li></ol></li></ol></div>
             
 
           </div>

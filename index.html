@@ -378,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/05/03/Fisher-s-Hypothesis-Test/">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/05/04/statistics/Comparing-Two-Means-and-Two-Variances/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jack Kin">
@@ -398,7 +398,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/05/03/Fisher-s-Hypothesis-Test/" class="post-title-link" itemprop="url">Fisher's Hypothesis Test</a>
+                <a href="/2019/05/04/statistics/Comparing-Two-Means-and-Two-Variances/" class="post-title-link" itemprop="url">Comparing Two Means and Two Variances</a>
               
             
           </h1>
@@ -423,7 +423,7 @@
                 
               
 
-              <time title="Created: 2019-05-03 01:32:54 / Modified: 01:55:21" itemprop="dateCreated datePublished" datetime="2019-05-03T01:32:54+08:00">2019-05-03</time>
+              <time title="Created: 2019-05-04 00:17:25 / Modified: 00:17:54" itemprop="dateCreated datePublished" datetime="2019-05-04T00:17:25+08:00">2019-05-04</time>
             
 
             
@@ -482,19 +482,666 @@
       
         
           
-            <h2 id="2-2-Fisher’s-Hypothesis-Test"><a href="#2-2-Fisher’s-Hypothesis-Test" class="headerlink" title="2.2 Fisher’s Hypothesis Test"></a>2.2 Fisher’s Hypothesis Test</h2><p>We consider a single hypothesis that compares a population parameter $\theta $  (总体参数) to a given null value $\theta_0$. This hypothesis will be denoted by $H_0$ and is called the null hypothesis.</p>
-<p>Our goal is to find statistical evidence that allow us to reject $H_0$. </p>
-<h3 id="2-2-1-One-tailed-test"><a href="#2-2-1-One-tailed-test" class="headerlink" title="2.2.1 One-tailed test"></a>2.2.1 One-tailed test</h3><script type="math/tex; mode=display">
-H_{0} : \theta \leq \theta_{0} \quad \text { or } \quad H_{0} : \theta \geq \theta_{0}</script><h3 id="2-2-2-Two-tailed-test"><a href="#2-2-2-Two-tailed-test" class="headerlink" title="2.2.2 Two-tailed test"></a>2.2.2 Two-tailed test</h3><script type="math/tex; mode=display">
-H_0 :\theta = \theta_{0}</script><h3 id="2-2-3-P-value"><a href="#2-2-3-P-value" class="headerlink" title="2.2.3 P-value"></a>2.2.3 P-value</h3><p>The P-value is an upper bound of the probability of obtaining the data if $H_0$ is true.</p>
-<p>If $D$ represents the statistical data, </p>
+            <h2 id="2-7-Comparing-Two-Means-and-Two-Variances"><a href="#2-7-Comparing-Two-Means-and-Two-Variances" class="headerlink" title="2.7 Comparing Two Means and Two Variances"></a>2.7 Comparing Two Means and Two Variances</h2><h3 id="2-7-1-Point-Estimation-Independent-Samples"><a href="#2-7-1-Point-Estimation-Independent-Samples" class="headerlink" title="2.7.1 Point Estimation: Independent Samples"></a>2.7.1 Point Estimation: Independent Samples</h3><p><strong>Point Estimator for the Difference Between Two Means</strong></p>
 <script type="math/tex; mode=display">
-P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
-<p>We say that we <strong>reject $H_0$ at the [P-value] level of significance</strong>.</p>
-<h3 id="2-2-4-Fisher-Test的问题"><a href="#2-2-4-Fisher-Test的问题" class="headerlink" title="2.2.4 Fisher Test的问题"></a>2.2.4 Fisher Test的问题</h3><p>A small P-value 不能推出 $H_0$ is false.</p>
-<p>In hypothesis test, we want to argue that</p>
+\widehat{\mu_{1}-\mu_{2}} :=\widehat{\mu}_{1}-\widehat{\mu}_{2}=\overline{X}_{1}-\overline{X}_{2}</script><p><strong>Distribution of  $\overline{X}<em>{1}-\overline{X}</em>{2}$</strong></p>
+<p>2.9.1. Theorem. Let $\overline{X}<em>{1}$ and $\overline{X}</em>{2}$ be the sample means based on independent random samples of sizes $n<em>{1}$ and $n</em>{2}$ drawn from normal distributions with means $\mu<em>{1}$ and $\mu</em>{2}$ and variance $\sigma<em>{1}^{2}$ and $\sigma</em>{2}^{2},$ respectively. Then $\overline{X}<em>{1}-\overline{X}</em>{2}$ is normal with mean $\mu<em>{1}-\mu</em>{2}$ and variance $\sigma<em>{1}^{2} / n</em>{1}+\sigma<em>{2}^{2} / n</em>{2}$. i.e,</p>
 <script type="math/tex; mode=display">
-\text{If P then Q; Q is unlikely, therefore P is unlikely}</script><p>which is obviously wrong.</p>
+\frac{\overline{X}_{1}-\overline{X}_{2}-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{\sigma_{1}^{2} / n_{1}+\sigma_{2}^{2} / n_{2}}}</script><p>is a standard normal random variable.</p>
+<p>As usual, the Central Limit theorem allows us to apply this result even to non-normal populations if we have large sample sizes.</p>
+<h3 id="2-7-2-Comparing-Variances-The-F-Distribution"><a href="#2-7-2-Comparing-Variances-The-F-Distribution" class="headerlink" title="2.7.2 Comparing Variances: The F Distribution"></a>2.7.2 Comparing Variances: The F Distribution</h3><p>Let $X<em>{\gamma</em>{1}}^{2}$ and $X<em>{\gamma</em>{2}}^{2}$ be independent chi-squared random variables with $\gamma<em>{1}$ and $\gamma</em>{2}$ degrees of freedom:</p>
+<script type="math/tex; mode=display">
+F_{\gamma_{1}, \gamma_{2}}=\frac{X_{\gamma_{1}}^{2} / \gamma_{1}}{X_{\gamma_{2}}^{2} / \gamma_{2}}</script><p>is said to follorw an F-distribution。</p>
+<p>Remark:</p>
+<script type="math/tex; mode=display">
+P\left[F_{\gamma_{1}, \gamma_{2}}<x\right]=P\left[1 / F_{\gamma_{1}, \gamma_{2}}>1 / x\right]=1-P\left[F_{\gamma_{2}, \gamma_{1}}<1 / x\right]</script><script type="math/tex; mode=display">
+f_{1-\alpha, \gamma_{1}, \gamma_{2}}=\frac{1}{f_{\alpha, \gamma_{2}, \gamma_{1}}}</script><p>If $\sigma<em>{1}^{2}=\sigma</em>{2}^{2},$ then the statistic</p>
+<script type="math/tex; mode=display">
+\frac{S_1^2}{S_2^2}</script><p>follows an $F$ -distribution with $n<em>{1}-1$ and $n</em>{2}-1$ degrees of freedom.</p>
+<p><strong>The F -Test</strong></p>
+<script type="math/tex; mode=display">
+F_{n_{1}-1, n_{2}-1}=\frac{S_{1}^{2}}{S_{2}^{2}}</script><p>We reject at significance level $\alpha $:</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : \sigma_{1} \leq \sigma_{2} \text { if } \frac{S_{1}^{2}}{S_{2}^{2}}>f_{\alpha, n_{1}-1, n_{2}-1}} \\ {H_{0} : \sigma_{1} \geq \sigma_{2} \text { if } \frac{S_{2}^{2}}{S_{1}^{2}}>f_{\alpha, n_{2}-1, n_{1}-1}} \\ {H_{0} : \sigma_{1}=\sigma_{2} \text { if } \frac{S_{1}^{2}}{S_{2}^{2}}>f_{\alpha / 2, n_{1}-1, n_{2}-1} \text { or } \frac{S_{2}^{2}}{S_{1}^{2}}>f_{\alpha / 2, n_{2}-1, n_{1}-1}}\end{array}</script><h3 id="2-7-3-Comparing-Means-Variances-Equal-Pooled-Test"><a href="#2-7-3-Comparing-Means-Variances-Equal-Pooled-Test" class="headerlink" title="2.7.3 Comparing Means: Variances Equal (Pooled Test)"></a>2.7.3 Comparing Means: Variances Equal (Pooled Test)</h3><p><strong>Pooled Variance</strong></p>
+<script type="math/tex; mode=display">
+S_{p}^{2}=\frac{\left(n_{1}-1\right) S_{1}^{2}+\left(n_{2}-1\right) S_{2}^{2}}{n_{1}+n_{2}-2}</script><p><strong>Pooled T-Ｔest</strong></p>
+<script type="math/tex; mode=display">
+\begin{aligned} T_{n_{1}+n_{2}-2} &=\frac{Z}{\sqrt{X_{n_{1}+n_{2}-2}^{2} /\left(n_{1}+n_{2}-2\right)}} \\ &=\frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{S_{p}^{2}\left(1 / n_{1}+1 / n_{2}\right)}} \end{aligned}</script><p>follows a T-distribution with $n_1 + n_2 -2$ degrees of freedom.  </p>
+<p>We reject at significance level $\alpha $:</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : \mu_{1}-\mu_{2}=\left(\mu_{1}-\mu_{2}\right)_{0} \text { if }\left|T_{n_{1}+n_{2}-2}\right|>t_{\alpha / 2, n_{1}+n_{2}-2}} \\ {H_{0} : \mu_{1}-\mu_{2} \leq\left(\mu_{1}-\mu_{2}\right)_{0} \text { if } T_{n_{1}+n_{2}-2}>t_{\alpha, n_{1}+n_{2}-2}} \\ {H_{0} : \mu_{1}-\mu_{2} \geq\left(\mu_{1}-\mu_{2}\right)_{0} \text { if } T_{n_{1}+n_{2}-2}<-t_{\alpha, n_{1}+n_{2}-2}}\end{array}</script><p><strong>Confidence Interval for the Difference of Means</strong></p>
+<script type="math/tex; mode=display">
+\left(\overline{X}_{1}-\overline{X}_{2}\right) \pm t_{\alpha / 2, n_{1}+n_{2}-2} \sqrt{S_{p}^{2}\left(1 / n_{1}+1 / n_{2}\right)}</script><h3 id="2-7-4-Comparing-Means-Variance-Unequal"><a href="#2-7-4-Comparing-Means-Variance-Unequal" class="headerlink" title="2.7.4 Comparing Means: Variance Unequal"></a>2.7.4 Comparing Means: Variance Unequal</h3><p><strong>Pooled test for equality of means</strong></p>
+<script type="math/tex; mode=display">
+T_{\gamma}=\frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)_{0}}{\sqrt{S_{1}^{2} / n_{1}+S_{2}^{2} / n_{2}}}</script><p>We reject at significance level $\alpha $:</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : \mu_{1}-\mu_{2}=\left(\mu_{1}-\mu_{2}\right)_{0} \text { if }\left|T_{\gamma}\right|>t_{\alpha / 2, \gamma}} \\ {H_{0} : \mu_{1}-\mu_{2} \leq\left(\mu_{1}-\mu_{2}\right)_{0} \text { if } T_{\gamma}>t_{\alpha, \gamma}} \\ {H_{0} : \mu_{1}-\mu_{2} \geq\left(\mu_{1}-\mu_{2}\right)_{0} \text { if } T_{\gamma}<-t_{\alpha, \gamma}}\end{array}</script><h3 id="2-7-5-Comparing-Means-Paired-Data"><a href="#2-7-5-Comparing-Means-Paired-Data" class="headerlink" title="2.7.5 Comparing Means: Paired Data"></a>2.7.5 Comparing Means: Paired Data</h3><p>Define $D = X-Y$, whose mean will be </p>
+<script type="math/tex; mode=display">
+\mu_{D}=\mathrm{E}[D]=\mathrm{E}[X-Y]=\mathrm{E}[X]-\mathrm{E}[Y]=\mu_{X}-\mu_Y</script><p><strong>Paired T-Test</strong></p>
+<script type="math/tex; mode=display">
+T=\frac{\overline{D}}{s_{D} / \sqrt{n}}</script><p><strong>Confidence bounds on $\mu_X-\mu_Y$ for paired data</strong></p>
+<script type="math/tex; mode=display">
+\overline{D} \pm t_{\alpha/2} S_d / \sqrt{n}</script><h3 id="2-7-6-Alternative-Nonparametric-Methods"><a href="#2-7-6-Alternative-Nonparametric-Methods" class="headerlink" title="2.7.6 Alternative Nonparametric Methods"></a>2.7.6 Alternative Nonparametric Methods</h3><p><strong>The Wilcoxon Rank-Sum Test</strong></p>
+<script type="math/tex; mode=display">
+H_{0} : P[X>Y]=\frac{1}{2} \quad \text { or } \quad H_{0} : P[X>Y] \leq \frac{1}{2}</script><pre><code>m: smaller szmple size between $X$ and $Y$.
+</code></pre><p>for large values of $m$, $W_m$ is approximately normally distributed with  </p>
+<script type="math/tex; mode=display">
+\mathrm{E}\left[W_{m}\right]=\frac{m(m+n+1)}{2}, \quad \operatorname{Var} W_{m}=\frac{m n(m+n+1)}{12}</script>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/05/04/statistics/Inferences-on-Proportions/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack Kin">
+      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
+      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack Kin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/04/statistics/Inferences-on-Proportions/" class="post-title-link" itemprop="url"> Inferences on Proportions</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-04 00:16:25 / Modified: 00:16:56" itemprop="dateCreated datePublished" datetime="2019-05-04T00:16:25+08:00">2019-05-04</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/statistics/" itemprop="url" rel="index"><span itemprop="name">statistics</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="2-6-Inferences-on-Proportions"><a href="#2-6-Inferences-on-Proportions" class="headerlink" title="2.6 Inferences on Proportions"></a>2.6 Inferences on Proportions</h2><h3 id="2-6-1-Estimating-Proportions"><a href="#2-6-1-Estimating-Proportions" class="headerlink" title="2.6.1 Estimating Proportions"></a>2.6.1 Estimating Proportions</h3><p>The proportion of the members of the population having the trait is:</p>
+<script type="math/tex; mode=display">
+p=\frac{\# \text { members wih trait }}{\text { population size }}=\frac{1}{N} \sum_{i=1}^{N} x_{i}</script><p><em>Sample proportion</em>, is an unbiased logical point estimator for $p$:</p>
+<script type="math/tex; mode=display">
+\hat{p}=\overline{X}=\frac{1}{n} \sum_{i=1}^{n} X_{i}</script><h4 id="Confidence-Interval-on-p"><a href="#Confidence-Interval-on-p" class="headerlink" title="Confidence Interval on $p$"></a>Confidence Interval on $p$</h4><script type="math/tex; mode=display">
+\frac{\hat{p}-p}{\sqrt{p(1-p) / n}}</script><p>is approximately standard-normally distributed.</p>
+<p>Then, it follows immediately that the following is a 100(1 - $\alpha$)% confidence interval for p:</p>
+<script type="math/tex; mode=display">
+\hat{p} \pm z_{\alpha / 2} \sqrt{p(1-p) / n}</script><p>But we can’t use $p$ to estimate $p$. One solution is to replace $p$ by $\hat{p}$:</p>
+<script type="math/tex; mode=display">
+\hat{p} \pm z_{\alpha / 2} \sqrt{\hat{p}(1-\hat{p}) / n}</script><h4 id="Sample-Size-for-Estimating-p"><a href="#Sample-Size-for-Estimating-p" class="headerlink" title="Sample Size for Estimating $p$"></a>Sample Size for Estimating $p$</h4><p>An important question: </p>
+<p>“How large a sample should be selected so that $\hat{p}$ lies within a  specified distance $d$ of $p$ with a stated degree of confidence?”</p>
+<p><strong>Sample size for estimating $p$, prior estimate available</strong></p>
+<script type="math/tex; mode=display">
+n=\frac{z_{\alpha / 2}^{2} \hat{p}(1-\hat{p})}{d^{2}}</script><p>given $d=z_{\alpha / 2} \sqrt{\hat{p}(1-\hat{p}) / n}$</p>
+<p><strong>Sample size for estimating $p$, no prior estimate available</strong></p>
+<script type="math/tex; mode=display">
+n=\frac{z_{\alpha / 2}^{2}}{4 d^{2}}</script><p>will ensure $|p-\hat{p}|&lt;d$ with 100$(1-\alpha) \%$ confidence.</p>
+<h3 id="2-6-2-Testing-Hypothesis-On-a-Proportion"><a href="#2-6-2-Testing-Hypothesis-On-a-Proportion" class="headerlink" title="2.6.2 Testing Hypothesis On a Proportion"></a>2.6.2 Testing Hypothesis On a Proportion</h3><p>Let $X<em>{1}, \ldots, X</em>{n}$ be a random sample of size $n$ from a Bernoulli distribution with parameter $p$ and let $\hat{p}=\overline{X}$ denote the sample mean. Then any test based on the statistic</p>
+<script type="math/tex; mode=display">
+Z=\frac{\hat{p}-p_{0}}{\sqrt{p_{0}\left(1-p_{0}\right) / n}}</script><p>is called a <strong>large-sample test for proportion</strong>.</p>
+<p>We reject at significance level $\alpha$</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}
+{H_{0} : p=p_{0} \ \text { if } \ |Z|>z_{\alpha / 2}} \\ 
+{H_{0} : p \leq p_{0} \ \text { if }  \ Z>z_{\alpha}} \\ 
+{H_{0} : p \geq p_{0} \ \text { if } \  Z<-z_{\alpha}}
+\end{array}</script><h3 id="2-6-3-Comparing-Two-Hypothesis"><a href="#2-6-3-Comparing-Two-Hypothesis" class="headerlink" title="2.6.3 Comparing Two Hypothesis"></a>2.6.3 Comparing Two Hypothesis</h3><p><strong>Point estimator for $p_1 - p_2$</strong>:</p>
+<script type="math/tex; mode=display">
+\widehat{p_{1}-p_{2}}=\hat{p}_{1}-\hat{p}_{2}=X_1/n_1 - X_2/n_2</script><p><strong>Confidence Interval on $p_1  - p_2$</strong>:</p>
+<script type="math/tex; mode=display">
+\hat{p}_{1}-\hat{p}_{2} \pm z_{\alpha / 2} \sqrt{\frac{\hat{p}_{1}\left(1-\hat{p}_{1}\right)}{n_{1}}+\frac{\hat{p}_{2}\left(1-\hat{p}_{2}\right)}{n_{2}}}</script><p>which is valid for large sample sizes.</p>
+<h3 id="2-6-4-Test-for-comparing-two-proportions"><a href="#2-6-4-Test-for-comparing-two-proportions" class="headerlink" title="2.6.4 Test for comparing two proportions"></a>2.6.4 Test for comparing two proportions</h3><p>The test</p>
+<script type="math/tex; mode=display">
+Z=\frac{\hat{p}_{1}-\hat{p}_{2}-\left(p_{1}-p_{2}\right)_{0}}{\sqrt{\frac{\hat{p}_{1}\left(1-\hat{p}_{1}\right)}{n_{1}}+\frac{\hat{p}_{2}\left(1-\hat{p}_{2}\right)}{n_{2}}}}</script><p>is called a <strong>large-sample test for differences in proportions.</strong></p>
+<p>We reject at significance level $\alpha$</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : p_{1}-p_{2}=\left(p_{1}-p_{2}\right)_{0} \text { if }|Z|>z_{\alpha / 2}} \\ {H_{0} : p_{1}-p_{2} \leq\left(p_{1}-p_{2}\right)_{0} \text { if } Z>z_{\alpha}} \\ {H_{0} : p_{1}-p_{2} \geq\left(p_{1}-p_{2}\right)_{0} \text { if } Z<-z_{\alpha}}\end{array}</script><h4 id="Pooled-Test-for-Equality-of-Proportions"><a href="#Pooled-Test-for-Equality-of-Proportions" class="headerlink" title="Pooled Test for Equality of Proportions:"></a><strong>Pooled Test for Equality of Proportions</strong>:</h4><p><strong>Pooled estimator for $p$ when $p_1 = p_2$</strong>:</p>
+<script type="math/tex; mode=display">
+\hat{p}=\frac{n_{1} \hat{p}_{1}+n_{2} \hat{p}_{2}}{n_{1}+n_{2}}</script><p><strong>pooled large-sample test for equality of proportions</strong>:</p>
+<script type="math/tex; mode=display">
+Z=\frac{\hat{p}_{1}-\hat{p}_{2}}{\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_{1}}+\frac{1}{n_{2}}\right)}}</script><p>We reject at significance level $\alpha$</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : p_{1}=p_{2} \text { if }|Z|>z_{\alpha / 2}} \\ {H_{0} : p_{1} \leq p_{2} \text { if } Z>z_{\alpha}} \\ {H_{0} : p_{1} \geq p_{2} \text { if } Z<-z_{\alpha}}\end{array}</script>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/05/04/statistics/Tests-for-Mean-Median-and-Variance-of-a-Single-Sample/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack Kin">
+      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
+      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack Kin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/04/statistics/Tests-for-Mean-Median-and-Variance-of-a-Single-Sample/" class="post-title-link" itemprop="url">Tests for Mean, Median and Variance of a Single Sample</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-04 00:14:31 / Modified: 00:15:49" itemprop="dateCreated datePublished" datetime="2019-05-04T00:14:31+08:00">2019-05-04</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/statistics/" itemprop="url" rel="index"><span itemprop="name">statistics</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="2-5-Tests-for-Mean-Median-and-Variance-of-a-Single-Sample"><a href="#2-5-Tests-for-Mean-Median-and-Variance-of-a-Single-Sample" class="headerlink" title="2.5 Tests for Mean, Median and Variance of a Single Sample"></a>2.5 Tests for Mean, Median and Variance of a Single Sample</h2><h3 id="2-5-1-Hypothesis-and-Significant-Tests-On-The-Mean"><a href="#2-5-1-Hypothesis-and-Significant-Tests-On-The-Mean" class="headerlink" title="2.5.1 Hypothesis and Significant Tests On The Mean"></a>2.5.1 Hypothesis and Significant Tests On The Mean</h3><h4 id="Z-Test"><a href="#Z-Test" class="headerlink" title="Z Test"></a>Z Test</h4><p>==用于 variance 已知的情况==</p>
+<h4 id="T-Test"><a href="#T-Test" class="headerlink" title="T Test"></a>T Test</h4><p>==用于 variance 未知的情况==</p>
+<script type="math/tex; mode=display">
+T_{n-1} = \dfrac{\overline{X} - \mu_0}{S/\sqrt{n}}</script><p>We reject at significance level $\alpha$:</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : \mu=\mu_{0} \text { if }\left|T_{n-1}\right|>t_{\alpha / 2, n-1}} \\ {H_{0} : \mu \leq \mu_{0} \text { if } T_{n-1}>t_{\alpha, n-1}} \\ {H_{0} : \mu \geq \mu_{0} \text { if } T_{n-1}<-t_{\alpha, n-1}}\end{array}</script><p>The T-distribution can be used in the presence of large sample sizes for the distribution of the sample mean even if the underlying distribution is non-normal.</p>
+<h3 id="2-5-2-Hypothesis-and-Significant-Tests-on-The-Variance"><a href="#2-5-2-Hypothesis-and-Significant-Tests-on-The-Variance" class="headerlink" title="2.5.2 Hypothesis and Significant Tests on The Variance"></a>2.5.2 Hypothesis and Significant Tests on The Variance</h3><h4 id="The-Chi-Squared-Test"><a href="#The-Chi-Squared-Test" class="headerlink" title="The Chi-Squared Test"></a>The Chi-Squared Test</h4><script type="math/tex; mode=display">
+\chi_{n-1}^{2}=\frac{(n-1) S^{2}}{\sigma_{0}^{2}}</script><p>We reject at significance level $\alpha$:</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : \sigma=\sigma_{0} \text { if } \chi_{n-1}^{2}>\chi_{\alpha / 2, n-1}^{2} \text { or } \chi_{n-1}^{2}<\chi_{1-\alpha / 2, n-1}^{2}} \\ {H_{0} : \sigma \leq \sigma_{0} \text { if } \chi_{n-1}^{2}>\chi_{\alpha, n-1}^{2}} \\ {H_{0} : \sigma \geq \sigma_{0} \text { if } \chi_{n-1}^{2}<\chi_{1-\alpha, n-1}^{2}}\end{array}</script><p>用chi-squared之前必须检验 normality of the data, 如果 the data is non-normal, 只能用其他方法</p>
+<h3 id="2-5-3-Alternative-Nonparametric-Methods"><a href="#2-5-3-Alternative-Nonparametric-Methods" class="headerlink" title="2.5.3 Alternative Nonparametric Methods"></a>2.5.3 Alternative Nonparametric Methods</h3><p>The terms “nonparametric” and “distribution free” are often interchangeably.</p>
+<p>When in doubt, use a nonparametric test!</p>
+<p>==以下两个test能用于$X$ is not normally distributed 并且 sample size is small的情况==</p>
+<h4 id="Sign-Test-for-the-Median"><a href="#Sign-Test-for-the-Median" class="headerlink" title="Sign Test for the Median"></a>Sign Test for the Median</h4><p>Recall that for a continuous distribution, the <strong>median</strong> for a random variable is defined to be the value of $M$ such that</p>
+<script type="math/tex; mode=display">
+P[X<M]=P[X>M]=1 / 2</script><p><strong>Sign Test</strong></p>
+<p>Let $X<em>{1}, \ldots, X</em>{n}$ be a random sample of size $n$ from an arbitrary continuous distribution and let</p>
+<script type="math/tex; mode=display">
+Q_{+}=\#\left\{X_{k} : X_{k}-M_{0}>0\right\}, \quad Q_{-}=\#\left\{X_{k} : X_{k}-M_{0}<0\right\}</script><p>We reject at significance level $\alpha$ :</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{ H_{0} : M \leq M_{0} \text { if } Q_{-} \text { is too small to have occurred by chance, }} \\ { H_{0} : M \geq M_{0} \text { if } Q_{+} \text { is too small to have occurred by chance, }} \\ { H_{0} : M=M_{0} \text { if } Q :=\min \left(Q_{-}, Q_{+}\right) \text { is too small to have occurred by chance. }}\end{array}</script><h4 id="Wilcoxon-Signed-Rank-Test"><a href="#Wilcoxon-Signed-Rank-Test" class="headerlink" title="Wilcoxon Signed Rank Test"></a>Wilcoxon Signed Rank Test</h4><p>Let</p>
+<script type="math/tex; mode=display">
+W_{+}=\sum_{R_{i}>0} R_{i}, \quad\left|W_{-}\right|=\sum_{R_{i}<0}\left|R_{i}\right|</script><p>We reject at significance level $\alpha$ :</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : M \leq M_{0} \text { if } W_{-} \text { is too small to have occurred by chance, }} \\ {H_{0} : M \geq M_{0} \text { if } W_{+} \text { is too small to have occurred by chance, }} \\ {H_{0} : M=M_{0} \text { if } W=\min \left(W_{+},\left|W_{-}\right|\right) \text { is too small to have occurred by chance}}\end{array}</script><p>For large sample sizes, $W$ is approximately normally distributed with</p>
+<script type="math/tex; mode=display">
+E[W]=\frac{n(n+1)}{4}, \quad \operatorname{Var} W=\frac{n(n+1)(2 n+1)}{24}</script>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/05/04/statistics/Newman-Pearson-Decision-Theory/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack Kin">
+      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
+      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack Kin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/04/statistics/Newman-Pearson-Decision-Theory/" class="post-title-link" itemprop="url">Newman-Pearson Decision Theory</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-04 00:12:50 / Modified: 00:13:44" itemprop="dateCreated datePublished" datetime="2019-05-04T00:12:50+08:00">2019-05-04</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/statistics/" itemprop="url" rel="index"><span itemprop="name">statistics</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="2-3-Newman-Pearson-Decision-Theory"><a href="#2-3-Newman-Pearson-Decision-Theory" class="headerlink" title="2.3 Newman-Pearson Decision Theory"></a>2.3 Newman-Pearson Decision Theory</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Decision\Fact</th>
+<th>$H_0$ 成立</th>
+<th>$H_1$ 成立</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不拒绝$ H_0$ (接受$H_0 $)</td>
+<td>不犯错</td>
+<td>Type II error</td>
+</tr>
+<tr>
+<td>拒绝$ H_0$ (接受$H_1$)</td>
+<td>Type I error</td>
+<td>不犯错</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned} \alpha & =P[\text { Type } | \text { error }]\\&=P\left[\text { reject } H_{0} | H_{0} \text { true }\right] \\ &=P\left[\text { accept } H_{1} | H_{0} \text { true }\right] \end{aligned}</script><script type="math/tex; mode=display">
+\begin{aligned} \beta & =P[\text { Type } \| \text { error }]\\
+&=P\left[\text { fail to reject } H_{0} | H_{1} \text { true }\right] \\ &=P\left[\text { accept } H_{0} | H_{1} \text { true }\right] \end{aligned}</script><script type="math/tex; mode=display">
+\begin{aligned} \text { Power } : &=1-\beta\\
+&=P\left[\text { reject } H_{0} | H_{1} \text { true }\right] \\ &=P\left[\text { accept } H_{1} | H_{1} \text { true] }\right.\end{aligned}</script><p>​    </p>
+<p><strong>Significant Test (显著性检验)：</strong> 只限制第一类错误</p>
+<p>$\alpha$ ：显著性水平</p>
+<p>$H_0$ 的提法：</p>
+<p>​    原则一： 将受保护的对象设为$ H_0$。E.g. 已经存在的事实/ 错误拒绝会带来很大后果的事情</p>
+<p>​    原则二： 如果希望“证明”某个命题，就取相反结论或者其中一部分作为$ H_0$</p>
+<p>​    原则三： 假设检验的”拒绝$ H_0$“结果不能比“不拒绝$ H_0$”的结论更有保证。（$\alpha$ 要小）</p>
+<h3 id="2-3-1-alpha-and-the-Critical-Region"><a href="#2-3-1-alpha-and-the-Critical-Region" class="headerlink" title="2.3.1 $\alpha$ and the Critical Region:"></a>2.3.1 $\alpha$ and the Critical Region:</h3><script type="math/tex; mode=display">
+\overline{X} \neq \mu \pm z_{\alpha / 2} \frac{\sigma}{\sqrt{n}}</script><p>其中$\mu$ 是总体均值，$\overline{X}$是样本均值</p>
+<p>范围内: reject $H_0$ $\Rightarrow$ the decision will be wrong with a probability of at most $\alpha$%.</p>
+<p>范围外: accept $H_0$</p>
+<h3 id="2-3-2-beta-and-the-Sample-Size"><a href="#2-3-2-beta-and-the-Sample-Size" class="headerlink" title="2.3.2 $\beta$ and the Sample Size:"></a>2.3.2 $\beta$ and the Sample Size:</h3><p>settings:   $H<em>{0} : \mu=\mu</em>{0}, \quad H<em>{1} :\left|\mu-\mu</em>{0}\right|&gt;\delta$</p>
+<p>Suppose that the true value of the mean is $\mu=\mu_{0}+\delta, \delta&gt;0$. Then the test statistic </p>
+<script type="math/tex; mode=display">
+Z=\frac{\overline{X}-\mu_{0}}{\sigma / \sqrt{n}}</script><p>will then follow a normal distribution with  unit variance and mean $\delta \sqrt{n} / \sigma$. </p>
+<p>Suppose that the critical and $\alpha$ have been fixed. we will <strong>fail to reject $H_0$</strong> if </p>
+<script type="math/tex; mode=display">
+-z_{\alpha / 2} \leq Z \leq z_{\alpha / 2}</script><p>then, </p>
+<script type="math/tex; mode=display">
+P\left[\text { fail to reject } H_{0} | \mu=\mu_{0}+\delta\right]
+\approx \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{z_{\alpha / 2}-\delta \sqrt{n} / \sigma} e^{-t^{2} / 2} d t</script><p>Let us suppose $H<em>{1}$ is true, i.e., $\left|\mu-\mu</em>{0}\right|&gt;\delta .$ Then</p>
+<script type="math/tex; mode=display">
+\begin{aligned} 
+\beta &=P\left[\text { fail to reject } H_{0} | H_{1} \text { true }\right] \\ & \leq P\left[\text { fail to reject } H_{0} | \mu=\mu_{0}+\delta\right] \\
+& = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{-z_{\beta}} e^{-t^{2} / 2} d t
+\end{aligned}</script><p>where</p>
+<script type="math/tex; mode=display">
+-z_{\beta} \approx z_{\alpha / 2}-\delta \sqrt{n} / \sigma</script><p>or</p>
+<script type="math/tex; mode=display">
+n \approx \frac{\left(z_{\alpha / 2}+z_{\beta}\right)^{2} \sigma^{2}}{\delta^{2}}</script><h3 id="2-3-3-OC-curve-操作特性曲线"><a href="#2-3-3-OC-curve-操作特性曲线" class="headerlink" title="2.3.3 OC curve (操作特性曲线)"></a>2.3.3 OC curve (操作特性曲线)</h3><p>待补充……</p>
+<h3 id="2-3-4-Acceptance-Sampling"><a href="#2-3-4-Acceptance-Sampling" class="headerlink" title="2.3.4 Acceptance Sampling"></a>2.3.4 Acceptance Sampling</h3><p>$\Pi_{}$: The true but unknown proportion of defectives</p>
+<p> $\Pi<em>{0}$: We will accept the lot if the true proportion of defectives is less than some specified $\Pi</em>{0}$</p>
+<p>$N$: lot size </p>
+<p>$n$: sample size </p>
+<p>c: acceptance number.( If the number of defective item in the sample exceeds c, the lot is rejected. Otherwise it is accepted)</p>
+<p>Hypothesis test:</p>
+<script type="math/tex; mode=display">
+H_{0} : \Pi \leq \Pi_{0,}, \quad H_{1} : \Pi>\Pi_{1}</script><p><strong>producer’s risk</strong> $\alpha $: Type I error $\Rightarrow$ reject an acceptable lot.</p>
+<p><strong>consumer’s risk</strong> $\beta $: Type II error $\Rightarrow$ fail to reject an unacceptable lot.</p>
 
           
         
@@ -596,7 +1243,7 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
                 
               
 
-              <time title="Created: 2019-05-03 01:32:54 / Modified: 23:39:15" itemprop="dateCreated datePublished" datetime="2019-05-03T01:32:54+08:00">2019-05-03</time>
+              <time title="Created: 2019-05-03 01:32:54 / Modified: 01:55:21" itemprop="dateCreated datePublished" datetime="2019-05-03T01:32:54+08:00">2019-05-03</time>
             
 
             
@@ -769,12 +1416,24 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
                 
               
 
-              <time title="Created: 2019-05-03 01:30:47 / Modified: 01:35:51" itemprop="dateCreated datePublished" datetime="2019-05-03T01:30:47+08:00">2019-05-03</time>
+              <time title="Created: 2019-05-03 01:30:47" itemprop="dateCreated datePublished" datetime="2019-05-03T01:30:47+08:00">2019-05-03</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-04 00:46:54" itemprop="dateModified" datetime="2019-05-04T00:46:54+08:00">2019-05-04</time>
               
             
           </span>
@@ -833,7 +1492,7 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
 P[L_1 \leq \theta \leq L_2] = 1- \alpha</script><p><strong>Confidence interval on $\mu$ when $\sigma^2 $ is known</strong>:</p>
 <script type="math/tex; mode=display">
 \overline{X} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}}</script><p><strong>Joint Sampling of Mean and Variance</strong>:</p>
-<p>Let $X<em>{1}, \ldots, X</em>{n}, n \geq 2,$ be a random sample of size n  from a normal distribution with mean $\mu$ and variance $\sigma^{2}$ . Then:</p>
+<p>Let $X_{1}, \ldots, X_{n}, n \geq 2​$,  be a random sample of size n  from a normal distribution with mean $\mu​$ and variance $\sigma^{2}​$ . Then:</p>
 <script type="math/tex; mode=display">
 \begin{array}{l}{\text { 1. The sample mean } \overline{X} \text { is independent of the sample variance } S^{2} \text { , }} \\ {\text { 2. } \overline{X} \text { is normally distributed with mean } \mu \text { and variance } \sigma^{2} / n,} \\ {\text { 3. }(n-1) S^{2} / \sigma^{2} \text { is chi-squared distributed with } n-1 \text { degrees of freedom. }}\end{array}</script><p>Furthermore, if in a given situation we assume that X and S2 are independently distributed we are essentially assuming that the population is normally distributed.</p>
 <p><strong>Interval Estimation of Variability:</strong></p>
@@ -845,7 +1504,7 @@ T_{\gamma}=\frac{Z}{\sqrt{\chi_{\gamma}^{2} / \gamma}}</script><p>is said to fol
 <p>The density:</p>
 <script type="math/tex; mode=display">
 f_{T_{\gamma}}(t)=\frac{\Gamma((\gamma+1) / 2)}{\Gamma(\gamma / 2) \sqrt{\pi \gamma}}\left(1+\frac{t^{2}}{\gamma}\right)^{-\frac{\gamma+1}{2}}</script><p><strong>Theorem</strong>:</p>
-<p>Let $X<em>{1}, X</em>{2},\ldots, X_{n}$ be a random sample from a normal distribution with $\mu$ and $\sigma$. Then the random variable:</p>
+<p>Let $X_{1}, X_{2},$ … , $X_{n}$  be a random sample from a normal distribution with $\mu$ and $\sigma$. Then the random variable:</p>
 <script type="math/tex; mode=display">
 T_{n-1}=\frac{\overline{X}-\mu}{S / \sqrt{n}}</script><p>follows a T distribution with n-1 degrees of freedom.</p>
 <p>A $100(1-\alpha)\%$ confidence interval on $\sigma^2$ is given by:</p>
@@ -1656,507 +2315,6 @@ f(x)=\left\{\begin{array}{ll}{\alpha \beta x^{\beta-1} e^{-\alpha x^{\beta}},} &
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/probability/Normal-Approximation-to-the-Binomial-Distributions/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jack Kin">
-      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
-      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jack Kin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/29/probability/Normal-Approximation-to-the-Binomial-Distributions/" class="post-title-link" itemprop="url">Normal Approximation to the Binomial Distributions</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-29 02:05:19 / Modified: 02:08:52" itemprop="dateCreated datePublished" datetime="2019-03-29T02:05:19+08:00">2019-03-29</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/probability/" itemprop="url" rel="index"><span itemprop="name">probability</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="4-6-Normal-Approximation-to-the-Binomial-Distributions"><a href="#4-6-Normal-Approximation-to-the-Binomial-Distributions" class="headerlink" title="4.6 Normal Approximation to the Binomial Distributions"></a>4.6 Normal Approximation to the Binomial Distributions</h2><p>Let $X$ be binomial with parameters $n$ and $p$. For large $n$, $X$ is approximately normal with mean $\mu = np$ and variance $\sigma^2 = np(1-p)$.</p>
-<script type="math/tex; mode=display">
-P[X=x]=\frac{n !}{x !(n-x) !} p^{x} q^{n-x} \approx \frac{1}{\sqrt{n p q} \sqrt{2 \pi}} e^{-\dfrac{(x-n p)^{2}}{2 n p q}}</script><p>The approximation is good if $p$ is close to 0.5 and $n&gt;10$. Otherwise, we require that</p>
-<script type="math/tex; mode=display">
-n p>5 \quad \text { if } p \leq 1 / 2 \quad \text { or } \quad n(1-p)>5 \quad \text { if } p>1 / 2</script><p>we can approximate the <strong>sum</strong> over all $x \leq y$ by integrating to y + 1/2:</p>
-<script type="math/tex; mode=display">
-P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p^{x}(1-p)^{n-x} \approx \Phi\left(\frac{y+1 / 2-n p}{\sqrt{n p(1-p)}}\right)</script><p>This additional term 1/2 is known as the <strong>half-unit correction</strong> for the normal approximation to the cumulative binomial distribution function.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/probability/Normal-Distribution/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jack Kin">
-      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
-      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jack Kin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/29/probability/Normal-Distribution/" class="post-title-link" itemprop="url">Normal Distribution</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-29 02:04:32 / Modified: 02:15:38" itemprop="dateCreated datePublished" datetime="2019-03-29T02:04:32+08:00">2019-03-29</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/probability/" itemprop="url" rel="index"><span itemprop="name">probability</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="4-4-Normal-Distribution"><a href="#4-4-Normal-Distribution" class="headerlink" title="4.4 Normal Distribution"></a>4.4 Normal Distribution</h2><script type="math/tex; mode=display">
-f_{X}(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-((x-\mu) / \sigma)^{2} / 2} \qquad \sigma>0</script><script type="math/tex; mode=display">
-E[X] = \mu</script><script type="math/tex; mode=display">
-\text{Var}[X] = \sigma^2</script><script type="math/tex; mode=display">
-m_{X} : \mathbb{R} \rightarrow \mathbb{R}, \quad m_{X}(t)=e^{\mu t+\sigma^{2} t^{2} / 2}</script><h3 id="Standard-Normal-Distribution"><a href="#Standard-Normal-Distribution" class="headerlink" title="Standard Normal Distribution"></a>Standard Normal Distribution</h3><p><strong>Definition</strong>: normally distributed random variable with parameters $\mu$= 0 and $\sigma$ = 1 is called a standard normal random variable and denoted by Z.</p>
-<p><strong>Theorem</strong>: $Z = \dfrac{X - \mu}{\sigma}​$ has standard normal distribution.</p>
-<h2 id="4-5-Normal-Probability-Rule-and-Chebyshev’s-Inequality"><a href="#4-5-Normal-Probability-Rule-and-Chebyshev’s-Inequality" class="headerlink" title="4.5 Normal Probability Rule and Chebyshev’s Inequality"></a>4.5 Normal Probability Rule and Chebyshev’s Inequality</h2><script type="math/tex; mode=display">
-\begin{aligned} P[-\sigma<X-\mu<\sigma] &=0.68 \\ P[-2 \sigma<X-\mu<2 \sigma] &=0.95 \\ P[-3 \sigma<X-\mu<3 \sigma] &=0.997 \end{aligned}</script><p><strong>Chebyshev’s Inequality</strong>:</p>
-<script type="math/tex; mode=display">
-P[|X-\mu| \geq m \sigma] \leq \frac{1}{m^{2}}</script>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/03/29/probability/Chi-Squared-Distribution/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jack Kin">
-      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
-      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jack Kin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/29/probability/Chi-Squared-Distribution/" class="post-title-link" itemprop="url">Chi-Squared Distribution</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-29 02:04:20 / Modified: 02:07:52" itemprop="dateCreated datePublished" datetime="2019-03-29T02:04:20+08:00">2019-03-29</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/probability/" itemprop="url" rel="index"><span itemprop="name">probability</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Chi-Squared-Distribution"><a href="#Chi-Squared-Distribution" class="headerlink" title="Chi-Squared Distribution"></a>Chi-Squared Distribution</h3><p>Let $\gamma \in \mathbb{N} $. A continuous random variable $\left(\chi<em>{\gamma}^{2}, f</em>{X}\right)$ with density</p>
-<script type="math/tex; mode=display">
-f_{\gamma}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\gamma / 2) 2^{\alpha}} x^{\gamma / 2-1} e^{-x / 2},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right.</script><p>is said to follow a chi-squared distribution with $\gamma$ <strong>degrees of freedom</strong>.</p>
-<p>the chi-squared distribution is simply that of a gamma random variable with  $\beta$= 2 and $\alpha$ =<br>=$\gamma /2 $, hence, we see that</p>
-<script type="math/tex; mode=display">
-E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi_{\gamma}^{2}\right]=2 \gamma</script>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2205,7 +2363,7 @@ E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-count">25</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2261,7 +2419,9 @@ E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi
                     
                       
                     
-                    <span class="site-state-item-count">11</span>
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -2503,6 +2663,8 @@ E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi
       
     
       
+        
+      
     
       
     
@@ -2551,7 +2713,7 @@ E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi
       }
   });
 </script>
-<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <style>
 .MathJax_Display {

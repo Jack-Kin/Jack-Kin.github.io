@@ -96,25 +96,25 @@
 
 
 
-  <meta name="description" content="2.2 Fisher’s Hypothesis TestWe consider a single hypothesis that compares a population parameter $\theta $  (总体参数) to a given null value $\theta_0$. This hypothesis will be denoted by $H_0$ and is cal">
-<meta name="keywords" content="Fisher Test,Hypothesis Test">
+  <meta name="description" content="2.5 Tests for Mean, Median and Variance of a Single Sample2.5.1 Hypothesis and Significant Tests On The MeanZ Test==用于 variance 已知的情况== T Test==用于 variance 未知的情况==  T_{n-1} = \dfrac{\overline{X} - \mu">
+<meta name="keywords" content="Hypothesis Test">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Fisher&#39;s Hypothesis Test">
-<meta property="og:url" content="https://Jack-Kin.github.io/2019/05/03/Fisher-s-Hypothesis-Test/index.html">
+<meta property="og:title" content="Tests for Mean, Median and Variance of a Single Sample">
+<meta property="og:url" content="https://Jack-Kin.github.io/2019/05/04/statistics/Tests-for-Mean-Median-and-Variance-of-a-Single-Sample/index.html">
 <meta property="og:site_name" content="Jack Kin">
-<meta property="og:description" content="2.2 Fisher’s Hypothesis TestWe consider a single hypothesis that compares a population parameter $\theta $  (总体参数) to a given null value $\theta_0$. This hypothesis will be denoted by $H_0$ and is cal">
+<meta property="og:description" content="2.5 Tests for Mean, Median and Variance of a Single Sample2.5.1 Hypothesis and Significant Tests On The MeanZ Test==用于 variance 已知的情况== T Test==用于 variance 未知的情况==  T_{n-1} = \dfrac{\overline{X} - \mu">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-05-02T17:55:21.561Z">
+<meta property="og:updated_time" content="2019-05-03T16:15:49.335Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Fisher&#39;s Hypothesis Test">
-<meta name="twitter:description" content="2.2 Fisher’s Hypothesis TestWe consider a single hypothesis that compares a population parameter $\theta $  (总体参数) to a given null value $\theta_0$. This hypothesis will be denoted by $H_0$ and is cal">
+<meta name="twitter:title" content="Tests for Mean, Median and Variance of a Single Sample">
+<meta name="twitter:description" content="2.5 Tests for Mean, Median and Variance of a Single Sample2.5.1 Hypothesis and Significant Tests On The MeanZ Test==用于 variance 已知的情况== T Test==用于 variance 未知的情况==  T_{n-1} = \dfrac{\overline{X} - \mu">
 
 
 
 
 
 
-  <link rel="canonical" href="https://Jack-Kin.github.io/2019/05/03/Fisher-s-Hypothesis-Test/">
+  <link rel="canonical" href="https://Jack-Kin.github.io/2019/05/04/statistics/Tests-for-Mean-Median-and-Variance-of-a-Single-Sample/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>Fisher's Hypothesis Test | Jack Kin</title>
+  <title>Tests for Mean, Median and Variance of a Single Sample | Jack Kin</title>
   
 
 
@@ -378,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/05/03/Fisher-s-Hypothesis-Test/">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/05/04/statistics/Tests-for-Mean-Median-and-Variance-of-a-Single-Sample/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jack Kin">
@@ -395,7 +395,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Fisher's Hypothesis Test
+          <h1 class="post-title" itemprop="name headline">Tests for Mean, Median and Variance of a Single Sample
 
               
             
@@ -421,7 +421,7 @@
                 
               
 
-              <time title="Created: 2019-05-03 01:32:54 / Modified: 01:55:21" itemprop="dateCreated datePublished" datetime="2019-05-03T01:32:54+08:00">2019-05-03</time>
+              <time title="Created: 2019-05-04 00:14:31 / Modified: 00:15:49" itemprop="dateCreated datePublished" datetime="2019-05-04T00:14:31+08:00">2019-05-04</time>
             
 
             
@@ -478,20 +478,33 @@
       
 
       
-        <h2 id="2-2-Fisher’s-Hypothesis-Test"><a href="#2-2-Fisher’s-Hypothesis-Test" class="headerlink" title="2.2 Fisher’s Hypothesis Test"></a>2.2 Fisher’s Hypothesis Test</h2><p>We consider a single hypothesis that compares a population parameter $\theta $  (总体参数) to a given null value $\theta_0$. This hypothesis will be denoted by $H_0$ and is called the null hypothesis.</p>
-<p>Our goal is to find statistical evidence that allow us to reject $H_0$. </p>
-<h3 id="2-2-1-One-tailed-test"><a href="#2-2-1-One-tailed-test" class="headerlink" title="2.2.1 One-tailed test"></a>2.2.1 One-tailed test</h3><script type="math/tex; mode=display">
-H_{0} : \theta \leq \theta_{0} \quad \text { or } \quad H_{0} : \theta \geq \theta_{0}</script><h3 id="2-2-2-Two-tailed-test"><a href="#2-2-2-Two-tailed-test" class="headerlink" title="2.2.2 Two-tailed test"></a>2.2.2 Two-tailed test</h3><script type="math/tex; mode=display">
-H_0 :\theta = \theta_{0}</script><h3 id="2-2-3-P-value"><a href="#2-2-3-P-value" class="headerlink" title="2.2.3 P-value"></a>2.2.3 P-value</h3><p>The P-value is an upper bound of the probability of obtaining the data if $H_0$ is true.</p>
-<p>If $D$ represents the statistical data, </p>
+        <h2 id="2-5-Tests-for-Mean-Median-and-Variance-of-a-Single-Sample"><a href="#2-5-Tests-for-Mean-Median-and-Variance-of-a-Single-Sample" class="headerlink" title="2.5 Tests for Mean, Median and Variance of a Single Sample"></a>2.5 Tests for Mean, Median and Variance of a Single Sample</h2><h3 id="2-5-1-Hypothesis-and-Significant-Tests-On-The-Mean"><a href="#2-5-1-Hypothesis-and-Significant-Tests-On-The-Mean" class="headerlink" title="2.5.1 Hypothesis and Significant Tests On The Mean"></a>2.5.1 Hypothesis and Significant Tests On The Mean</h3><h4 id="Z-Test"><a href="#Z-Test" class="headerlink" title="Z Test"></a>Z Test</h4><p>==用于 variance 已知的情况==</p>
+<h4 id="T-Test"><a href="#T-Test" class="headerlink" title="T Test"></a>T Test</h4><p>==用于 variance 未知的情况==</p>
 <script type="math/tex; mode=display">
-P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
-<p>We say that we <strong>reject $H_0$ at the [P-value] level of significance</strong>.</p>
-<h3 id="2-2-4-Fisher-Test的问题"><a href="#2-2-4-Fisher-Test的问题" class="headerlink" title="2.2.4 Fisher Test的问题"></a>2.2.4 Fisher Test的问题</h3><p>A small P-value 不能推出 $H_0$ is false.</p>
-<p>In hypothesis test, we want to argue that</p>
+T_{n-1} = \dfrac{\overline{X} - \mu_0}{S/\sqrt{n}}</script><p>We reject at significance level $\alpha$:</p>
 <script type="math/tex; mode=display">
-\text{If P then Q; Q is unlikely, therefore P is unlikely}</script><p>which is obviously wrong.</p>
-
+\begin{array}{l}{H_{0} : \mu=\mu_{0} \text { if }\left|T_{n-1}\right|>t_{\alpha / 2, n-1}} \\ {H_{0} : \mu \leq \mu_{0} \text { if } T_{n-1}>t_{\alpha, n-1}} \\ {H_{0} : \mu \geq \mu_{0} \text { if } T_{n-1}<-t_{\alpha, n-1}}\end{array}</script><p>The T-distribution can be used in the presence of large sample sizes for the distribution of the sample mean even if the underlying distribution is non-normal.</p>
+<h3 id="2-5-2-Hypothesis-and-Significant-Tests-on-The-Variance"><a href="#2-5-2-Hypothesis-and-Significant-Tests-on-The-Variance" class="headerlink" title="2.5.2 Hypothesis and Significant Tests on The Variance"></a>2.5.2 Hypothesis and Significant Tests on The Variance</h3><h4 id="The-Chi-Squared-Test"><a href="#The-Chi-Squared-Test" class="headerlink" title="The Chi-Squared Test"></a>The Chi-Squared Test</h4><script type="math/tex; mode=display">
+\chi_{n-1}^{2}=\frac{(n-1) S^{2}}{\sigma_{0}^{2}}</script><p>We reject at significance level $\alpha$:</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : \sigma=\sigma_{0} \text { if } \chi_{n-1}^{2}>\chi_{\alpha / 2, n-1}^{2} \text { or } \chi_{n-1}^{2}<\chi_{1-\alpha / 2, n-1}^{2}} \\ {H_{0} : \sigma \leq \sigma_{0} \text { if } \chi_{n-1}^{2}>\chi_{\alpha, n-1}^{2}} \\ {H_{0} : \sigma \geq \sigma_{0} \text { if } \chi_{n-1}^{2}<\chi_{1-\alpha, n-1}^{2}}\end{array}</script><p>用chi-squared之前必须检验 normality of the data, 如果 the data is non-normal, 只能用其他方法</p>
+<h3 id="2-5-3-Alternative-Nonparametric-Methods"><a href="#2-5-3-Alternative-Nonparametric-Methods" class="headerlink" title="2.5.3 Alternative Nonparametric Methods"></a>2.5.3 Alternative Nonparametric Methods</h3><p>The terms “nonparametric” and “distribution free” are often interchangeably.</p>
+<p>When in doubt, use a nonparametric test!</p>
+<p>==以下两个test能用于$X$ is not normally distributed 并且 sample size is small的情况==</p>
+<h4 id="Sign-Test-for-the-Median"><a href="#Sign-Test-for-the-Median" class="headerlink" title="Sign Test for the Median"></a>Sign Test for the Median</h4><p>Recall that for a continuous distribution, the <strong>median</strong> for a random variable is defined to be the value of $M$ such that</p>
+<script type="math/tex; mode=display">
+P[X<M]=P[X>M]=1 / 2</script><p><strong>Sign Test</strong></p>
+<p>Let $X<em>{1}, \ldots, X</em>{n}$ be a random sample of size $n$ from an arbitrary continuous distribution and let</p>
+<script type="math/tex; mode=display">
+Q_{+}=\#\left\{X_{k} : X_{k}-M_{0}>0\right\}, \quad Q_{-}=\#\left\{X_{k} : X_{k}-M_{0}<0\right\}</script><p>We reject at significance level $\alpha$ :</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{ H_{0} : M \leq M_{0} \text { if } Q_{-} \text { is too small to have occurred by chance, }} \\ { H_{0} : M \geq M_{0} \text { if } Q_{+} \text { is too small to have occurred by chance, }} \\ { H_{0} : M=M_{0} \text { if } Q :=\min \left(Q_{-}, Q_{+}\right) \text { is too small to have occurred by chance. }}\end{array}</script><h4 id="Wilcoxon-Signed-Rank-Test"><a href="#Wilcoxon-Signed-Rank-Test" class="headerlink" title="Wilcoxon Signed Rank Test"></a>Wilcoxon Signed Rank Test</h4><p>Let</p>
+<script type="math/tex; mode=display">
+W_{+}=\sum_{R_{i}>0} R_{i}, \quad\left|W_{-}\right|=\sum_{R_{i}<0}\left|R_{i}\right|</script><p>We reject at significance level $\alpha$ :</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}{H_{0} : M \leq M_{0} \text { if } W_{-} \text { is too small to have occurred by chance, }} \\ {H_{0} : M \geq M_{0} \text { if } W_{+} \text { is too small to have occurred by chance, }} \\ {H_{0} : M=M_{0} \text { if } W=\min \left(W_{+},\left|W_{-}\right|\right) \text { is too small to have occurred by chance}}\end{array}</script><p>For large sample sizes, $W$ is approximately normally distributed with</p>
+<script type="math/tex; mode=display">
+E[W]=\frac{n(n+1)}{4}, \quad \operatorname{Var} W=\frac{n(n+1)(2 n+1)}{24}</script>
       
     </div>
 
@@ -514,8 +527,6 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
       
         <div class="post-tags">
           
-            <a href="/tags/Fisher-Test/" rel="tag"># Fisher Test</a>
-          
             <a href="/tags/Hypothesis-Test/" rel="tag"># Hypothesis Test</a>
           
         </div>
@@ -529,8 +540,8 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/03/statistics/Fisher-s-Hypothesis-Test/" rel="next" title="Fisher's Hypothesis Test">
-                <i class="fa fa-chevron-left"></i> Fisher's Hypothesis Test
+              <a href="/2019/05/04/statistics/Newman-Pearson-Decision-Theory/" rel="next" title="Newman-Pearson Decision Theory">
+                <i class="fa fa-chevron-left"></i> Newman-Pearson Decision Theory
               </a>
             
           </div>
@@ -538,6 +549,10 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/04/statistics/Inferences-on-Proportions/" rel="prev" title=" Inferences on Proportions">
+                 Inferences on Proportions <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -608,7 +623,7 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-count">25</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -664,7 +679,9 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
                     
                       
                     
-                    <span class="site-state-item-count">11</span>
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -748,7 +765,7 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-Fisher’s-Hypothesis-Test"><span class="nav-number">1.</span> <span class="nav-text">2.2 Fisher’s Hypothesis Test</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1-One-tailed-test"><span class="nav-number">1.1.</span> <span class="nav-text">2.2.1 One-tailed test</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2-Two-tailed-test"><span class="nav-number">1.2.</span> <span class="nav-text">2.2.2 Two-tailed test</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3-P-value"><span class="nav-number">1.3.</span> <span class="nav-text">2.2.3 P-value</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-4-Fisher-Test的问题"><span class="nav-number">1.4.</span> <span class="nav-text">2.2.4 Fisher Test的问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5-Tests-for-Mean-Median-and-Variance-of-a-Single-Sample"><span class="nav-number">1.</span> <span class="nav-text">2.5 Tests for Mean, Median and Variance of a Single Sample</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-1-Hypothesis-and-Significant-Tests-On-The-Mean"><span class="nav-number">1.1.</span> <span class="nav-text">2.5.1 Hypothesis and Significant Tests On The Mean</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Z-Test"><span class="nav-number">1.1.1.</span> <span class="nav-text">Z Test</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#T-Test"><span class="nav-number">1.1.2.</span> <span class="nav-text">T Test</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-2-Hypothesis-and-Significant-Tests-on-The-Variance"><span class="nav-number">1.2.</span> <span class="nav-text">2.5.2 Hypothesis and Significant Tests on The Variance</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#The-Chi-Squared-Test"><span class="nav-number">1.2.1.</span> <span class="nav-text">The Chi-Squared Test</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-3-Alternative-Nonparametric-Methods"><span class="nav-number">1.3.</span> <span class="nav-text">2.5.3 Alternative Nonparametric Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Sign-Test-for-the-Median"><span class="nav-number">1.3.1.</span> <span class="nav-text">Sign Test for the Median</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Wilcoxon-Signed-Rank-Test"><span class="nav-number">1.3.2.</span> <span class="nav-text">Wilcoxon Signed Rank Test</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -893,7 +910,7 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
   
@@ -918,53 +935,6 @@ P = P[D | \ H_0]</script><p>and we will reject $H_0$ if the value is small.</p>
   
   
 
-  
-    
-      <script type="text/x-mathjax-config">
-  
-
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
-      processEscapes: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    },
-    TeX: {
-      
-      equationNumbers: {
-        autoNumber: 'AMS'
-      }
-    }
-  });
-  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
-    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
-      if (data.display) {
-        var next = data.script.nextSibling;
-        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
-        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
-      }
-    });
-  });
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-      for (i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-  });
-</script>
-<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-<style>
-.MathJax_Display {
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-
-    
   
 
 
