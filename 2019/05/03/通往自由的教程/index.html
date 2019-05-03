@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false,"dimmer":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="通往自由的教程前言本文介绍自搭梯子的方法， 嫌麻烦可以直接使用NordVPN等付费软件。 起这个名字的原因是怕被ban (自欺欺人)。 参考了前人的经验。 本文非常详细适合小白。 搭建过程如下：  租界VPS 安装ssh远程登陆客户端 通过rrsmu.sh脚本远程安装ShadowsocksR 安装SSR本地客户端，科学上网  What’s VPS (可以跳过)VPS（Virtual Private">
+<meta name="keywords" content="hhh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通往自由的教程">
+<meta property="og:url" content="https://Jack-Kin.github.io/2019/05/03/通往自由的教程/index.html">
+<meta property="og:site_name" content="Jack Kin">
+<meta property="og:description" content="通往自由的教程前言本文介绍自搭梯子的方法， 嫌麻烦可以直接使用NordVPN等付费软件。 起这个名字的原因是怕被ban (自欺欺人)。 参考了前人的经验。 本文非常详细适合小白。 搭建过程如下：  租界VPS 安装ssh远程登陆客户端 通过rrsmu.sh脚本远程安装ShadowsocksR 安装SSR本地客户端，科学上网  What’s VPS (可以跳过)VPS（Virtual Private">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENtDl6.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENtc0e.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENtgTH.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENtRkd.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENNunO.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENNdHg.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENU2RI.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENUgJA.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENUcid.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENaGOf.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENa86P.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENa6mT.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENdmj0.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENduuV.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/03/ENdD4H.png">
+<meta property="og:updated_time" content="2019-05-02T17:17:53.313Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="通往自由的教程">
+<meta name="twitter:description" content="通往自由的教程前言本文介绍自搭梯子的方法， 嫌麻烦可以直接使用NordVPN等付费软件。 起这个名字的原因是怕被ban (自欺欺人)。 参考了前人的经验。 本文非常详细适合小白。 搭建过程如下：  租界VPS 安装ssh远程登陆客户端 通过rrsmu.sh脚本远程安装ShadowsocksR 安装SSR本地客户端，科学上网  What’s VPS (可以跳过)VPS（Virtual Private">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/05/03/ENtDl6.png">
+
+
+
+
+
+
+  <link rel="canonical" href="https://Jack-Kin.github.io/2019/05/03/通往自由的教程/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>通往自由的教程 | Jack Kin</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jack Kin</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Keep learning</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>Schedule</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>Sitemap</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Jack-Kin.github.io/2019/05/03/通往自由的教程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack Kin">
+      <meta itemprop="description" content="UMJI-SJTU. A garbage sophomore">
+      <meta itemprop="image" content="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack Kin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">通往自由的教程
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-03 01:17:00 / Modified: 01:17:53" itemprop="dateCreated datePublished" datetime="2019-05-03T01:17:00+08:00">2019-05-03</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tool/" itemprop="url" rel="index"><span itemprop="name">tool</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tool/vpn/" itemprop="url" rel="index"><span itemprop="name">vpn</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="通往自由的教程"><a href="#通往自由的教程" class="headerlink" title="通往自由的教程"></a>通往自由的教程</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文介绍自搭梯子的方法， 嫌麻烦可以直接使用NordVPN等付费软件。</p>
+<p>起这个名字的原因是怕被ban (自欺欺人)。</p>
+<p>参考了前人的经验。</p>
+<p>本文非常详细适合小白。</p>
+<p>搭建过程如下：</p>
+<ol>
+<li>租界VPS</li>
+<li>安装ssh远程登陆客户端</li>
+<li>通过rrsmu.sh脚本远程安装ShadowsocksR</li>
+<li>安装SSR本地客户端，科学上网</li>
+</ol>
+<h2 id="What’s-VPS-可以跳过"><a href="#What’s-VPS-可以跳过" class="headerlink" title="What’s VPS (可以跳过)"></a>What’s VPS (可以跳过)</h2><p>VPS（Virtual Private Server 虚拟专用服务器）技术，将一台服务器分割成多个虚拟专享服务器的优质服务。实现VPS的技术分为容器技术，和虚拟化技术。在容器或虚拟机中，每个VPS都可分配独立公网IP地址、独立操作系统、实现不同VPS间磁盘空间、内存、CPU资源、进程和系统配置的隔离，为用户和应用程序模拟出“独占”使用计算资源的体验。VPS可以像独立服务器一样，重装操作系统，安装程序，单独重启服务器。VPS为使用者提供了管理配置的自由，可用于企业虚拟化，也可以用于IDC资源租用。</p>
+<p>简单说，可以vps就是你自己的一台服务器，你可以随时远程登陆(手机都可以，很方便)，在上面部署任何服务，比如建个网站博客之类的，做个邮件服务器，或者就是当个ftp服务器，做个云盘等等，这就不细说了，但是同样你也可以用它搭建梯子，让它成为你自己独享的一台代理服务器。当这个服务器ip在国外的时候，不受墙的限制，你利用这个服务器的梯子科学上网的时候，相当于是用它代理，比如你要看油管的视频，其实是它代替你上油管，视频先加载在你的代理服务器上，服务器在转给你，因为墙也不是所有国外ip都封锁，基本上你新申请的vps是不会被墙的，所以你和你自己的vps之间的链接是正常的（当然之后用的时间越久流量越大，被封的概率也很高，不过不要担心，这时候我们换个ip就好啦）。这样，就实现了科学上网的功能。</p>
+<p>好了讲完原理，看看怎么操作，第一步租个vps，vps当然不是免费的，你也可以把它理解为一台在国外，你可以用它远程上网的，永远不关机的电脑。（所以你要是想不花钱的话，可以直接找你在国外上学的同学，用他的电脑搭梯子，也是可行的)</p>
+<h2 id="VPS租借"><a href="#VPS租借" class="headerlink" title="VPS租借"></a>VPS租借</h2><p>推荐两个网站：</p>
+<ol>
+<li>Digitalocean</li>
+<li>Vultr</li>
+</ol>
+<p>两个网站都可以换ip, 都只计算单项流量</p>
+<p>以下为vultr vps租借步骤：</p>
+<ol>
+<li>充值</li>
+</ol>
+<p><img src="https://s2.ax1x.com/2019/05/03/ENtDl6.png" alt="ENtDl6.png"></p>
+<ol>
+<li><p>购买具体server</p>
+<ol>
+<li>点击➕</li>
+</ol>
+<p><img src="https://s2.ax1x.com/2019/05/03/ENtc0e.png" alt="ENtc0e.png"></p>
+<ol>
+<li>选择远端server location </li>
+</ol>
+<p><img src="https://s2.ax1x.com/2019/05/03/ENtgTH.png" alt="ENtgTH.png"></p>
+<ol>
+<li>选择server系统and server size (记得不要选ipv6 only!)</li>
+</ol>
+<p><img src="https://s2.ax1x.com/2019/05/03/ENtRkd.png" alt="ENtRkd.png"></p>
+</li>
+</ol>
+<p>p.s. 以上这种选择最便宜吧应该</p>
+<p>点击确定了并且installing好之后是这样的</p>
+<p>[<img src="https://s2.ax1x.com/2019/05/03/ENNunO.png" alt="ENNunO.png"></p>
+<p>点进去看server information</p>
+<p>[<img src="https://s2.ax1x.com/2019/05/03/ENNdHg.png" alt="ENNdHg.png"></p>
+<p>IP Address, username 和 password之后有用！</p>
+<h2 id="ssh客户端安装"><a href="#ssh客户端安装" class="headerlink" title="ssh客户端安装"></a>ssh客户端安装</h2><p>ssh客户端就是我们本地连接服务器的工具，windows下ssh客户端主要有Putty和xshell，我一般用putty，直接百度搜&amp;下载就好 (www.putty.org), 点开如下图</p>
+<p><a href="https://imgchr.com/i/ENU2RI" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/03/ENU2RI.png" alt="ENU2RI.png"></a></p>
+<p>hostname填刚才邮件的ip，点open，会出现login的登陆画面</p>
+<p><a href="https://imgchr.com/i/ENUgJA" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/03/ENUgJA.png" alt="ENUgJA.png"></a></p>
+<p>填root，之后会要求出入密码，直接复制粘贴刚刚的password就好，注意！！！ putty里粘贴直接在光标后面点鼠标右键， 然后enter等一会儿就好</p>
+<p>第一次登陆会要求改密码，按照提示改就好。</p>
+<p><a href="https://imgchr.com/i/ENUcid" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/03/ENUcid.png" alt="ENUcid.png"></a></p>
+<p>这样就代表成功了, 不要关putty，下一步还要用</p>
+<h2 id="ssrmu脚本远端安装"><a href="#ssrmu脚本远端安装" class="headerlink" title="ssrmu脚本远端安装"></a>ssrmu脚本远端安装</h2><p>通过rrsmu.sh脚本安装ShadowsocksR (通过putty安装在购买的服务器中)</p>
+<p>先明确一点，我们是要安装shadowsocksR这个软件，rrsmu是一个便捷的安装配置ShadowsocksR的脚本。总之，通过上一步登录到我们的vps后我们直接复制黏贴下面的命令</p>
+<p>wget -N —no-check-certificate <a href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh</a> &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</p>
+<p>下图第二行 为我输入以上命令+按了enter的效果</p>
+<p><a href="https://imgchr.com/i/ENaGOf" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/03/ENaGOf.png" alt="ENaGOf.png"></a></p>
+<p>如果提示</p>
+<p>bash: wget: command not found</p>
+<p>的话，就先执行下面的再执行第一步的命令</p>
+<p>yum -y install wget</p>
+<p>然后就进入了ssrmu.sh脚本了，脚本有很多功能，如下</p>
+<p><a href="https://imgchr.com/i/ENa86P" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/03/ENa86P.png" alt="ENa86P.png"></a></p>
+<p>我这里第一步选择1安装shadowsocksR, 小白的我们之后一路回车就好了</p>
+<p>最后会出现配置完成的画面，复制好提示出现的ssr链接复制保存在剪贴板里 （CTRL + C），之后就要安装ssr客户端了。</p>
+<h2 id="SSR客户端本地安装"><a href="#SSR客户端本地安装" class="headerlink" title="SSR客户端本地安装"></a>SSR客户端本地安装</h2><p>安装SSR客户端，科学上网</p>
+<p>windows下的ssr客户端数不胜数，百度一个下载就好，一般下载下来是这样的图标</p>
+<p><a href="https://imgchr.com/i/ENa6mT" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/03/ENa6mT.png" alt="ENa6mT.png"></a></p>
+<p>打开以后，在桌面右下角任务栏出现，点右键，点从粘贴板导入</p>
+<p><a href="https://imgchr.com/i/ENdmj0" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/03/ENdmj0.png" alt="ENdmj0.png"></a></p>
+<p>检查一下服务器选项中ip是否和购买的服务器相同。</p>
+<p>介绍一下：直连模式 = 翻不了&amp;省流量， PAC = 只能外网&amp;省流量， 全局 = 都可以&amp;费流量</p>
+<p><a href="https://imgchr.com/i/ENduuV" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/03/ENduuV.png" alt="ENduuV.png"></a></p>
+<p>好了我们Google测试测试</p>
+<p><a href="https://imgchr.com/i/ENdD4H" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/03/ENdD4H.png" alt="ENdD4H.png"></a></p>
+<p>Congratulations！大功告成！</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/29/probability/Reliability/" rel="next" title="Reliability">
+                <i class="fa fa-chevron-left"></i> Reliability
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/03/statistics/Simultaneous-Estimation-of-the-Mean-and-Variance/" rel="prev" title="Simultaneous Estimation of the Mean and Variance">
+                Simultaneous Estimation of the Mean and Variance <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://s2.ax1x.com/2019/03/15/AEWkPx.jpg" alt="Jack Kin">
+            
+              <p class="site-author-name" itemprop="name">Jack Kin</p>
+              <p class="site-description motion-element" itemprop="description">UMJI-SJTU. A garbage sophomore</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/Jack-Kin" title="GitHub &rarr; https://github.com/Jack-Kin" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="/jinzhejian@outlook.com" title="E-Mail &rarr; jinzhejian@outlook.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/JACK__KIN" title="Weibo &rarr; https://weibo.com/JACK__KIN" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.zhihu.com/people/kin-jack/" title="知乎 &rarr; https://www.zhihu.com/people/kin-jack/" rel="noopener" target="_blank"><i class="fa fa-fw fa-zhihu"></i>知乎</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#通往自由的教程"><span class="nav-number">1.</span> <span class="nav-text">通往自由的教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-VPS-可以跳过"><span class="nav-number">1.2.</span> <span class="nav-text">What’s VPS (可以跳过)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VPS租借"><span class="nav-number">1.3.</span> <span class="nav-text">VPS租借</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ssh客户端安装"><span class="nav-number">1.4.</span> <span class="nav-text">ssh客户端安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ssrmu脚本远端安装"><span class="nav-number">1.5.</span> <span class="nav-text">ssrmu脚本远端安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSR客户端本地安装"><span class="nav-number">1.6.</span> <span class="nav-text">SSR客户端本地安装</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jack Kin</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.0.1</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
+
+
+  
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
