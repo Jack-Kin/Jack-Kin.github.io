@@ -484,20 +484,20 @@
           
             <h2 id="2-7-Comparing-Two-Means-and-Two-Variances"><a href="#2-7-Comparing-Two-Means-and-Two-Variances" class="headerlink" title="2.7 Comparing Two Means and Two Variances"></a>2.7 Comparing Two Means and Two Variances</h2><h3 id="2-7-1-Point-Estimation-Independent-Samples"><a href="#2-7-1-Point-Estimation-Independent-Samples" class="headerlink" title="2.7.1 Point Estimation: Independent Samples"></a>2.7.1 Point Estimation: Independent Samples</h3><p><strong>Point Estimator for the Difference Between Two Means</strong></p>
 <script type="math/tex; mode=display">
-\widehat{\mu_{1}-\mu_{2}} :=\widehat{\mu}_{1}-\widehat{\mu}_{2}=\overline{X}_{1}-\overline{X}_{2}</script><p><strong>Distribution of  $\overline{X}<em>{1}-\overline{X}</em>{2}$</strong></p>
-<p>2.9.1. Theorem. Let $\overline{X}<em>{1}$ and $\overline{X}</em>{2}$ be the sample means based on independent random samples of sizes $n<em>{1}$ and $n</em>{2}$ drawn from normal distributions with means $\mu<em>{1}$ and $\mu</em>{2}$ and variance $\sigma<em>{1}^{2}$ and $\sigma</em>{2}^{2},$ respectively. Then $\overline{X}<em>{1}-\overline{X}</em>{2}$ is normal with mean $\mu<em>{1}-\mu</em>{2}$ and variance $\sigma<em>{1}^{2} / n</em>{1}+\sigma<em>{2}^{2} / n</em>{2}$. i.e,</p>
+\widehat{\mu_{1}-\mu_{2}} :=\widehat{\mu}_{1}-\widehat{\mu}_{2}=\overline{X}_{1}-\overline{X}_{2}</script><p><strong>Distribution of  $\overline{X}_{1}-\overline{X}_{2}$</strong></p>
+<p>2.9.1. Theorem. Let $\overline{X}_{1}$ and $\overline{X}_{2}$ be the sample means based on independent random samples of sizes $n_{1}$ and $n_{2}$ drawn from normal distributions with means $\mu_{1}$ and $\mu_{2}$ and variance $\sigma_{1}^{2}$ and $\sigma_{2}^{2},$ respectively. Then $\overline{X}_{1}-\overline{X}_{2}$ is normal with mean $\mu_{1}-\mu_{2}$ and variance $\sigma_{1}^{2} / n_{1}+\sigma_{2}^{2} / n_{2}$. i.e,</p>
 <script type="math/tex; mode=display">
 \frac{\overline{X}_{1}-\overline{X}_{2}-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{\sigma_{1}^{2} / n_{1}+\sigma_{2}^{2} / n_{2}}}</script><p>is a standard normal random variable.</p>
 <p>As usual, the Central Limit theorem allows us to apply this result even to non-normal populations if we have large sample sizes.</p>
-<h3 id="2-7-2-Comparing-Variances-The-F-Distribution"><a href="#2-7-2-Comparing-Variances-The-F-Distribution" class="headerlink" title="2.7.2 Comparing Variances: The F Distribution"></a>2.7.2 Comparing Variances: The F Distribution</h3><p>Let $X<em>{\gamma</em>{1}}^{2}$ and $X<em>{\gamma</em>{2}}^{2}$ be independent chi-squared random variables with $\gamma<em>{1}$ and $\gamma</em>{2}$ degrees of freedom:</p>
+<h3 id="2-7-2-Comparing-Variances-The-F-Distribution"><a href="#2-7-2-Comparing-Variances-The-F-Distribution" class="headerlink" title="2.7.2 Comparing Variances: The F Distribution"></a>2.7.2 Comparing Variances: The F Distribution</h3><p>Let $X_{\gamma_{1}}^{2}$ and $X_{\gamma_{2}}^{2}$ be independent chi-squared random variables with $\gamma_{1}$ and $\gamma_{2}$ degrees of freedom:</p>
 <script type="math/tex; mode=display">
 F_{\gamma_{1}, \gamma_{2}}=\frac{X_{\gamma_{1}}^{2} / \gamma_{1}}{X_{\gamma_{2}}^{2} / \gamma_{2}}</script><p>is said to follorw an F-distribution。</p>
 <p>Remark:</p>
 <script type="math/tex; mode=display">
 P\left[F_{\gamma_{1}, \gamma_{2}}<x\right]=P\left[1 / F_{\gamma_{1}, \gamma_{2}}>1 / x\right]=1-P\left[F_{\gamma_{2}, \gamma_{1}}<1 / x\right]</script><script type="math/tex; mode=display">
-f_{1-\alpha, \gamma_{1}, \gamma_{2}}=\frac{1}{f_{\alpha, \gamma_{2}, \gamma_{1}}}</script><p>If $\sigma<em>{1}^{2}=\sigma</em>{2}^{2},$ then the statistic</p>
+f_{1-\alpha, \gamma_{1}, \gamma_{2}}=\frac{1}{f_{\alpha, \gamma_{2}, \gamma_{1}}}</script><p>If $\sigma_{1}^{2}=\sigma_{2}^{2},$ then the statistic</p>
 <script type="math/tex; mode=display">
-\frac{S_1^2}{S_2^2}</script><p>follows an $F$ -distribution with $n<em>{1}-1$ and $n</em>{2}-1$ degrees of freedom.</p>
+\frac{S_1^2}{S_2^2}</script><p>follows an $F$ -distribution with $n_{1}-1$ and $n_{2}-1$ degrees of freedom.</p>
 <p><strong>The F -Test</strong></p>
 <script type="math/tex; mode=display">
 F_{n_{1}-1, n_{2}-1}=\frac{S_{1}^{2}}{S_{2}^{2}}</script><p>We reject at significance level $\alpha $:</p>
@@ -704,7 +704,7 @@ n=\frac{z_{\alpha / 2}^{2} \hat{p}(1-\hat{p})}{d^{2}}</script><p>given $d=z_{\al
 <p><strong>Sample size for estimating $p$, no prior estimate available</strong></p>
 <script type="math/tex; mode=display">
 n=\frac{z_{\alpha / 2}^{2}}{4 d^{2}}</script><p>will ensure $|p-\hat{p}|&lt;d$ with 100$(1-\alpha) \%$ confidence.</p>
-<h3 id="2-6-2-Testing-Hypothesis-On-a-Proportion"><a href="#2-6-2-Testing-Hypothesis-On-a-Proportion" class="headerlink" title="2.6.2 Testing Hypothesis On a Proportion"></a>2.6.2 Testing Hypothesis On a Proportion</h3><p>Let $X<em>{1}, \ldots, X</em>{n}$ be a random sample of size $n$ from a Bernoulli distribution with parameter $p$ and let $\hat{p}=\overline{X}$ denote the sample mean. Then any test based on the statistic</p>
+<h3 id="2-6-2-Testing-Hypothesis-On-a-Proportion"><a href="#2-6-2-Testing-Hypothesis-On-a-Proportion" class="headerlink" title="2.6.2 Testing Hypothesis On a Proportion"></a>2.6.2 Testing Hypothesis On a Proportion</h3><p>Let $X_{1}, \ldots, X_{n}$ be a random sample of size $n$ from a Bernoulli distribution with parameter $p$ and let $\hat{p}=\overline{X}$ denote the sample mean. Then any test based on the statistic</p>
 <script type="math/tex; mode=display">
 Z=\frac{\hat{p}-p_{0}}{\sqrt{p_{0}\left(1-p_{0}\right) / n}}</script><p>is called a <strong>large-sample test for proportion</strong>.</p>
 <p>We reject at significance level $\alpha$</p>
@@ -905,7 +905,7 @@ T_{n-1} = \dfrac{\overline{X} - \mu_0}{S/\sqrt{n}}</script><p>We reject at signi
 <h4 id="Sign-Test-for-the-Median"><a href="#Sign-Test-for-the-Median" class="headerlink" title="Sign Test for the Median"></a>Sign Test for the Median</h4><p>Recall that for a continuous distribution, the <strong>median</strong> for a random variable is defined to be the value of $M$ such that</p>
 <script type="math/tex; mode=display">
 P[X<M]=P[X>M]=1 / 2</script><p><strong>Sign Test</strong></p>
-<p>Let $X<em>{1}, \ldots, X</em>{n}$ be a random sample of size $n$ from an arbitrary continuous distribution and let</p>
+<p>Let $X_{1}, \ldots, X_{n}$ be a random sample of size $n$ from an arbitrary continuous distribution and let</p>
 <script type="math/tex; mode=display">
 Q_{+}=\#\left\{X_{k} : X_{k}-M_{0}>0\right\}, \quad Q_{-}=\#\left\{X_{k} : X_{k}-M_{0}<0\right\}</script><p>We reject at significance level $\alpha$ :</p>
 <script type="math/tex; mode=display">
@@ -1114,7 +1114,7 @@ E[W]=\frac{n(n+1)}{4}, \quad \operatorname{Var} W=\frac{n(n+1)(2 n+1)}{24}</scri
 \overline{X} \neq \mu \pm z_{\alpha / 2} \frac{\sigma}{\sqrt{n}}</script><p>其中$\mu$ 是总体均值，$\overline{X}$是样本均值</p>
 <p>范围内: reject $H_0$ $\Rightarrow$ the decision will be wrong with a probability of at most $\alpha$%.</p>
 <p>范围外: accept $H_0$</p>
-<h3 id="2-3-2-beta-and-the-Sample-Size"><a href="#2-3-2-beta-and-the-Sample-Size" class="headerlink" title="2.3.2 $\beta$ and the Sample Size:"></a>2.3.2 $\beta$ and the Sample Size:</h3><p>settings:   $H<em>{0} : \mu=\mu</em>{0}, \quad H<em>{1} :\left|\mu-\mu</em>{0}\right|&gt;\delta$</p>
+<h3 id="2-3-2-beta-and-the-Sample-Size"><a href="#2-3-2-beta-and-the-Sample-Size" class="headerlink" title="2.3.2 $\beta$ and the Sample Size:"></a>2.3.2 $\beta$ and the Sample Size:</h3><p>settings:   $H_{0} : \mu=\mu_{0}, \quad H_{1} :\left|\mu-\mu_{0}\right|&gt;\delta$</p>
 <p>Suppose that the true value of the mean is $\mu=\mu_{0}+\delta, \delta&gt;0$. Then the test statistic </p>
 <script type="math/tex; mode=display">
 Z=\frac{\overline{X}-\mu_{0}}{\sigma / \sqrt{n}}</script><p>will then follow a normal distribution with  unit variance and mean $\delta \sqrt{n} / \sigma$. </p>
@@ -1123,7 +1123,7 @@ Z=\frac{\overline{X}-\mu_{0}}{\sigma / \sqrt{n}}</script><p>will then follow a n
 -z_{\alpha / 2} \leq Z \leq z_{\alpha / 2}</script><p>then, </p>
 <script type="math/tex; mode=display">
 P\left[\text { fail to reject } H_{0} | \mu=\mu_{0}+\delta\right]
-\approx \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{z_{\alpha / 2}-\delta \sqrt{n} / \sigma} e^{-t^{2} / 2} d t</script><p>Let us suppose $H<em>{1}$ is true, i.e., $\left|\mu-\mu</em>{0}\right|&gt;\delta .$ Then</p>
+\approx \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{z_{\alpha / 2}-\delta \sqrt{n} / \sigma} e^{-t^{2} / 2} d t</script><p>Let us suppose $H_{1}$ is true, i.e., $\left|\mu-\mu_{0}\right|&gt;\delta .$ Then</p>
 <script type="math/tex; mode=display">
 \begin{aligned} 
 \beta &=P\left[\text { fail to reject } H_{0} | H_{1} \text { true }\right] \\ & \leq P\left[\text { fail to reject } H_{0} | \mu=\mu_{0}+\delta\right] \\
@@ -1134,7 +1134,7 @@ P\left[\text { fail to reject } H_{0} | \mu=\mu_{0}+\delta\right]
 <script type="math/tex; mode=display">
 n \approx \frac{\left(z_{\alpha / 2}+z_{\beta}\right)^{2} \sigma^{2}}{\delta^{2}}</script><h3 id="2-3-3-OC-curve-操作特性曲线"><a href="#2-3-3-OC-curve-操作特性曲线" class="headerlink" title="2.3.3 OC curve (操作特性曲线)"></a>2.3.3 OC curve (操作特性曲线)</h3><p>待补充……</p>
 <h3 id="2-3-4-Acceptance-Sampling"><a href="#2-3-4-Acceptance-Sampling" class="headerlink" title="2.3.4 Acceptance Sampling"></a>2.3.4 Acceptance Sampling</h3><p>$\Pi_{}$: The true but unknown proportion of defectives</p>
-<p> $\Pi<em>{0}$: We will accept the lot if the true proportion of defectives is less than some specified $\Pi</em>{0}$</p>
+<p> $\Pi_{0}$: We will accept the lot if the true proportion of defectives is less than some specified $\Pi_{0}$</p>
 <p>$N$: lot size </p>
 <p>$n$: sample size </p>
 <p>c: acceptance number.( If the number of defective item in the sample exceeds c, the lot is rejected. Otherwise it is accepted)</p>

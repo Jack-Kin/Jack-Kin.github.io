@@ -480,20 +480,20 @@
       
         <h2 id="2-7-Comparing-Two-Means-and-Two-Variances"><a href="#2-7-Comparing-Two-Means-and-Two-Variances" class="headerlink" title="2.7 Comparing Two Means and Two Variances"></a>2.7 Comparing Two Means and Two Variances</h2><h3 id="2-7-1-Point-Estimation-Independent-Samples"><a href="#2-7-1-Point-Estimation-Independent-Samples" class="headerlink" title="2.7.1 Point Estimation: Independent Samples"></a>2.7.1 Point Estimation: Independent Samples</h3><p><strong>Point Estimator for the Difference Between Two Means</strong></p>
 <script type="math/tex; mode=display">
-\widehat{\mu_{1}-\mu_{2}} :=\widehat{\mu}_{1}-\widehat{\mu}_{2}=\overline{X}_{1}-\overline{X}_{2}</script><p><strong>Distribution of  $\overline{X}<em>{1}-\overline{X}</em>{2}$</strong></p>
-<p>2.9.1. Theorem. Let $\overline{X}<em>{1}$ and $\overline{X}</em>{2}$ be the sample means based on independent random samples of sizes $n<em>{1}$ and $n</em>{2}$ drawn from normal distributions with means $\mu<em>{1}$ and $\mu</em>{2}$ and variance $\sigma<em>{1}^{2}$ and $\sigma</em>{2}^{2},$ respectively. Then $\overline{X}<em>{1}-\overline{X}</em>{2}$ is normal with mean $\mu<em>{1}-\mu</em>{2}$ and variance $\sigma<em>{1}^{2} / n</em>{1}+\sigma<em>{2}^{2} / n</em>{2}$. i.e,</p>
+\widehat{\mu_{1}-\mu_{2}} :=\widehat{\mu}_{1}-\widehat{\mu}_{2}=\overline{X}_{1}-\overline{X}_{2}</script><p><strong>Distribution of  $\overline{X}_{1}-\overline{X}_{2}$</strong></p>
+<p>2.9.1. Theorem. Let $\overline{X}_{1}$ and $\overline{X}_{2}$ be the sample means based on independent random samples of sizes $n_{1}$ and $n_{2}$ drawn from normal distributions with means $\mu_{1}$ and $\mu_{2}$ and variance $\sigma_{1}^{2}$ and $\sigma_{2}^{2},$ respectively. Then $\overline{X}_{1}-\overline{X}_{2}$ is normal with mean $\mu_{1}-\mu_{2}$ and variance $\sigma_{1}^{2} / n_{1}+\sigma_{2}^{2} / n_{2}$. i.e,</p>
 <script type="math/tex; mode=display">
 \frac{\overline{X}_{1}-\overline{X}_{2}-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{\sigma_{1}^{2} / n_{1}+\sigma_{2}^{2} / n_{2}}}</script><p>is a standard normal random variable.</p>
 <p>As usual, the Central Limit theorem allows us to apply this result even to non-normal populations if we have large sample sizes.</p>
-<h3 id="2-7-2-Comparing-Variances-The-F-Distribution"><a href="#2-7-2-Comparing-Variances-The-F-Distribution" class="headerlink" title="2.7.2 Comparing Variances: The F Distribution"></a>2.7.2 Comparing Variances: The F Distribution</h3><p>Let $X<em>{\gamma</em>{1}}^{2}$ and $X<em>{\gamma</em>{2}}^{2}$ be independent chi-squared random variables with $\gamma<em>{1}$ and $\gamma</em>{2}$ degrees of freedom:</p>
+<h3 id="2-7-2-Comparing-Variances-The-F-Distribution"><a href="#2-7-2-Comparing-Variances-The-F-Distribution" class="headerlink" title="2.7.2 Comparing Variances: The F Distribution"></a>2.7.2 Comparing Variances: The F Distribution</h3><p>Let $X_{\gamma_{1}}^{2}$ and $X_{\gamma_{2}}^{2}$ be independent chi-squared random variables with $\gamma_{1}$ and $\gamma_{2}$ degrees of freedom:</p>
 <script type="math/tex; mode=display">
 F_{\gamma_{1}, \gamma_{2}}=\frac{X_{\gamma_{1}}^{2} / \gamma_{1}}{X_{\gamma_{2}}^{2} / \gamma_{2}}</script><p>is said to follorw an F-distribution。</p>
 <p>Remark:</p>
 <script type="math/tex; mode=display">
 P\left[F_{\gamma_{1}, \gamma_{2}}<x\right]=P\left[1 / F_{\gamma_{1}, \gamma_{2}}>1 / x\right]=1-P\left[F_{\gamma_{2}, \gamma_{1}}<1 / x\right]</script><script type="math/tex; mode=display">
-f_{1-\alpha, \gamma_{1}, \gamma_{2}}=\frac{1}{f_{\alpha, \gamma_{2}, \gamma_{1}}}</script><p>If $\sigma<em>{1}^{2}=\sigma</em>{2}^{2},$ then the statistic</p>
+f_{1-\alpha, \gamma_{1}, \gamma_{2}}=\frac{1}{f_{\alpha, \gamma_{2}, \gamma_{1}}}</script><p>If $\sigma_{1}^{2}=\sigma_{2}^{2},$ then the statistic</p>
 <script type="math/tex; mode=display">
-\frac{S_1^2}{S_2^2}</script><p>follows an $F$ -distribution with $n<em>{1}-1$ and $n</em>{2}-1$ degrees of freedom.</p>
+\frac{S_1^2}{S_2^2}</script><p>follows an $F$ -distribution with $n_{1}-1$ and $n_{2}-1$ degrees of freedom.</p>
 <p><strong>The F -Test</strong></p>
 <script type="math/tex; mode=display">
 F_{n_{1}-1, n_{2}-1}=\frac{S_{1}^{2}}{S_{2}^{2}}</script><p>We reject at significance level $\alpha $:</p>
