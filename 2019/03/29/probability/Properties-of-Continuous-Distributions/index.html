@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Jack Kin">
 <meta property="og:description" content="C4 Continuous Distributions4.1 Continuous DensitiesLet $S$ be a sample space. A continuous  random variable is a map X: S \rightarrow \R together with a function f_X： \R \rightarrow \R , having the pr">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-28T18:02:55.541Z">
+<meta property="og:updated_time" content="2019-05-15T07:50:16.499Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Properties of Continuous Distributions">
 <meta name="twitter:description" content="C4 Continuous Distributions4.1 Continuous DensitiesLet $S$ be a sample space. A continuous  random variable is a map X: S \rightarrow \R together with a function f_X： \R \rightarrow \R , having the pr">
@@ -421,12 +421,24 @@
                 
               
 
-              <time title="Created: 2019-03-29 02:02:00 / Modified: 02:02:55" itemprop="dateCreated datePublished" datetime="2019-03-29T02:02:00+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 02:02:00" itemprop="dateCreated datePublished" datetime="2019-03-29T02:02:00+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:50:16" itemprop="dateModified" datetime="2019-05-15T15:50:16+08:00">2019-05-15</time>
               
             
           </span>
@@ -479,12 +491,13 @@
 
       
         <h1 id="C4-Continuous-Distributions"><a href="#C4-Continuous-Distributions" class="headerlink" title="C4 Continuous Distributions"></a>C4 Continuous Distributions</h1><h2 id="4-1-Continuous-Densities"><a href="#4-1-Continuous-Densities" class="headerlink" title="4.1 Continuous Densities"></a>4.1 Continuous Densities</h2><p>Let $S$ be a sample space. A <strong>continuous  random variable</strong> is a map <script type="math/tex">X: S \rightarrow \R</script> together with a function <script type="math/tex">f_X： \R \rightarrow \R</script> , having the properties that:</p>
-<pre><code>    (i)  $f _ { X } ( x ) \geq 0$ for all $x$ real
-
-    (ii)  $\int_{-\infty}^{\infty} f_{X}(x)dx = 1$
-
-    (iii)  $P[a \leq X \leq b]=\int_{a}^{b} f_{X}(x) d x$
-</code></pre><p>The function $f_X$ is called the <strong>probability density function</strong> of the random variable $X$.</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+(i) &  f _ { X } ( x ) \geq 0 \text{   for all x real}\\
+(ii) &  \int_{-\infty}^{\infty} f_{X}(x)dx = 1\\
+(iii) &  P[a \leq X \leq b]=\int_{a}^{b} f_{X}(x) d x
+\end{aligned}</script><p>The function $f_X$ is called the <strong>probability density function</strong> of the random variable $X$.</p>
+<a id="more"></a>
 <p><strong>Cumulative Distribution</strong>: </p>
 <script type="math/tex; mode=display">
 F_X(x) = P[X \leq x] = \int_{-\infty}^{x} f_{X}(t) d t</script><p><strong>Obtain the density $f_X$ from $F_X$</strong>:</p>
@@ -898,7 +911,7 @@ E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x</script
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
 
 
   
@@ -923,6 +936,53 @@ E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x</script
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
   
 
 

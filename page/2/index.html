@@ -423,12 +423,24 @@
                 
               
 
-              <time title="Created: 2019-03-29 02:05:19 / Modified: 02:08:52" itemprop="dateCreated datePublished" datetime="2019-03-29T02:05:19+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 02:05:19" itemprop="dateCreated datePublished" datetime="2019-03-29T02:05:19+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:47:08" itemprop="dateModified" datetime="2019-05-15T15:47:08+08:00">2019-05-15</time>
               
             
           </span>
@@ -481,16 +493,18 @@
 
       
         
+          <h2 id="4-6-Normal-Approximation-to-the-Binomial-Distributions"><a href="#4-6-Normal-Approximation-to-the-Binomial-Distributions" class="headerlink" title="4.6 Normal Approximation to the Binomial Distributions"></a>4.6 Normal Approximation to the Binomial Distributions</h2><p>Let $X$ be binomial with parameters $n$ and $p$. For large $n$, $X$ is approximately normal with mean $\mu = np$ and variance $\sigma^2 = np(1-p)$.</p>
+<script type="math/tex; mode=display">
+P[X=x]=\frac{n !}{x !(n-x) !} p^{x} q^{n-x} \approx \frac{1}{\sqrt{n p q} \sqrt{2 \pi}} e^{-\dfrac{(x-n p)^{2}}{2 n p q}}</script>
+          <!--noindex-->
           
-            <h2 id="4-6-Normal-Approximation-to-the-Binomial-Distributions"><a href="#4-6-Normal-Approximation-to-the-Binomial-Distributions" class="headerlink" title="4.6 Normal Approximation to the Binomial Distributions"></a>4.6 Normal Approximation to the Binomial Distributions</h2><p>Let $X$ be binomial with parameters $n$ and $p$. For large $n$, $X$ is approximately normal with mean $\mu = np$ and variance $\sigma^2 = np(1-p)$.</p>
-<script type="math/tex; mode=display">
-P[X=x]=\frac{n !}{x !(n-x) !} p^{x} q^{n-x} \approx \frac{1}{\sqrt{n p q} \sqrt{2 \pi}} e^{-\dfrac{(x-n p)^{2}}{2 n p q}}</script><p>The approximation is good if $p$ is close to 0.5 and $n&gt;10$. Otherwise, we require that</p>
-<script type="math/tex; mode=display">
-n p>5 \quad \text { if } p \leq 1 / 2 \quad \text { or } \quad n(1-p)>5 \quad \text { if } p>1 / 2</script><p>we can approximate the <strong>sum</strong> over all $x \leq y$ by integrating to y + 1/2:</p>
-<script type="math/tex; mode=display">
-P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p^{x}(1-p)^{n-x} \approx \Phi\left(\frac{y+1 / 2-n p}{\sqrt{n p(1-p)}}\right)</script><p>This additional term 1/2 is known as the <strong>half-unit correction</strong> for the normal approximation to the cumulative binomial distribution function.</p>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/probability/Normal-Approximation-to-the-Binomial-Distributions/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -590,12 +604,24 @@ P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p
                 
               
 
-              <time title="Created: 2019-03-29 02:04:32 / Modified: 02:15:38" itemprop="dateCreated datePublished" datetime="2019-03-29T02:04:32+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 02:04:32" itemprop="dateCreated datePublished" datetime="2019-03-29T02:04:32+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:47:21" itemprop="dateModified" datetime="2019-05-15T15:47:21+08:00">2019-05-15</time>
               
             
           </span>
@@ -648,18 +674,20 @@ P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p
 
       
         
-          
-            <h2 id="4-4-Normal-Distribution"><a href="#4-4-Normal-Distribution" class="headerlink" title="4.4 Normal Distribution"></a>4.4 Normal Distribution</h2><script type="math/tex; mode=display">
+          <h2 id="4-4-Normal-Distribution"><a href="#4-4-Normal-Distribution" class="headerlink" title="4.4 Normal Distribution"></a>4.4 Normal Distribution</h2><script type="math/tex; mode=display">
 f_{X}(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-((x-\mu) / \sigma)^{2} / 2} \qquad \sigma>0</script><script type="math/tex; mode=display">
 E[X] = \mu</script><script type="math/tex; mode=display">
 \text{Var}[X] = \sigma^2</script><script type="math/tex; mode=display">
-m_{X} : \mathbb{R} \rightarrow \mathbb{R}, \quad m_{X}(t)=e^{\mu t+\sigma^{2} t^{2} / 2}</script><h3 id="Standard-Normal-Distribution"><a href="#Standard-Normal-Distribution" class="headerlink" title="Standard Normal Distribution"></a>Standard Normal Distribution</h3><p><strong>Definition</strong>: normally distributed random variable with parameters $\mu$= 0 and $\sigma$ = 1 is called a standard normal random variable and denoted by Z.</p>
-<p><strong>Theorem</strong>: $Z = \dfrac{X - \mu}{\sigma}​$ has standard normal distribution.</p>
-<h2 id="4-5-Normal-Probability-Rule-and-Chebyshev’s-Inequality"><a href="#4-5-Normal-Probability-Rule-and-Chebyshev’s-Inequality" class="headerlink" title="4.5 Normal Probability Rule and Chebyshev’s Inequality"></a>4.5 Normal Probability Rule and Chebyshev’s Inequality</h2><script type="math/tex; mode=display">
-\begin{aligned} P[-\sigma<X-\mu<\sigma] &=0.68 \\ P[-2 \sigma<X-\mu<2 \sigma] &=0.95 \\ P[-3 \sigma<X-\mu<3 \sigma] &=0.997 \end{aligned}</script><p><strong>Chebyshev’s Inequality</strong>:</p>
-<script type="math/tex; mode=display">
-P[|X-\mu| \geq m \sigma] \leq \frac{1}{m^{2}}</script>
+m_{X} : \mathbb{R} \rightarrow \mathbb{R}, \quad m_{X}(t)=e^{\mu t+\sigma^{2} t^{2} / 2}</script>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/probability/Normal-Distribution/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -924,12 +952,24 @@ E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi
                 
               
 
-              <time title="Created: 2019-03-29 02:04:04 / Modified: 02:07:28" itemprop="dateCreated datePublished" datetime="2019-03-29T02:04:04+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 02:04:04" itemprop="dateCreated datePublished" datetime="2019-03-29T02:04:04+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:45:25" itemprop="dateModified" datetime="2019-05-15T15:45:25+08:00">2019-05-15</time>
               
             
           </span>
@@ -982,21 +1022,20 @@ E\left[\chi_{\gamma}^{2}\right]=\gamma, \quad \quad \operatorname{Var}\left[\chi
 
       
         
-          
-            <h3 id="Exponential-Distribution"><a href="#Exponential-Distribution" class="headerlink" title="Exponential Distribution"></a>Exponential Distribution</h3><script type="math/tex; mode=display">
+          <h3 id="Exponential-Distribution"><a href="#Exponential-Distribution" class="headerlink" title="Exponential Distribution"></a>Exponential Distribution</h3><script type="math/tex; mode=display">
 f_{\beta}(x)=\left\{\begin{array}{ll}{\beta e^{-\beta x},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \beta > 0</script><script type="math/tex; mode=display">
 E[X] = \dfrac{1}{\beta}</script><script type="math/tex; mode=display">
 \text{Var}[X] = \dfrac{1}{\beta^2}</script><script type="math/tex; mode=display">
-m_X(t) = \dfrac{1}{1-\dfrac{t}{\beta}}</script><p><strong>Connection to the Poisson Distribution</strong>:</p>
-<p>Consider a Poisson process with parameter $\lambda$. Let $W$ denote the time of the occurrence of the <strong>first</strong> event. $W$ has an exponential distribution with $\beta = 1/\lambda$.</p>
-<p><strong>Memoryless Property of the Exponential Distribution</strong>:</p>
-<script type="math/tex; mode=display">
-P[X>t+s | X>t]=P[X>s]\\
-\Leftrightarrow \dfrac{P[X>t+s, X>t]}{P[X>t]}= P[X>s]\\
-\Leftrightarrow P[X>t+s] = P[X>s]P[X>t]</script><p><strong>Time to several arrivals</strong>:</p>
-<script type="math/tex; mode=display">
-f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}</script>
+m_X(t) = \dfrac{1}{1-\dfrac{t}{\beta}}</script>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/probability/Exponential-Distribution/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1096,12 +1135,24 @@ f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}</script>
                 
               
 
-              <time title="Created: 2019-03-29 02:03:46 / Modified: 21:44:15" itemprop="dateCreated datePublished" datetime="2019-03-29T02:03:46+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 02:03:46" itemprop="dateCreated datePublished" datetime="2019-03-29T02:03:46+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:45:42" itemprop="dateModified" datetime="2019-05-15T15:45:42+08:00">2019-05-15</time>
               
             
           </span>
@@ -1154,16 +1205,19 @@ f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}</script>
 
       
         
-          
-            <h3 id="Gamma-Distribution"><a href="#Gamma-Distribution" class="headerlink" title="Gamma Distribution"></a>Gamma Distribution</h3><script type="math/tex; mode=display">
+          <h3 id="Gamma-Distribution"><a href="#Gamma-Distribution" class="headerlink" title="Gamma Distribution"></a>Gamma Distribution</h3><script type="math/tex; mode=display">
 f_{\alpha, \beta}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\alpha) \beta^{\alpha}} x^{\alpha-1} e^{-x / \beta},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \alpha>0, \beta>0</script><p>Here, </p>
 <script type="math/tex; mode=display">
-\Gamma(\alpha)=\int_{0}^{\infty} z^{\alpha-1} e^{-z} d z, \quad \alpha>0</script><p>is the Euler gamma function,   $n !=\Gamma(n+1)$ </p>
-<script type="math/tex; mode=display">
-E[X] = \alpha \beta</script><script type="math/tex; mode=display">
-\text{Var}[X] = \alpha\beta^2</script><script type="math/tex; mode=display">
-{m_{X} :(-\infty, 1 / \beta) \rightarrow \mathbb{R}, \quad m_{X}(t)=(1-\beta t)^{-\alpha}}</script>
+\Gamma(\alpha)=\int_{0}^{\infty} z^{\alpha-1} e^{-z} d z, \quad \alpha>0</script>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/probability/Gamma-Distribution/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1263,12 +1317,24 @@ E[X] = \alpha \beta</script><script type="math/tex; mode=display">
                 
               
 
-              <time title="Created: 2019-03-29 02:02:00 / Modified: 02:02:55" itemprop="dateCreated datePublished" datetime="2019-03-29T02:02:00+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 02:02:00" itemprop="dateCreated datePublished" datetime="2019-03-29T02:02:00+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:50:16" itemprop="dateModified" datetime="2019-05-15T15:50:16+08:00">2019-05-15</time>
               
             
           </span>
@@ -1321,23 +1387,22 @@ E[X] = \alpha \beta</script><script type="math/tex; mode=display">
 
       
         
-          
-            <h1 id="C4-Continuous-Distributions"><a href="#C4-Continuous-Distributions" class="headerlink" title="C4 Continuous Distributions"></a>C4 Continuous Distributions</h1><h2 id="4-1-Continuous-Densities"><a href="#4-1-Continuous-Densities" class="headerlink" title="4.1 Continuous Densities"></a>4.1 Continuous Densities</h2><p>Let $S$ be a sample space. A <strong>continuous  random variable</strong> is a map <script type="math/tex">X: S \rightarrow \R</script> together with a function <script type="math/tex">f_X： \R \rightarrow \R</script> , having the properties that:</p>
-<pre><code>    (i)  $f _ { X } ( x ) \geq 0$ for all $x$ real
-
-    (ii)  $\int_{-\infty}^{\infty} f_{X}(x)dx = 1$
-
-    (iii)  $P[a \leq X \leq b]=\int_{a}^{b} f_{X}(x) d x$
-</code></pre><p>The function $f_X$ is called the <strong>probability density function</strong> of the random variable $X$.</p>
-<p><strong>Cumulative Distribution</strong>: </p>
+          <h1 id="C4-Continuous-Distributions"><a href="#C4-Continuous-Distributions" class="headerlink" title="C4 Continuous Distributions"></a>C4 Continuous Distributions</h1><h2 id="4-1-Continuous-Densities"><a href="#4-1-Continuous-Densities" class="headerlink" title="4.1 Continuous Densities"></a>4.1 Continuous Densities</h2><p>Let $S$ be a sample space. A <strong>continuous  random variable</strong> is a map <script type="math/tex">X: S \rightarrow \R</script> together with a function <script type="math/tex">f_X： \R \rightarrow \R</script> , having the properties that:</p>
 <script type="math/tex; mode=display">
-F_X(x) = P[X \leq x] = \int_{-\infty}^{x} f_{X}(t) d t</script><p><strong>Obtain the density $f_X$ from $F_X$</strong>:</p>
-<script type="math/tex; mode=display">
-f_X(x) = F'_X(x)</script><h2 id="4-2-Expectation-and-Distribution-Parameters"><a href="#4-2-Expectation-and-Distribution-Parameters" class="headerlink" title="4.2 Expectation and Distribution Parameters"></a>4.2 Expectation and Distribution Parameters</h2><script type="math/tex; mode=display">
-\mathrm{E}[X] =\int_{-\infty}^{\infty} x \cdot f_{X}(x) d x</script><script type="math/tex; mode=display">
-E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x</script><script type="math/tex; mode=display">
-\operatorname{Var}[X] =\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]=\mathrm{E}\left[X^{2}\right]-\mathrm{E}[X]^{2}</script>
+\begin{aligned}
+(i) &  f _ { X } ( x ) \geq 0 \text{   for all x real}\\
+(ii) &  \int_{-\infty}^{\infty} f_{X}(x)dx = 1\\
+(iii) &  P[a \leq X \leq b]=\int_{a}^{b} f_{X}(x) d x
+\end{aligned}</script><p>The function $f_X$ is called the <strong>probability density function</strong> of the random variable $X$.</p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/probability/Properties-of-Continuous-Distributions/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1454,7 +1519,7 @@ E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x</script
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-03 01:34:36" itemprop="dateModified" datetime="2019-05-03T01:34:36+08:00">2019-05-03</time>
+                <time title="Modified: 2019-05-15 15:47:37" itemprop="dateModified" datetime="2019-05-15T15:47:37+08:00">2019-05-15</time>
               
             
           </span>
@@ -1615,12 +1680,24 @@ E[X] = \mu = k\\ \operatorname{Var} [X] = \sigma^2 = k</script>
                 
               
 
-              <time title="Created: 2019-03-29 01:51:16 / Modified: 01:52:06" itemprop="dateCreated datePublished" datetime="2019-03-29T01:51:16+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 01:51:16" itemprop="dateCreated datePublished" datetime="2019-03-29T01:51:16+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:46:30" itemprop="dateModified" datetime="2019-05-15T15:46:30+08:00">2019-05-15</time>
               
             
           </span>
@@ -1673,27 +1750,21 @@ E[X] = \mu = k\\ \operatorname{Var} [X] = \sigma^2 = k</script>
 
       
         
-          
-            <h2 id="3-7-Hypergeometric-Distribution"><a href="#3-7-Hypergeometric-Distribution" class="headerlink" title="3.7 Hypergeometric Distribution"></a>3.7 Hypergeometric Distribution</h2><p><strong>Hypergeometric properties</strong>:</p>
+          <h2 id="3-7-Hypergeometric-Distribution"><a href="#3-7-Hypergeometric-Distribution" class="headerlink" title="3.7 Hypergeometric Distribution"></a>3.7 Hypergeometric Distribution</h2><p><strong>Hypergeometric properties</strong>:</p>
 <ol>
-<li><p>The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.</p>
-</li>
-<li><p>Of the N objects, we want r , the other N-r do not have the trait.</p>
-</li>
-<li><p>The random variable $X$ denotes <strong>the number of objects obtained in n trials with the trait.</strong></p>
-</li>
+<li>The experiment consists of drawing a random sample of size n without replacement and without regard to order from a collection of N objects.</li>
+<li>Of the N objects, we want r , the other N-r do not have the trait.</li>
+<li>The random variable $X$ denotes <strong>the number of objects obtained in n trials with the trait.</strong></li>
 </ol>
-<p><strong>Definition ( Hypergeometric distribution)</strong>: </p>
-<script type="math/tex; mode=display">
-f(x) = \dfrac{\left( \begin{array} { c } { r } \\ { x } \end{array} \right) \left( \begin{array} { c } { N - r } \\ { n-x } \end{array} \right)}{\left( \begin{array} { c } { N } \\ { n } \end{array} \right)}  
-\qquad \qquad
-\operatorname{max}[0, n- (N-r)] \leq x \leq \operatorname{min}(n,r)</script><p><strong>Expectation and Variance for the Hypergeometric Distribution</strong>:</p>
-<script type="math/tex; mode=display">
-E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</script><p>where $p = r/N$, $q = 1 - p$</p>
-<p><strong>Approximating the Hypergeometric Distribution</strong>:</p>
-<p>If $n/N \leq 0.05$, the <strong>hypergeometric distribution</strong> can be approximated by a <strong>binomial distribution</strong> with parameters $n$ and $p=r/N$.</p>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/probability/Hypergeometric-Distribution/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1793,12 +1864,24 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
                 
               
 
-              <time title="Created: 2019-03-29 01:49:48 / Modified: 01:50:14" itemprop="dateCreated datePublished" datetime="2019-03-29T01:49:48+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 01:49:48" itemprop="dateCreated datePublished" datetime="2019-03-29T01:49:48+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:46:58" itemprop="dateModified" datetime="2019-05-15T15:46:58+08:00">2019-05-15</time>
               
             
           </span>
@@ -1851,8 +1934,7 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
 
       
         
-          
-            <h2 id="3-6-Negative-Binomial-Distribution"><a href="#3-6-Negative-Binomial-Distribution" class="headerlink" title="3.6 Negative Binomial Distribution"></a>3.6 Negative Binomial Distribution</h2><p><strong>Negative binomial properties</strong>:</p>
+          <h2 id="3-6-Negative-Binomial-Distribution"><a href="#3-6-Negative-Binomial-Distribution" class="headerlink" title="3.6 Negative Binomial Distribution"></a>3.6 Negative Binomial Distribution</h2><p><strong>Negative binomial properties</strong>:</p>
 <ol>
 <li><p>A series of trails, classed as being either ‘<strong>success</strong>‘ or ‘<strong>failure</strong>‘ (<em>Bernoulli</em> trial).</p>
 </li>
@@ -1861,20 +1943,15 @@ E[X] = \mu = np\\ \operatorname{Var} [X] = \sigma^2 = npq \dfrac{N-n}{N-1}</scri
 <li><p>The random variable $X$ denotes <strong>the number of successes needed to obtain the r trials.</strong></p>
 </li>
 </ol>
-<p><strong>E.g:</strong></p>
-<p>Sample space for an experiment in which  $r  = 3$:</p>
-<script type="math/tex; mode=display">
-S = \{ ssffffs, sffffss, ffffsss, sss, ssfs \}\</script><p>Here, $X = 7, 7, 7, 3, 4$, for $X = 7$ , there are $\left( \begin{array}{c}{ x-1 } \\ { 2 } \end{array} \right)$ ways in which $X$ can assume the value 7.</p>
-<p>The probability of an outcome for which $X = x$ is given by: </p>
-<script type="math/tex; mode=display">
-P[X = x] = \left( \begin{array}{c}{ x-1 } \\ { 2 } \end{array} \right)(1-p)^x-3p^3 \qquad x=3, 4, 5...</script><p><strong>Definition ( Negative binomial distribution)</strong>: </p>
-<script type="math/tex; mode=display">
-f(x) = \left( \begin{array}{l}{ x-1 } \\ { 2-1 } \end{array} \right) p^r(1-p)^{x-r} \qquad r=1, 2, 3,... \qquad x = r, r+1, r+2,...</script><p><strong>Negative binomial moment generating function</strong>:</p>
-<script type="math/tex; mode=display">
-m_X(t) = \dfrac{(pe^t)^r}{(1-qe^t)^r} \qquad  q = 1-p</script><p><strong>Expectation and Variance for the Negative Binomial Distribution</strong>:</p>
-<script type="math/tex; mode=display">
-E[X] = \mu = r/p \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = rq/p^2</script>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/probability/Negative-Binomial-Distribution/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1974,12 +2051,24 @@ E[X] = \mu = r/p \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = rq/p^2</s
                 
               
 
-              <time title="Created: 2019-03-29 01:48:33 / Modified: 01:49:31" itemprop="dateCreated datePublished" datetime="2019-03-29T01:48:33+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 01:48:33" itemprop="dateCreated datePublished" datetime="2019-03-29T01:48:33+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:44:58" itemprop="dateModified" datetime="2019-05-15T15:44:58+08:00">2019-05-15</time>
               
             
           </span>
@@ -2032,32 +2121,21 @@ E[X] = \mu = r/p \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = rq/p^2</s
 
       
         
-          
-            <h2 id="3-5-Binomial-Distribution"><a href="#3-5-Binomial-Distribution" class="headerlink" title="3.5 Binomial Distribution"></a>3.5 Binomial Distribution</h2><p><strong>Binomial properties</strong>:</p>
+          <h2 id="3-5-Binomial-Distribution"><a href="#3-5-Binomial-Distribution" class="headerlink" title="3.5 Binomial Distribution"></a>3.5 Binomial Distribution</h2><p><strong>Binomial properties</strong>:</p>
 <ol>
 <li>A series of trails, classed as being either ‘<strong>success</strong>‘ or ‘<strong>failure</strong>‘ (<em>Bernoulli</em> trial).</li>
 <li>The trials are <strong>identical</strong> and <strong>independent</strong>. ( in the sense that the outcome of one trial has no effect on the outcome of any other)</li>
 <li>The random variable $X$ denotes <strong>the number of successes obtained in the n trials.</strong></li>
 </ol>
-<p>Sample space for an experiment in which  $n  = 3$:</p>
-<script type="math/tex; mode=display">
-S = \{ fff, sff, fsf, ffs, ssf, sfs, sss , fss \}\</script><p>Note that:</p>
-<script type="math/tex; mode=display">
-\begin{align}
-P[X = 0] &= (1-p)^3\\
-P[X = 1] &= 3 \cdot p(1-p)^2\\
-P[X = 2] &= 3 \cdot p^2(1-p)\\
-P[X = 3] &= p^3\\
-\end{align}</script><p><strong>Definition ( Binomial distribution)</strong>: </p>
-<script type="math/tex; mode=display">
-f(x) = \left( \begin{array} { l } { n } \\ { x } \end{array} \right) p^x(1-p)^{n-x} \qquad x=0,1,2,...,n \qquad 0<p<1</script><p>We write: <script type="math/tex">X \sim \operatorname{B}(n, p)</script></p>
-<p>Specially,  <script type="math/tex">\operatorname{B}(1, p )= \operatorname{Bernoulli}(p)</script></p>
-<p><strong>Binomial moment generating function</strong>:</p>
-<script type="math/tex; mode=display">
-m_X(t) = (q+pe^t)^n \qquad  q = 1-p</script><p><strong>Expectation and Variance for the Binomial Distribution</strong>:</p>
-<script type="math/tex; mode=display">
-E[X] = \mu = np \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = npq</script>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/probability/Binomial-Distribution/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -2411,7 +2489,7 @@ E[X] = \mu = np \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = npq</scrip
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
 
 
   
@@ -2456,6 +2534,53 @@ E[X] = \mu = np \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = npq</scrip
     
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
   
 
 

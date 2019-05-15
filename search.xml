@@ -81,7 +81,7 @@
   <entry>
     <title><![CDATA[Reliability]]></title>
     <url>%2F2019%2F03%2F29%2Fprobability%2FReliability%2F</url>
-    <content type="text"><![CDATA[The reliability function, R, is defined to be the probability that the component will not fail before time t. Thus \begin{aligned} R(t) &=1-P[\text { component fails before time } t] \\ &=1-\int_{0}^{t} f(x) d x\\ &=1-F(t) \end{aligned}The hazard rate $\rho$ : \rho (t) = \dfrac{f(t)}{R(t)}Theorem: R(t) = e^{-\int_0^t \rho(x)dx}Reliability of Series and Parallel Systems: The reliability of a series system wih k components: R_{s}(t)=\prod_{i=1}^{k} R_{i}(t)The reliability of a parallel system is given by: \begin{aligned} R_{p}(t) &=1-P[\text { all components fail before } t] \\ &=1-\prod_{i=1}^{k}\left(1-R_{i}(t)\right) \end{aligned}]]></content>
+    <content type="text"><![CDATA[The reliability function, R, is defined to be the probability that the component will not fail before time t. Thus \begin{aligned} R(t) &=1-P[\text { component fails before time } t] \\ &=1-\int_{0}^{t} f(x) d x\\ &=1-F(t) \end{aligned} The hazard rate $\rho$ : \rho (t) = \dfrac{f(t)}{R(t)}Theorem: R(t) = e^{-\int_0^t \rho(x)dx}Reliability of Series and Parallel Systems: The reliability of a series system wih k components: R_{s}(t)=\prod_{i=1}^{k} R_{i}(t)The reliability of a parallel system is given by: \begin{aligned} R_{p}(t) &=1-P[\text { all components fail before } t] \\ &=1-\prod_{i=1}^{k}\left(1-R_{i}(t)\right) \end{aligned}]]></content>
       <categories>
         <category>probability</category>
       </categories>
@@ -114,7 +114,7 @@
   <entry>
     <title><![CDATA[Normal Approximation to the Binomial Distributions]]></title>
     <url>%2F2019%2F03%2F29%2Fprobability%2FNormal-Approximation-to-the-Binomial-Distributions%2F</url>
-    <content type="text"><![CDATA[4.6 Normal Approximation to the Binomial DistributionsLet $X$ be binomial with parameters $n$ and $p$. For large $n$, $X$ is approximately normal with mean $\mu = np$ and variance $\sigma^2 = np(1-p)$. P[X=x]=\frac{n !}{x !(n-x) !} p^{x} q^{n-x} \approx \frac{1}{\sqrt{n p q} \sqrt{2 \pi}} e^{-\dfrac{(x-n p)^{2}}{2 n p q}}The approximation is good if $p$ is close to 0.5 and $n&gt;10$. Otherwise, we require that n p>5 \quad \text { if } p \leq 1 / 2 \quad \text { or } \quad n(1-p)>5 \quad \text { if } p>1 / 2we can approximate the sum over all $x \leq y$ by integrating to y + 1/2: P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p^{x}(1-p)^{n-x} \approx \Phi\left(\frac{y+1 / 2-n p}{\sqrt{n p(1-p)}}\right)This additional term 1/2 is known as the half-unit correction for the normal approximation to the cumulative binomial distribution function.]]></content>
+    <content type="text"><![CDATA[4.6 Normal Approximation to the Binomial DistributionsLet $X$ be binomial with parameters $n$ and $p$. For large $n$, $X$ is approximately normal with mean $\mu = np$ and variance $\sigma^2 = np(1-p)$. P[X=x]=\frac{n !}{x !(n-x) !} p^{x} q^{n-x} \approx \frac{1}{\sqrt{n p q} \sqrt{2 \pi}} e^{-\dfrac{(x-n p)^{2}}{2 n p q}} The approximation is good if $p$ is close to 0.5 and $n&gt;10$. Otherwise, we require that n p>5 \quad \text { if } p \leq 1 / 2 \quad \text { or } \quad n(1-p)>5 \quad \text { if } p>1 / 2we can approximate the sum over all $x \leq y$ by integrating to y + 1/2: P[X \leq y]=\sum_{x=0}^{y} \left( \begin{array}{l}{n} \\ {x}\end{array}\right) p^{x}(1-p)^{n-x} \approx \Phi\left(\frac{y+1 / 2-n p}{\sqrt{n p(1-p)}}\right)This additional term 1/2 is known as the half-unit correction for the normal approximation to the cumulative binomial distribution function.]]></content>
       <categories>
         <category>probability</category>
       </categories>
@@ -125,7 +125,7 @@
   <entry>
     <title><![CDATA[Normal Distribution]]></title>
     <url>%2F2019%2F03%2F29%2Fprobability%2FNormal-Distribution%2F</url>
-    <content type="text"><![CDATA[4.4 Normal Distribution f_{X}(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-((x-\mu) / \sigma)^{2} / 2} \qquad \sigma>0 E[X] = \mu \text{Var}[X] = \sigma^2 m_{X} : \mathbb{R} \rightarrow \mathbb{R}, \quad m_{X}(t)=e^{\mu t+\sigma^{2} t^{2} / 2}Standard Normal DistributionDefinition: normally distributed random variable with parameters $\mu$= 0 and $\sigma$ = 1 is called a standard normal random variable and denoted by Z. Theorem: $Z = \dfrac{X - \mu}{\sigma}​$ has standard normal distribution. 4.5 Normal Probability Rule and Chebyshev’s Inequality \begin{aligned} P[-\sigma]]></content>
+    <content type="text"><![CDATA[4.4 Normal Distribution f_{X}(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-((x-\mu) / \sigma)^{2} / 2} \qquad \sigma>0 E[X] = \mu \text{Var}[X] = \sigma^2 m_{X} : \mathbb{R} \rightarrow \mathbb{R}, \quad m_{X}(t)=e^{\mu t+\sigma^{2} t^{2} / 2} Standard Normal DistributionDefinition: normally distributed random variable with parameters $\mu$= 0 and $\sigma$ = 1 is called a standard normal random variable and denoted by Z. Theorem: $Z = \dfrac{X - \mu}{\sigma}​$ has standard normal distribution. 4.5 Normal Probability Rule and Chebyshev’s Inequality \begin{aligned} P[-\sigma]]></content>
       <categories>
         <category>probability</category>
       </categories>
@@ -147,7 +147,7 @@
   <entry>
     <title><![CDATA[Exponential Distribution]]></title>
     <url>%2F2019%2F03%2F29%2Fprobability%2FExponential-Distribution%2F</url>
-    <content type="text"><![CDATA[Exponential Distribution f_{\beta}(x)=\left\{\begin{array}{ll}{\beta e^{-\beta x},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \beta > 0 E[X] = \dfrac{1}{\beta} \text{Var}[X] = \dfrac{1}{\beta^2} m_X(t) = \dfrac{1}{1-\dfrac{t}{\beta}}Connection to the Poisson Distribution: Consider a Poisson process with parameter $\lambda$. Let $W$ denote the time of the occurrence of the first event. $W$ has an exponential distribution with $\beta = 1/\lambda$. Memoryless Property of the Exponential Distribution: P[X>t+s | X>t]=P[X>s]\\ \Leftrightarrow \dfrac{P[X>t+s, X>t]}{P[X>t]}= P[X>s]\\ \Leftrightarrow P[X>t+s] = P[X>s]P[X>t]Time to several arrivals: f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}]]></content>
+    <content type="text"><![CDATA[Exponential Distribution f_{\beta}(x)=\left\{\begin{array}{ll}{\beta e^{-\beta x},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \beta > 0 E[X] = \dfrac{1}{\beta} \text{Var}[X] = \dfrac{1}{\beta^2} m_X(t) = \dfrac{1}{1-\dfrac{t}{\beta}} Connection to the Poisson Distribution: Consider a Poisson process with parameter $\lambda$. Let $W$ denote the time of the occurrence of the first event. $W$ has an exponential distribution with $\beta = 1/\lambda$. Memoryless Property of the Exponential Distribution: P[X>t+s | X>t]=P[X>s]\\ \Leftrightarrow \dfrac{P[X>t+s, X>t]}{P[X>t]}= P[X>s]\\ \Leftrightarrow P[X>t+s] = P[X>s]P[X>t]Time to several arrivals: f_{T_j}(t) = \lambda e^{-\lambda t} \dfrac{(\lambda t)^{j-1}}{(j-1)!}]]></content>
       <categories>
         <category>probability</category>
       </categories>
@@ -158,7 +158,7 @@
   <entry>
     <title><![CDATA[Gamma Distribution]]></title>
     <url>%2F2019%2F03%2F29%2Fprobability%2FGamma-Distribution%2F</url>
-    <content type="text"><![CDATA[Gamma Distribution f_{\alpha, \beta}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\alpha) \beta^{\alpha}} x^{\alpha-1} e^{-x / \beta},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \alpha>0, \beta>0Here, \Gamma(\alpha)=\int_{0}^{\infty} z^{\alpha-1} e^{-z} d z, \quad \alpha>0is the Euler gamma function, $n !=\Gamma(n+1)$ E[X] = \alpha \beta \text{Var}[X] = \alpha\beta^2 {m_{X} :(-\infty, 1 / \beta) \rightarrow \mathbb{R}, \quad m_{X}(t)=(1-\beta t)^{-\alpha}}]]></content>
+    <content type="text"><![CDATA[Gamma Distribution f_{\alpha, \beta}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\alpha) \beta^{\alpha}} x^{\alpha-1} e^{-x / \beta},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \alpha>0, \beta>0Here, \Gamma(\alpha)=\int_{0}^{\infty} z^{\alpha-1} e^{-z} d z, \quad \alpha>0 is the Euler gamma function, $n !=\Gamma(n+1)$ E[X] = \alpha \beta \text{Var}[X] = \alpha\beta^2 {m_{X} :(-\infty, 1 / \beta) \rightarrow \mathbb{R}, \quad m_{X}(t)=(1-\beta t)^{-\alpha}}]]></content>
       <categories>
         <category>probability</category>
       </categories>
@@ -169,7 +169,7 @@
   <entry>
     <title><![CDATA[Properties of Continuous Distributions]]></title>
     <url>%2F2019%2F03%2F29%2Fprobability%2FProperties-of-Continuous-Distributions%2F</url>
-    <content type="text"><![CDATA[C4 Continuous Distributions4.1 Continuous DensitiesLet $S$ be a sample space. A continuous random variable is a map X: S \rightarrow \R together with a function f_X： \R \rightarrow \R , having the properties that: (i) $f _ { X } ( x ) \geq 0$ for all $x$ real (ii) $\int_{-\infty}^{\infty} f_{X}(x)dx = 1$ (iii) $P[a \leq X \leq b]=\int_{a}^{b} f_{X}(x) d x$ The function $f_X$ is called the probability density function of the random variable $X$. Cumulative Distribution: F_X(x) = P[X \leq x] = \int_{-\infty}^{x} f_{X}(t) d tObtain the density $f_X$ from $F_X$: f_X(x) = F'_X(x)4.2 Expectation and Distribution Parameters \mathrm{E}[X] =\int_{-\infty}^{\infty} x \cdot f_{X}(x) d x E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x \operatorname{Var}[X] =\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]=\mathrm{E}\left[X^{2}\right]-\mathrm{E}[X]^{2}]]></content>
+    <content type="text"><![CDATA[C4 Continuous Distributions4.1 Continuous DensitiesLet $S$ be a sample space. A continuous random variable is a map X: S \rightarrow \R together with a function f_X： \R \rightarrow \R , having the properties that: \begin{aligned} (i) & f _ { X } ( x ) \geq 0 \text{ for all x real}\\ (ii) & \int_{-\infty}^{\infty} f_{X}(x)dx = 1\\ (iii) & P[a \leq X \leq b]=\int_{a}^{b} f_{X}(x) d x \end{aligned}The function $f_X$ is called the probability density function of the random variable $X$. Cumulative Distribution: F_X(x) = P[X \leq x] = \int_{-\infty}^{x} f_{X}(t) d tObtain the density $f_X$ from $F_X$: f_X(x) = F'_X(x)4.2 Expectation and Distribution Parameters \mathrm{E}[X] =\int_{-\infty}^{\infty} x \cdot f_{X}(x) d x E[\varphi \circ X]=\int_{-\infty}^{\infty} \varphi(x) \cdot f_{X}(x) d x \operatorname{Var}[X] =\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]=\mathrm{E}\left[X^{2}\right]-\mathrm{E}[X]^{2}]]></content>
       <categories>
         <category>probability</category>
       </categories>

@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Jack Kin">
 <meta property="og:description" content="4.7 Weibull DistributionDefinition:  f(x)=\left\{\begin{array}{ll}{\alpha \beta x^{\beta-1} e^{-\alpha x^{\beta}},} &amp; {x&amp;gt;0,} \\ {0,} &amp; {\text { otherwise }}\end{array}\right. \quad \alpha, \beta&amp;gt;0With">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-05-02T17:27:15.186Z">
+<meta property="og:updated_time" content="2019-05-15T07:51:11.392Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Weibull Distribution">
 <meta name="twitter:description" content="4.7 Weibull DistributionDefinition:  f(x)=\left\{\begin{array}{ll}{\alpha \beta x^{\beta-1} e^{-\alpha x^{\beta}},} &amp; {x&amp;gt;0,} \\ {0,} &amp; {\text { otherwise }}\end{array}\right. \quad \alpha, \beta&amp;gt;0With">
@@ -438,7 +438,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-03 01:27:15" itemprop="dateModified" datetime="2019-05-03T01:27:15+08:00">2019-05-03</time>
+                <time title="Modified: 2019-05-15 15:51:11" itemprop="dateModified" datetime="2019-05-15T15:51:11+08:00">2019-05-15</time>
               
             
           </span>
@@ -900,7 +900,7 @@ f(x)=\left\{\begin{array}{ll}{\alpha \beta x^{\beta-1} e^{-\alpha x^{\beta}},} &
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
 
 
   
@@ -925,6 +925,53 @@ f(x)=\left\{\begin{array}{ll}{\alpha \beta x^{\beta-1} e^{-\alpha x^{\beta}},} &
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
   
 
 

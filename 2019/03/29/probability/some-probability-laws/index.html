@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Jack Kin">
 <meta property="og:description" content="C2 Some Probability Laws$P$是一个函数，定义域是$\mathscr{F}$， 叫做probability function (probability measure / probability) $P : \mathscr { T } \rightarrow [ 0,1 ] , \quad A \mapsto P [ A ]$ The triple $( S , \mat">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-05-02T18:31:57.535Z">
+<meta property="og:updated_time" content="2019-05-15T07:50:55.262Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Some Probability Laws">
 <meta name="twitter:description" content="C2 Some Probability Laws$P$是一个函数，定义域是$\mathscr{F}$， 叫做probability function (probability measure / probability) $P : \mathscr { T } \rightarrow [ 0,1 ] , \quad A \mapsto P [ A ]$ The triple $( S , \mat">
@@ -438,7 +438,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-03 02:31:57" itemprop="dateModified" datetime="2019-05-03T02:31:57+08:00">2019-05-03</time>
+                <time title="Modified: 2019-05-15 15:50:55" itemprop="dateModified" datetime="2019-05-15T15:50:55+08:00">2019-05-15</time>
               
             
           </span>
@@ -493,6 +493,7 @@
         <h1 id="C2-Some-Probability-Laws"><a href="#C2-Some-Probability-Laws" class="headerlink" title="C2 Some Probability Laws"></a>C2 Some Probability Laws</h1><p>$P$是一个函数，定义域是$\mathscr{F}$， 叫做<strong>probability function</strong> (<strong>probability measure</strong> / <strong>probability</strong>)</p>
 <p>$P : \mathscr { T } \rightarrow [ 0,1 ] , \quad A \mapsto P [ A ]$</p>
 <p>The triple $( S , \mathscr { T } , P )$ is called a <strong>probability space</strong>.</p>
+<a id="more"></a>
 <h2 id="2-1-Basic-Properties-of-Probabilities-of-Events"><a href="#2-1-Basic-Properties-of-Probabilities-of-Events" class="headerlink" title="2.1 Basic Properties of Probabilities of Events"></a>2.1 Basic Properties of Probabilities of Events</h2><script type="math/tex; mode=display">
 \begin{aligned} P [ S ] & = 1 \\ P [ \varnothing ] & = 0 \\ P [ S \backslash A ] & = 1 - P [ A ] \\ P \left[ A _ { 1 } \cup A _ { 2 } \right] & = P \left[ A _ { 1 } \right] + P \left[ A _ { 2 } \right] - P \left[ A _ { 1 } \cap A _ { 2 } \right] \end{aligned}</script><h2 id="2-2-Conditional-Probability"><a href="#2-2-Conditional-Probability" class="headerlink" title="2.2 Conditional Probability"></a>2.2 Conditional Probability</h2><script type="math/tex; mode=display">
 P \left[ A _ { 1 } | A _ { 2 } \right] = \dfrac { \left| A _ { 1 } \cap A _ { 2 } \right| } { \left| A _ { 2 } \right| } = \dfrac { P \left[ A _ { 1 } \cap A _ { 2 } \right] } { P \left[ A _ { 2 } \right] }</script><p>the <strong>conditional probability</strong> of the event A occurring, given that $B$ occurs as follows:</p>
@@ -917,7 +918,7 @@ P[A_k | B ]  &= \dfrac{P[B \cap  A_k]}{P[B]} =\dfrac{P[B | A_k] \cdot P[A_k]}{ \
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
 
 
   
@@ -942,6 +943,53 @@ P[A_k | B ]  &= \dfrac{P[B \cap  A_k]}{P[B]} =\dfrac{P[B | A_k] \cdot P[A_k]}{ \
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
   
 
 

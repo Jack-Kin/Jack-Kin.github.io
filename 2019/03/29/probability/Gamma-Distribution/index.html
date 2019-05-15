@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Jack Kin">
 <meta property="og:description" content="Gamma Distribution f_{\alpha, \beta}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\alpha) \beta^{\alpha}} x^{\alpha-1} e^{-x / \beta},} &amp; {x&amp;gt;0} \\ {0,} &amp; {x \leq 0}\end{array}\right. \qquad \alpha&amp;gt;0, \">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-29T13:44:15.445Z">
+<meta property="og:updated_time" content="2019-05-15T07:45:42.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gamma Distribution">
 <meta name="twitter:description" content="Gamma Distribution f_{\alpha, \beta}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\alpha) \beta^{\alpha}} x^{\alpha-1} e^{-x / \beta},} &amp; {x&amp;gt;0} \\ {0,} &amp; {x \leq 0}\end{array}\right. \qquad \alpha&amp;gt;0, \">
@@ -421,12 +421,24 @@
                 
               
 
-              <time title="Created: 2019-03-29 02:03:46 / Modified: 21:44:15" itemprop="dateCreated datePublished" datetime="2019-03-29T02:03:46+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 02:03:46" itemprop="dateCreated datePublished" datetime="2019-03-29T02:03:46+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:45:42" itemprop="dateModified" datetime="2019-05-15T15:45:42+08:00">2019-05-15</time>
               
             
           </span>
@@ -481,7 +493,8 @@
         <h3 id="Gamma-Distribution"><a href="#Gamma-Distribution" class="headerlink" title="Gamma Distribution"></a>Gamma Distribution</h3><script type="math/tex; mode=display">
 f_{\alpha, \beta}(x)=\left\{\begin{array}{ll}{\frac{1}{\Gamma(\alpha) \beta^{\alpha}} x^{\alpha-1} e^{-x / \beta},} & {x>0} \\ {0,} & {x \leq 0}\end{array}\right. \qquad \alpha>0, \beta>0</script><p>Here, </p>
 <script type="math/tex; mode=display">
-\Gamma(\alpha)=\int_{0}^{\infty} z^{\alpha-1} e^{-z} d z, \quad \alpha>0</script><p>is the Euler gamma function,   $n !=\Gamma(n+1)$ </p>
+\Gamma(\alpha)=\int_{0}^{\infty} z^{\alpha-1} e^{-z} d z, \quad \alpha>0</script><a id="more"></a>
+<p>is the Euler gamma function,   $n !=\Gamma(n+1)$ </p>
 <script type="math/tex; mode=display">
 E[X] = \alpha \beta</script><script type="math/tex; mode=display">
 \text{Var}[X] = \alpha\beta^2</script><script type="math/tex; mode=display">
@@ -891,7 +904,7 @@ E[X] = \alpha \beta</script><script type="math/tex; mode=display">
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
 
 
   
@@ -916,6 +929,53 @@ E[X] = \alpha \beta</script><script type="math/tex; mode=display">
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
   
 
 

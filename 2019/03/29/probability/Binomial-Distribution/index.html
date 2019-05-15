@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Jack Kin">
 <meta property="og:description" content="3.5 Binomial DistributionBinomial properties:  A series of trails, classed as being either ‘success‘ or ‘failure‘ (Bernoulli trial). The trials are identical and independent. ( in the sense that the o">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-28T17:49:31.157Z">
+<meta property="og:updated_time" content="2019-05-15T07:44:58.143Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Binomial Distribution">
 <meta name="twitter:description" content="3.5 Binomial DistributionBinomial properties:  A series of trails, classed as being either ‘success‘ or ‘failure‘ (Bernoulli trial). The trials are identical and independent. ( in the sense that the o">
@@ -421,12 +421,24 @@
                 
               
 
-              <time title="Created: 2019-03-29 01:48:33 / Modified: 01:49:31" itemprop="dateCreated datePublished" datetime="2019-03-29T01:48:33+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 01:48:33" itemprop="dateCreated datePublished" datetime="2019-03-29T01:48:33+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:44:58" itemprop="dateModified" datetime="2019-05-15T15:44:58+08:00">2019-05-15</time>
               
             
           </span>
@@ -484,6 +496,7 @@
 <li>The trials are <strong>identical</strong> and <strong>independent</strong>. ( in the sense that the outcome of one trial has no effect on the outcome of any other)</li>
 <li>The random variable $X$ denotes <strong>the number of successes obtained in the n trials.</strong></li>
 </ol>
+<a id="more"></a>
 <p>Sample space for an experiment in which  $n  = 3$:</p>
 <script type="math/tex; mode=display">
 S = \{ fff, sff, fsf, ffs, ssf, sfs, sss , fss \}\</script><p>Note that:</p>
@@ -907,7 +920,7 @@ E[X] = \mu = np \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = npq</scrip
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
 
 
   
@@ -932,6 +945,53 @@ E[X] = \mu = np \qquad and \qquad \operatorname{Var} [X] = \sigma^2 = npq</scrip
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
   
 
 

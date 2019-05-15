@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Jack Kin">
 <meta property="og:description" content="4.8 Transformation of Random VariablesLet $Y = \varphi(X)$, where g is strictly monotonic and differentiable. Then:  f_{Y}(y)=f_{X}\left(\varphi^{-1}(y)\right) \cdot\left|\frac{d \varphi^{-1}(y)}{d y}">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-28T18:09:44.372Z">
+<meta property="og:updated_time" content="2019-05-15T07:51:05.972Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Transformation of Random Variables">
 <meta name="twitter:description" content="4.8 Transformation of Random VariablesLet $Y = \varphi(X)$, where g is strictly monotonic and differentiable. Then:  f_{Y}(y)=f_{X}\left(\varphi^{-1}(y)\right) \cdot\left|\frac{d \varphi^{-1}(y)}{d y}">
@@ -421,12 +421,24 @@
                 
               
 
-              <time title="Created: 2019-03-29 02:05:56 / Modified: 02:09:44" itemprop="dateCreated datePublished" datetime="2019-03-29T02:05:56+08:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 02:05:56" itemprop="dateCreated datePublished" datetime="2019-03-29T02:05:56+08:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-15 15:51:05" itemprop="dateModified" datetime="2019-05-15T15:51:05+08:00">2019-05-15</time>
               
             
           </span>
@@ -888,7 +900,7 @@ f_Y(y) = 0  \qquad \text { for } y \notin \operatorname{ran}g</script>
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
 
 
   
@@ -913,6 +925,53 @@ f_Y(y) = 0  \qquad \text { for } y \notin \operatorname{ran}g</script>
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
   
 
 
